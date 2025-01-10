@@ -1,0 +1,14 @@
+import { Component, HostBinding } from '@angular/core';
+
+@Component({
+  selector: 'app-error-404',
+  standalone: true,
+  imports: [],
+  templateUrl: './error-404.component.html',
+  styleUrl: './error-404.component.scss'
+})
+export class Error404Component {
+
+  @HostBinding('class') class = 'd-flex justify-content-center align-items-center'
+
+}
