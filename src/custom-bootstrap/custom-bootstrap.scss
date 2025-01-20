@@ -1,0 +1,97 @@
+// bootstrap-custom.scss
+$utilities: (
+  "max-width": (
+    property: max-width,
+    class: mw,
+    values: (
+      100: 100%,
+      75: 75%,
+      50: 50%,
+      25: 25% 
+    )
+  ),
+  "gap": (
+    property: gap,
+    class: gap,
+    values: (
+      1: 1rem,
+      2: 2rem,
+      3: 3rem,
+      4: 4rem,
+      5: 4.5rem,
+      6: 5rem,
+      7: 5.5rem,
+      8: 6rem,
+      9: 6.5rem,
+      10: 7rem
+    )
+  ),
+  "font-size": (
+    property: font-size,
+    class: fs,
+    values: (
+      1: 80px,
+      2: 2rem,
+      3: 3rem,
+      4: 4rem,
+      5: 4.5rem,
+      6: 5rem,
+      7: 5.5rem,
+      8: 6rem,
+      9: 6.5rem,
+      10: 7rem
+    )
+  )
+);
+
+.form-control::placeholder {
+  color: var(--colorSplinkGrayLigth) !important;
+}
+
+.form-control-solid {
+  background-color: #f7f7f7 !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-80 {
+  height: 80vh !important;
+}
+
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.py-7 {
+  padding-top: 9rem !important;
+  padding-bottom: 9rem !important;
+}
+
+.py-8 {
+  padding-top: 12rem !important;
+  padding-bottom: 12rem !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+.no-resize {
+  resize: none;
+}
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities/api";
