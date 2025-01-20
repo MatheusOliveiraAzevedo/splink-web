@@ -1,0 +1,17 @@
+:host {
+    // background: linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF, var(--colorSplinkPrimary)) !important;
+}
+
+button:hover {
+    background-color: var(--colorSplinkPrimaryDark) !important;
+}
+
+#image-logo {
+    width: 150px;
+}
+
+@media screen and (max-width:350px) {
+    nav {
+        flex-direction: column;
+    }
+}

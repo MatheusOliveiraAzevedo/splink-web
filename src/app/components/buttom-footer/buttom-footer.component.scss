@@ -1,0 +1,23 @@
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: var(--colorSplinkPrimary) !important;
+}
+
+@media screen and (max-width:767px) {
+    li {
+        width: 100%;
+        text-align: start;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width:425px) {
+    li {
+        width: auto;
+        text-align: start;
+    }
+}

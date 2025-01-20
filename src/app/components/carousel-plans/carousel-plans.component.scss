@@ -1,0 +1,9 @@
+#carouselExampleDark {
+    width: 75%;
+}
+
+@media screen and (max-width:767px) {
+    #carouselExampleDark {
+        width: 100%;
+    }
+}
