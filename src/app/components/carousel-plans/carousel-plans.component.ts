@@ -9,6 +9,6 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class CarouselPlansComponent {
 
-  @HostBinding('class') class = 'd-flex py-6 bg-white-to-primary'
+  @HostBinding('class') class = 'd-flex py-6'
 
 }

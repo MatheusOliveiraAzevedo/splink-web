@@ -1,1 +1,45 @@
-<p>work-with-us works!</p>
+<section class="container d-flex flex-column gap-4 align-items-center">
+    <div class="d-flex justify-content-start w-100">
+        <button class="btn bg-color-primary text-white fw-medium" (click)="backPage()">Voltar</button>
+    </div>
+    <h1 class="m-0 fs-2">Trabalhe conosco</h1>
+    
+    <form class="d-flex flex-column align-items-end gap-3 w-100">
+        <section class="block-inputs w-100">
+            <fieldset class="d-flex flex-column justify-content-center w-100">
+                <label class="col-form-label fw-medium fs-6" for="name">Nome</label>
+                <input class="form-control form-control-solid" type="text" id="name" name="name" placeholder="Digite seu nome" formControlName="name">
+                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
+                    informar uma data</span> -->
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-center w-100">
+                <label class="col-form-label fw-medium fs-6" for="phone">Telefone</label>
+                <input class="form-control form-control-solid" type="number" id="phone" name="phone" placeholder="Digite seu telefone" formControlName="name">
+                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
+                    informar uma data</span> -->
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-center w-100">
+                <label class="col-form-label fw-medium fs-6" for="address">Endereço</label>
+                <input class="form-control form-control-solid" type="text" id="address" name="address" placeholder="Digite seu endereço" formControlName="name">
+                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
+                    informar uma data</span> -->
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-center w-100">
+                <label class="col-form-label fw-medium fs-6" for="attachment">Anexo</label>
+                <input class="form-control form-control-solid" type="file" id="attachment" name="attachment"
+                    formControlName="name">
+                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
+                    informar uma data</span> -->
+            </fieldset>
+            <fieldset class="d-flex flex-column justify-content-center container-large">
+                <label class="col-form-label fw-bold fs-6" for="observation">Observação</label>
+                <textarea class="w-100 textarea form-control form-control-solid no-resize" id="observation" name="observation"
+                    formControlName="observation" #textarea (change)="textObservation = textarea.value" rows="5"
+                    placeholder="Digite a observação aqui..."></textarea>
+                    <!-- <span *ngIf="formOs.get('description').errors && formOs.get('description').touched" class="text-danger my-2">Favor
+                        inserir uma Descrição</span> -->
+            </fieldset>
+        </section>
+        <button class="btn text-white fw-medium">Enviar</button>
+    </form>
+</section>

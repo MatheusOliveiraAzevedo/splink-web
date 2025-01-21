@@ -1,4 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-who-we-are',
@@ -9,6 +10,14 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class WhoWeAreComponent {
 
+  constructor(
+    private router: Router
+  ) {}
+
   @HostBinding('class') class = 'd-flex flex-column align-items-center py-6 px-5'
+
+  backPage() {
+    this.router.navigate(['/home'])
+  }
 
 }

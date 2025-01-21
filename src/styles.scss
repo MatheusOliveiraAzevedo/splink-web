@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './custom-bootstrap/custom-bootstrap.scss';
+
+:root {
+    --colorSplinkPrimaryLigth: #27af919c;
+    --colorSplinkPrimary: #27AF91;
+    --colorSplinkPrimaryDark: #046D5D;
+    --colorSplinkSecondary: #B5A4EE;
+    --colorSplinkGrayLigth: #a0a0a0;
+    --colorSplinkGray: #59595b;
+    --colorSplinkGrayDark: #59595bbf;
+}
+
+.container {
+    width: 1280px;
+}
+
+.container-padding {
+    padding: 30px 20px;
+}
+
+.bg-color-primary {
+    background-color: var(--colorSplinkPrimary) !important;
+}
+
+.bg-color-secondary {
+    background-color: var(--colorSplinkSecondary) !important;
+}
+
+.bg-color-primary-dark {
+    background-color: var(--colorSplinkPrimaryDark) !important;
+}
+
+.bg-color-gray {
+    background-color: var(--colorSplinkGray) !important;
+}
