@@ -20,6 +20,10 @@
     padding: 30px 20px;
 }
 
+.text-color-gray {
+    color: var(--colorSplinkGray);
+}
+
 .bg-color-primary {
     background-color: var(--colorSplinkPrimary) !important;
 }
@@ -35,3 +39,5 @@
 .bg-color-gray {
     background-color: var(--colorSplinkGray) !important;
 }
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

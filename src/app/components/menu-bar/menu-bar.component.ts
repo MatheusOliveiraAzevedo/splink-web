@@ -1,5 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { links } from '../../shared/model/links';
 
 @Component({
   selector: 'app-menu-bar',
@@ -21,5 +22,9 @@ export class MenuBarComponent {
   goHome() {
     this.router.navigate(['/home'])
   }
+
+  goToCentral() {
+      window.open(links.central, '_blank')
+    }
 
 }

@@ -1,4 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
+import { links } from '../../shared/model/links';
 
 @Component({
   selector: 'app-carousel-plans',
@@ -10,5 +11,9 @@ import { Component, HostBinding } from '@angular/core';
 export class CarouselPlansComponent {
 
   @HostBinding('class') class = 'd-flex py-6'
+
+  goToWhatsApp() {
+    window.open(links.whatsapp, '_blank')
+  }
 
 }

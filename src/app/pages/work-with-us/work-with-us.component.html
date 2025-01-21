@@ -4,42 +4,42 @@
     </div>
     <h1 class="m-0 fs-2">Trabalhe conosco</h1>
     
-    <form class="d-flex flex-column align-items-end gap-3 w-100">
+    <form [formGroup]="formWork" (ngSubmit)="send()" class="d-flex flex-column align-items-end gap-3 w-100">
         <section class="block-inputs w-100">
             <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="name">Nome</label>
-                <input class="form-control form-control-solid" type="text" id="name" name="name" placeholder="Digite seu nome" formControlName="name">
-                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
-                    informar uma data</span> -->
+                <label class="col-form-label fw-medium fs-6" for="nome">Nome</label>
+                <input class="form-control form-control-solid" type="text" id="nome" name="nome" placeholder="Digite seu nome" formControlName="nome">
+                @if (formWork.get('nome').errors && formWork.get('nome').touched) {
+                    <span class="text-danger my-2">Favor informar um nome</span>
+                }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="phone">Telefone</label>
-                <input class="form-control form-control-solid" type="number" id="phone" name="phone" placeholder="Digite seu telefone" formControlName="name">
-                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
-                    informar uma data</span> -->
+                <label class="col-form-label fw-medium fs-6" for="tel">Telefone</label>
+                <input class="form-control form-control-solid" type="number" id="tel" name="tel" placeholder="Digite seu telefone" formControlName="tel">
+                @if (formWork.get('tel').errors && formWork.get('tel').touched) {
+                    <span class="text-danger my-2">Favor informar um telefone</span>
+                }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="address">Endereço</label>
-                <input class="form-control form-control-solid" type="text" id="address" name="address" placeholder="Digite seu endereço" formControlName="name">
-                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
-                    informar uma data</span> -->
+                <label class="col-form-label fw-medium fs-6" for="endereco">Endereço</label>
+                <input class="form-control form-control-solid" type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" formControlName="endereco">
+                @if (formWork.get('endereco').errors && formWork.get('endereco').touched) {
+                    <span class="text-danger my-2">Favor informar um endereço</span>
+                }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="attachment">Anexo</label>
-                <input class="form-control form-control-solid" type="file" id="attachment" name="attachment"
-                    formControlName="name">
-                <!-- <span *ngIf="formOs.get('startDate').errors && formOs.get('startDate').touched" class="text-danger my-2">Favor
-                    informar uma data</span> -->
+                <label class="col-form-label fw-medium fs-6" for="curriculo">Anexo</label>
+                <input class="form-control form-control-solid" type="file" id="curriculo" name="curriculo" formControlName="curriculo" (change)="onFileSelected($event)">
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center container-large">
-                <label class="col-form-label fw-bold fs-6" for="observation">Observação</label>
-                <textarea class="w-100 textarea form-control form-control-solid no-resize" id="observation" name="observation"
-                    formControlName="observation" #textarea (change)="textObservation = textarea.value" rows="5"
+                <label class="col-form-label fw-bold fs-6" for="obs">Observação</label>
+                <textarea class="w-100 textarea form-control form-control-solid no-resize" id="obs" name="obs" formControlName="obs" #textarea (change)="textObservation = textarea.value" rows="5"
                     placeholder="Digite a observação aqui..."></textarea>
-                    <!-- <span *ngIf="formOs.get('description').errors && formOs.get('description').touched" class="text-danger my-2">Favor
-                        inserir uma Descrição</span> -->
+                    @if (formWork.get('obs').errors && formWork.get('obs').touched) {
+                        <span class="text-danger my-2">Favor informar uma observação</span>
+                    }
             </fieldset>
         </section>
-        <button class="btn text-white fw-medium">Enviar</button>
+        <button type="submit" class="btn text-white fw-medium">Enviar</button>
     </form>
 </section>

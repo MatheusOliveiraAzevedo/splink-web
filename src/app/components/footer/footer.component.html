@@ -16,9 +16,9 @@
     </section>
     <section class="container-logo d-flex flex-column align-items-center justify-content-center gap-4">
         <ul class="d-flex flex-row justify-content-center gap-5 m-0 p-0 fs-1">
-            <li><i class="bi bi-instagram"></i></li>
-            <li><i class="bi bi-facebook"></i></li>
-            <li><i class="bi bi-whatsapp"></i></li>
+            <li><i class="bi bi-instagram cursor-pointer" ngbTooltip="Instagram" (click)="goToInstagram()"></i></li>
+            <li><i class="bi bi-facebook cursor-pointer" ngbTooltip="Facebook" (click)="goToFacebook()"></i></li>
+            <li><i class="bi bi-whatsapp cursor-pointer" ngbTooltip="WhatsApp" (click)="goToWhatsApp()"></i></li>
         </ul>
         <img src="assets/logo/logo-rodape.png" alt="Logo SP-Link">
     </section>
@@ -29,9 +29,9 @@
             <app-buttom-footer url="/politica-de-privacidade" label="Politica de privacidade"></app-buttom-footer>
         </ul>
         <ul class="d-flex flex-column gap-1 m-0 px-0 px-sm-5 p-md-0">
-            <app-buttom-footer url="https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-Locacao-Completo.pdf" label="Contrato de locação de equipamentos"></app-buttom-footer>
-            <app-buttom-footer url="https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-de-prestacoes-de-servicos-de-valor-adicionado.pdf" label="Contrato de SVA"></app-buttom-footer>
-            <app-buttom-footer url="https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf" label="Contrato de prestação de serviços"></app-buttom-footer>
+            <app-buttom-footer [url]="links.contratoLocacao" label="Contrato de locação de equipamentos"></app-buttom-footer>
+            <app-buttom-footer [url]="links.contratoSVA" label="Contrato de SVA"></app-buttom-footer>
+            <app-buttom-footer [url]="links.contratoServico" label="Contrato de prestação de serviços"></app-buttom-footer>
         </ul>
     </nav>
     <span class="container-cnpj d-flex flex-column align-items-center justify-content-center gap-2">

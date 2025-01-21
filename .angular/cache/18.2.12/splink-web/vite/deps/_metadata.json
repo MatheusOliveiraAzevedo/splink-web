@@ -1,34 +1,61 @@
 {
-  "hash": "6bf831ae",
-  "configHash": "25403c5f",
-  "lockfileHash": "5b18cc34",
-  "browserHash": "ccc7d8f3",
+  "hash": "dbdd2d71",
+  "configHash": "4c232339",
+  "lockfileHash": "2198f661",
+  "browserHash": "e21cfb78",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "df3fd977",
+      "fileHash": "1400f91c",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "90deb11d",
+      "fileHash": "c8310da6",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "cbf824a0",
+      "fileHash": "4ac8fea9",
+      "needsInterop": false
+    },
+    "@ng-bootstrap/ng-bootstrap": {
+      "src": "../../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
+      "file": "@ng-bootstrap_ng-bootstrap.js",
+      "fileHash": "e077f929",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "a400c38a",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "686504f6",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-5BRWUF3M": {
-      "file": "chunk-5BRWUF3M.js"
+    "chunk-O523YMPR": {
+      "file": "chunk-O523YMPR.js"
     },
-    "chunk-YJFJI4Y6": {
-      "file": "chunk-YJFJI4Y6.js"
+    "chunk-3DVWQGGV": {
+      "file": "chunk-3DVWQGGV.js"
+    },
+    "chunk-T3Q2I5G4": {
+      "file": "chunk-T3Q2I5G4.js"
+    },
+    "chunk-WORQWKTP": {
+      "file": "chunk-WORQWKTP.js"
+    },
+    "chunk-7U244Q32": {
+      "file": "chunk-7U244Q32.js"
     }
   }
 }
