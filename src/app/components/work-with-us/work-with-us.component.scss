@@ -1,7 +1,7 @@
 :host {
     min-height: 60vh;
-    background-color: #FFFFFF;
     color: var(--colorSplinkGray);
+    background: linear-gradient(var(--colorSplinkPrimary), var(--colorSplinkPrimary), var(--colorSplinkPrimary), var(--colorSplinkPrimaryDark));
 }
 
 .block-inputs {

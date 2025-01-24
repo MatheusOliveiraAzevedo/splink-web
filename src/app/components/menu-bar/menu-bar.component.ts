@@ -1,5 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { links } from '../../shared/model/links';
 
 @Component({
@@ -14,8 +14,6 @@ export class MenuBarComponent {
   constructor(
     private router: Router
   ) {}
-
-
 
   @HostBinding('class') class = 'd-block w-100'
 
