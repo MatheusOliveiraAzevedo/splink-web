@@ -8,6 +8,20 @@
     overflow: hidden;
 }
 
+section {
+    width: 90%;
+}
+
+#container-image {
+    scale: 1;
+}
+
+#container-image:hover {
+    transition: 500ms;
+    transform: scale(1.04);
+}
+
+
 @media screen and (max-width:767px) {
     #carouselExampleDark {
         width: 100%;

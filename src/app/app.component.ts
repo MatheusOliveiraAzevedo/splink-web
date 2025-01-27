@@ -2,10 +2,8 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { MenuBarComponent } from "./components/menu-bar/menu-bar.component";
 import { FooterComponent } from "./components/footer/footer.component";
-import { CookieService } from 'ngx-cookie-service';
 import { Meta, Title } from '@angular/platform-browser';
 import { filter, map, mergeMap } from 'rxjs';
-import { register } from 'swiper/element';
 
 @Component({
   selector: 'app-root',
@@ -48,6 +46,5 @@ export class AppComponent implements OnInit {
           this.metaService.updateTag({ name: 'description', content: data['description'] });
         }
       });
-      register();
   }
 }
