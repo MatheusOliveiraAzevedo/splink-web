@@ -2,6 +2,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 import { ButtomFooterComponent } from "../buttom-footer/buttom-footer.component";
 import { links } from '../../shared/model/links';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -11,6 +12,10 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent implements OnInit {
+
+  constructor(
+    private router: Router
+  ) {}
 
   @HostBinding('class') class = 'd-flex justify-content-center bg-color-primary-dark'
   links: any
@@ -29,5 +34,19 @@ export class FooterComponent implements OnInit {
 
   goToFacebook() {
     window.open(links.facebook, '_blank')
+  }
+
+  scrollTo(idElement) {
+    if (this.router.url !== '/') {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          this.scrollTo(idElement);
+        }, 500);
+      })
+    }
+    const element = document.getElementById(idElement);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
   }
 }
