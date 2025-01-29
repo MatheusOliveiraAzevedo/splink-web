@@ -1,15 +1,17 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { MenuBarComponent } from "./components/menu-bar/menu-bar.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { Meta, Title } from '@angular/platform-browser';
 import { filter, map, mergeMap } from 'rxjs';
+import { CommonModule } from '@angular/common';
+import { provideNgxMask } from 'ngx-mask';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuBarComponent, FooterComponent],
-  providers: [Title],
+  imports: [RouterOutlet, MenuBarComponent, FooterComponent, CommonModule],
+  providers: [Title, provideNgxMask()],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -24,6 +26,8 @@ export class AppComponent implements OnInit {
   ) {}
 
   title = 'splink-web';
+  public isMenuHidden = true
+  lastScrollPosition = 50
 
   ngOnInit(): void {
     this.router.events
@@ -38,13 +42,34 @@ export class AppComponent implements OnInit {
         mergeMap(route => route.data)
       )
       .subscribe(data => {
-        // Atualiza o título da aba
         this.titleService.setTitle(data['title'] || 'SP-LINK');
         
-        // Atualiza a meta descrição, se estiver no data
         if (data['description']) {
           this.metaService.updateTag({ name: 'description', content: data['description'] });
         }
+
+        if (this.router.url === '/') {
+          this.isMenuHidden = true
+        } else {
+          this.isMenuHidden = false
+        }
       });
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    
+    if (this.router.url === '/') {
+      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollPosition < 50) {
+        this.isMenuHidden = true;
+      } else if (currentScrollPosition > this.lastScrollPosition) {
+        this.isMenuHidden = false;
+      }
+      this.lastScrollPosition = currentScrollPosition;
+    } else {
+      this.isMenuHidden = false
+    }
+
   }
 }

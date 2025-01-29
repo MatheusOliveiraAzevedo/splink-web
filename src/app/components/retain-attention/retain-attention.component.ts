@@ -1,5 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { CardServiceComponent } from "../card-service/card-service.component";
+import { serviceCards } from '../../shared/model/plans';
 
 @Component({
   selector: 'app-retain-attention',
@@ -10,8 +11,7 @@ import { CardServiceComponent } from "../card-service/card-service.component";
 })
 export class RetainAttentionComponent {
 
-  @HostBinding('class') class = ''
-
-  
+  @HostBinding('class') class = 'd-flex justify-content-center'
+  serviceCards: any[] = serviceCards
 
 }

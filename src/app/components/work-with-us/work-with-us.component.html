@@ -1,4 +1,4 @@
-<section class="container d-flex flex-column gap-4 align-items-center text-white">
+<section class="container-max d-flex flex-column gap-4 align-items-center text-white">
     <h1 class="m-0 fs-2">Trabalhe conosco</h1>
     
     <form [formGroup]="formWork" (ngSubmit)="send()" class="d-flex flex-column align-items-end gap-3 w-100">
@@ -12,7 +12,7 @@
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center w-100">
                 <label class="col-form-label fw-medium fs-6" for="tel">Telefone</label>
-                <input class="form-control form-control-solid" type="number" id="tel" name="tel" placeholder="Digite seu telefone" formControlName="tel">
+                <input class="form-control form-control-solid" mask="(00) 00009 0000"  [dropSpecialCharacters]="false" type="tel" id="tel" name="tel" placeholder="Digite seu telefone" formControlName="tel">
                 @if (formWork.get('tel').errors && formWork.get('tel').touched) {
                     <span class="text-danger my-2">Favor informar um telefone</span>
                 }
@@ -27,14 +27,14 @@
             <fieldset class="d-flex flex-column justify-content-center w-100">
                 <label class="col-form-label fw-medium fs-6" for="curriculo">Anexo</label>
                 <input class="form-control form-control-solid" type="file" id="curriculo" name="curriculo" formControlName="curriculo" (change)="onFileSelected($event)">
+                @if (formWork.get('curriculo').errors && formWork.get('curriculo').touched) {
+                    <span class="text-danger my-2">Favor inserir o anexo</span>
+                }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center container-large">
                 <label class="col-form-label fw-bold fs-6" for="obs">Observação</label>
                 <textarea class="w-100 textarea form-control form-control-solid no-resize" id="obs" name="obs" formControlName="obs" #textarea (change)="textObservation = textarea.value" rows="5"
                     placeholder="Digite a observação aqui..."></textarea>
-                    @if (formWork.get('obs').errors && formWork.get('obs').touched) {
-                        <span class="text-danger my-2">Favor informar uma observação</span>
-                    }
             </fieldset>
         </section>
         <button type="submit" class="btn text-white fw-medium">Enviar</button>

@@ -1,4 +1,35 @@
-<nav class="container container-padding d-flex justify-content-between align-items-center w-100">
-    <img id="image-logo" class="cursor-pointer" src="assets/logo/logo-color-splink.png" alt="Logo da SP Link" (click)="goHome()">
-    <button class="btn btn-sm rounded-2 fw-semibold bg-color-primary text-white" (click)="goToCentral()">Central do Assinante</button>
+<nav class="navbar navbar-expand-lg container-max px-4">
+    <div class="container-fluid">
+        <img id="image-logo" class="cursor-pointer" src="assets/logo/logo-color-splink.png" alt="Logo da SP Link" (click)="goHome()">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" style="width: 300px; height: 100vh;" id="navbarNav" aria-labelledby="offcanvasExampleLabel" #offcanvasMenu>
+            <div class="offcanvas-header">
+                <img id="image-logo" class="cursor-pointer" src="assets/logo/logo-color-splink.png" alt="Logo da SP Link" (click)="goHome()" data-bs-dismiss="offcanvas" aria-label="Close">
+                <button type="button" class="btn-close button-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto fw-normal">
+                    @for (menu of navBarMenu; track $index) {
+                        <li class="nav-item {{menu.submenu ? 'dropdown' : ''}}">
+                            @if (menu.submenu) {
+                                <a class="nav-link dropdown-toggle cursor-pointer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{menu.label}}
+                                  </a>
+                                  <ul class="dropdown-menu dropdown-menu-end">
+                                    @for (menuSub of menu.submenu; track $index) {
+                                        <li><a class="dropdown-item" (click)="scrollTo(menuSub.scrollTo)" data-bs-dismiss="offcanvas" aria-label="Close">{{menuSub.label}}</a></li>
+                                    }
+                                  </ul>
+                            } @else {
+                                <a class="nav-link cursor-pointer" (click)="clickItemMenu(menu)" data-bs-dismiss="offcanvas" aria-label="Close">{{menu.label}}</a>
+                            }
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
 </nav>

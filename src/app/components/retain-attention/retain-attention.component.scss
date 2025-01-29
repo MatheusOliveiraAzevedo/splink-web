@@ -1,16 +1,3 @@
-section {
+:host {
     background-color: var(--colorSplinkPrimary) !important;
-}
-
-
-.container-services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 991px) {
-    .container-services {
-        display: flex;
-        flex-direction: column;
-    }
 }

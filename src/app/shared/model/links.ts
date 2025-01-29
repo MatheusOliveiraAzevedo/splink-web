@@ -8,3 +8,47 @@ export const links = {
     contratoServico: 'https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf'
   };
   
+  export const navBarMenu = [
+    {
+      label: 'Inicio',
+      url: null,
+      scrollTo: 'startBanner'
+    },
+    {
+      label: 'Serviços',
+      url: null,
+      scrollTo: 'services'
+    },
+    {
+      label: 'Planos',
+      url: null,
+      scrollTo: 'plans'
+    },
+    {
+      label: 'Area de cobertura',
+      url: null,
+      scrollTo: 'coverage'
+    },
+    {
+      label: 'Central do Assinante',
+      url: links.central,
+      scrollTo: null
+    },
+    {
+      label: 'Sobre',
+      url: null,
+      scrollTo: null,
+      submenu: [
+        {
+          label: 'Quem somos',
+          url: null,
+          scrollTo: 'whoWeAre'
+        },
+        {
+          label: 'Trabalhe conosco',
+          url: null,
+          scrollTo: 'workUs'
+        },
+      ]
+    },
+  ]

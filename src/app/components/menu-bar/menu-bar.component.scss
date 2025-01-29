@@ -1,14 +1,26 @@
 :host {
-    // background: linear-gradient(#FFFFFF, #FFFFFF, #FFFFFF, var(--colorSplinkPrimary)) !important;
-}
-
-button:hover {
-    background-color: var(--colorSplinkPrimaryDark) !important;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1000;
 }
 
 #image-logo {
-    width: 150px;
+    width: 100px;
 }
+
+.nav-link {
+    color: var(--colorSplinkGray) !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: var(--colorSplinkPrimaryDark) !important;
+}
+
+.dropdown-item:active {
+    background-color: #FFFFFF;
+}
+
 
 @media screen and (max-width:350px) {
     nav {

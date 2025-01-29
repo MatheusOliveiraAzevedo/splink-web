@@ -1,12 +1,7 @@
-<section class="d-flex flex-column">
-    
-    <div class="container container-services gap-5 px-4 px-sm-5 py-6">
-        <img src="assets/cards-service/watchtv copy.png" alt="" class="w-100">
-        <img src="assets/cards-service/paramout+.png" alt="" class="w-100">
-        <img src="assets/cards-service/wi-fi6.png" alt="" class="w-100">
-        <!-- <app-card-service image="assets/logo-services/watchtv.png" text="Para deixar sua conexão muito mais divertida, acesse canais de TV de onde estiver e não perca mais nenhuma de suas programações."></app-card-service>
-        <app-card-service image="assets/logo-services/wifi6.png" text="É mais do que conectar você à internet, é garantia de maior velocidade e capacidade para comportar aplicações de uma futura geração de dispositivos."></app-card-service>
-        <app-card-service image="assets/logo-services/paramount+.png" text="Mais uma opção de streaming para não perder nenhum lançamento do mundo dos filmes, séries e realities."></app-card-service> -->
-    </div>
-
-</section>
+<div class="container-max d-flex flex-row justify-content-evenly flex-wrap gap-5 px-4 px-sm-5 py-6">
+    @for (service of serviceCards; track $index) {
+        <div style="max-width: 300px;">
+            <img [src]="service.image" [alt]="service.alt" class="w-100">
+        </div>
+    }
+</div>

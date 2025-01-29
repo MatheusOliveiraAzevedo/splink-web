@@ -9,6 +9,6 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class CoverageAreaComponent {
 
-  @HostBinding('class') class = 'd-flex'
+  @HostBinding('class') class = 'd-flex justify-content-center'
 
 }

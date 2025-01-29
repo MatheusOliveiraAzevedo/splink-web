@@ -12,7 +12,7 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class FooterComponent implements OnInit {
 
-  @HostBinding('class') class = 'd-flex bg-color-primary-dark'
+  @HostBinding('class') class = 'd-flex justify-content-center bg-color-primary-dark'
   links: any
 
   ngOnInit(): void {

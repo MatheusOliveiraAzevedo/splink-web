@@ -2,11 +2,12 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ContactFormService } from '../../shared/services/contact-form.service';
+import { NgxMaskDirective } from 'ngx-mask';
 
 @Component({
   selector: 'app-work-with-us',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule, NgxMaskDirective],
   templateUrl: './work-with-us.component.html',
   styleUrl: './work-with-us.component.scss'
 })
@@ -40,32 +41,28 @@ export class WorkWithUsComponent implements OnInit {
         Validators.required
       ])],
       curriculo: [null, Validators.compose([
+        Validators.required
       ])],
       obs: ['', Validators.compose([
-        Validators.required
       ])],
     })
   }
   
   send() {
-    console.log(this.formWork.value)
-    if (this.formWork.status === 'VALID') {
+    if (this.formWork.status === 'VALID' && this.fileImage) {
 
-      if (this.fileImage) {
-        const formData = new FormData();
-        formData.append('curriculo', this.fileImage, this.fileImage.name);
-        formData.append('endereco', this.formWork.get('endereco')?.value || '');
-        formData.append('nome', this.formWork.get('nome')?.value || '');
-        formData.append('obs', this.formWork.get('obs')?.value || '');
-        formData.append('tel', this.formWork.get('tel')?.value || '');
-        this.contactForm.sendFormContact(formData).then((res) => {
-          console.log(res)
-          console.log('enviou')
-        }).catch((err) => {
-          console.log(err)
-        })
-      }
-
+      const formData = new FormData();
+      formData.append('curriculo', this.fileImage, this.fileImage.name);
+      formData.append('endereco', this.formWork.get('endereco')?.value || '');
+      formData.append('nome', this.formWork.get('nome')?.value || '');
+      formData.append('obs', this.formWork.get('obs')?.value || '');
+      formData.append('tel', this.formWork.get('tel')?.value || '');
+      this.contactForm.sendFormContact(formData).then((res) => {
+        console.log(res)
+        console.log('enviou')
+      }).catch((err) => {
+        console.log(err)
+      })
 
     } else {
       this.formWork.markAllAsTouched();
