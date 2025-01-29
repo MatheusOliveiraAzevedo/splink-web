@@ -5,7 +5,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 
 export const routes: Routes = [
     {
-      path: 'home',
+      path: '',
       component: HomeComponent,
       data: {title: 'SP-Link - Home', description: 'SP-Link, Estabilidade para suas maratonas, reuniões e jogos online, com atendimento que faz a diferença.'}
     },
