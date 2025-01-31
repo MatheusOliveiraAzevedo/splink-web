@@ -14,7 +14,7 @@ export class WhoWeAreComponent {
     private router: Router
   ) {}
 
-  @HostBinding('class') class = 'd-flex flex-column align-items-center py-6 px-5'
+  @HostBinding('class') class = 'd-flex flex-column align-items-center'
 
   backPage() {
     this.router.navigate(['/home'])
