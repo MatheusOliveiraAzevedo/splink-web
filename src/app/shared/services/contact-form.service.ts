@@ -6,14 +6,17 @@ import { Injectable } from '@angular/core';
 })
 export class ContactFormService {
 
-  private API = 'https://sp-link.com.br/wp-json/contact-form-7/v1/contact-forms/64/feedback'
+  private API = 'https://script.google.com/macros/s/AKfycbzlnf0cCKc-74ouPZ1xRT_3HqpxDgmMygVatuxv0OFzeXcBMsorbJw6AaGdvT2N8eIl/exec'
 
   constructor(
     private http: HttpClient,
   ) { }
 
   sendFormContact(image): Promise<any>{
-    return this.http.post(this.API, image).toPromise();
+    return this.http.post(this.API, image, {
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      responseType: 'json'
+    }).toPromise();
   }
 
 }
