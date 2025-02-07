@@ -2,7 +2,7 @@
     <p-carousel [value]="plans" [numVisible]="5" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
         <ng-template let-plan #item>
             <div id="container-image" class="rounded-4 m-3 cursor-pointer" (click)="goToWhatsApp()">
-                <img src="{{ plan.image }}" [alt]="plan.name" class="w-100 rounded-4" style="height: 100%;"/>
+                <img src="{{ plan.image }}" [alt]="plan.name" class="w-100 rounded-4" style="height: 100%; object-fit: cover;"/>
             </div>
         </ng-template>
     </p-carousel>

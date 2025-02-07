@@ -11,6 +11,6 @@ export class ButtomFooterComponent {
 
   @HostBinding('class') class = 'flex-grow-1'
   label = input.required<string>()
-  url = input.required<string>()
+  url = input<string>()
 
 }

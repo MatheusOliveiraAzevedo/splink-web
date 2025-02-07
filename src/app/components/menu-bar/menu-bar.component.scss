@@ -21,6 +21,9 @@
     background-color: #FFFFFF;
 }
 
+img {
+    object-fit: cover;
+}
 
 @media screen and (max-width:350px) {
     nav {
