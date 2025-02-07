@@ -1,11 +1,6 @@
-import { Component, ElementRef, HostBinding, ViewChild } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
-import { links, navBarMenu } from '../../shared/model/links';
-import { WorkWithUsComponent } from '../work-with-us/work-with-us.component';
-import { BannerPrincipalComponent } from '../banner-principal/banner-principal.component';
-import { RetainAttentionComponent } from '../retain-attention/retain-attention.component';
-import { CoverageAreaComponent } from '../coverage-area/coverage-area.component';
-import { WhoWeAreComponent } from '../who-we-are/who-we-are.component';
+import { navBarMenu } from '../../shared/model/links';
 import { CommonModule } from '@angular/common';
 
 @Component({

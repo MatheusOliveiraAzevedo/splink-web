@@ -1,25 +1,29 @@
-import { AfterViewInit, Component, HostBinding, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component, HostBinding, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ContactFormService } from '../../shared/services/contact-form.service';
 import { NgxMaskDirective } from 'ngx-mask';
 import { Toast } from 'bootstrap';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 
 @Component({
   selector: 'app-work-with-us',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgxMaskDirective],
+  imports: [FormsModule, ReactiveFormsModule, NgxMaskDirective, ToastModule],
+  providers: [MessageService],
   templateUrl: './work-with-us.component.html',
   styleUrl: './work-with-us.component.scss'
 })
-export class WorkWithUsComponent implements OnInit, AfterViewInit {
+export class WorkWithUsComponent implements OnInit {
 
 
   constructor(
     private router: Router,
     private fb: FormBuilder,
-    private contactForm: ContactFormService
+    private contactForm: ContactFormService,
+    private messageService: MessageService
   ) {}
 
   @HostBinding('class') class = 'd-flex flex-column align-items-center py-6 px-5'
@@ -29,25 +33,9 @@ export class WorkWithUsComponent implements OnInit, AfterViewInit {
   isLoading: boolean = false
   toastTrigger
   toastLiveExample
-  toastBootstrap
-  colorToast: 'success' | 'danger' = 'success'
-  textToast: string
 
   ngOnInit(): void {
     this.loadForm();
-  }
-
-  ngAfterViewInit(): void {
-    this.toastTrigger = document.getElementById('liveToastBtn');
-    this.toastLiveExample = document.getElementById('liveToast');
-
-    if (this.toastTrigger && this.toastLiveExample) {
-      this.toastBootstrap = new Toast(this.toastLiveExample);
-
-      this.toastTrigger.addEventListener('click', () => {
-        this.toastBootstrap.show();
-      });
-    }
   }
 
   loadForm() {
@@ -68,7 +56,11 @@ export class WorkWithUsComponent implements OnInit, AfterViewInit {
       ])],
     })
   }
-  
+
+  showToast(sumary: string, detail: string, severity: string) {
+    this.messageService.add({ severity: severity, summary: sumary, detail: detail, key: 'br', life: 3000 });
+  }
+
   send() {
     if (this.formWork.status === 'VALID' && this.fileDocument) {
       this.isLoading = true
@@ -89,27 +81,24 @@ export class WorkWithUsComponent implements OnInit, AfterViewInit {
         }
         
         
-        this.contactForm.sendFormContact(data).then((res) => {
-          console.log(res)
-          console.log('enviou')
+        this.contactForm.sendFormContact(data).then(() => {
           this.isLoading = false
-          this.textToast = 'Enviado com sucesso!'
-          this.colorToast = 'success'
-          this.toastBootstrap.show();
+          this.showToast('Concluido', 'Enviado com sucesso!', 'success');
         }).catch((err) => {
-          this.textToast = 'Houve um erro! Tente novamente!'
-          this.colorToast = 'danger'
-          this.toastBootstrap.show();
-          this.isLoading = false
-          console.log(err)
+          if (err.status === 200) {
+            this.showToast('Concluido', 'Enviado com sucesso!', 'success');
+            this.isLoading = false
+          } else {
+            this.showToast('Houve um erro!', 'Tente novamente!', 'error');
+            this.isLoading = false
+            console.log(err)
+          }
         })
       }
       
     } else {
       this.formWork.markAllAsTouched();
-      this.textToast = 'Preencha os campos obrigatórios!'
-      this.colorToast = 'danger'
-      this.toastBootstrap.show();
+      this.showToast('Campos vazios!', 'Preencha os campos obrigatórios!', 'warn');
     }
   }
 
