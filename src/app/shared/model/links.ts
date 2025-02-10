@@ -25,7 +25,7 @@ export const links = {
       scrollTo: 'plans'
     },
     {
-      label: 'Area de cobertura',
+      label: 'Área de cobertura',
       url: null,
       scrollTo: 'coverage'
     },
