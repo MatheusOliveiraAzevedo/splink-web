@@ -1,0 +1,17 @@
+:host {
+    background: linear-gradient(to right, var(--colorSplinkPrimaryDark), var(--colorSplinkPrimary));
+    border-radius: 30px;
+    box-shadow: 1px 2px 5px var(--colorSplinkGray);
+    scale: 1;
+}
+
+:host:hover {
+    transition: 500ms;
+    transform: scale(1.05);
+}
+
+button {
+    font-size: 18px;
+    background-color: inherit;
+    border: none;
+}

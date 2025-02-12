@@ -1,7 +1,9 @@
 <div class="container-max d-flex flex-row justify-content-evenly flex-wrap gap-5 px-4 px-sm-5 py-6">
     @for (service of serviceCards; track $index) {
-        <div style="max-width: 300px;">
+        <div style="max-width: 300px; position: relative;">
             <img [src]="service.image" [alt]="service.alt" class="w-100">
+            <app-button-attention class="d-block d-md-none buttonAttention" label="Quero contratar!"></app-button-attention>
         </div>
     }
 </div>
+<app-button-attention class="d-none d-md-block" label="Quero contratar!"></app-button-attention>

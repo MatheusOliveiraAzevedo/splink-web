@@ -1,10 +1,11 @@
 import { Component, HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
+import { ButtonAttentionComponent } from "../button-attention/button-attention.component";
 
 @Component({
   selector: 'app-who-we-are',
   standalone: true,
-  imports: [],
+  imports: [ButtonAttentionComponent],
   templateUrl: './who-we-are.component.html',
   styleUrl: './who-we-are.component.scss'
 })
