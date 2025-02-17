@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { links } from '../../shared/model/links';
 
 @Component({
   selector: 'app-button-attention',
@@ -9,5 +10,10 @@ import { Component, input } from '@angular/core';
 export class ButtonAttentionComponent {
 
   label = input.required<string>()
+  linkButton = links.whatsapp
+
+  returnLinkButton() {
+    return window.open(links.whatsapp, '_blank')
+  }
 
 }

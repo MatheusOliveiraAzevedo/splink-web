@@ -1,10 +1,10 @@
 <footer class="container-max gap-5 px-5 py-4 text-white">
     <section class="container-addresses d-flex flex-column justify-content-center gap-3" style="font-size: 16px;">
-        <span class="d-flex flex-row gap-2">
+        <span class="d-flex flex-row gap-2 cursor-pointer" (click)="goToMapAddress('endereco_01')">
             <i class="bi bi-geo-alt"></i>
             <p>Av. Curitiba, 980 Tramandaí, RS, Brasil</p>
         </span>
-        <span class="d-flex flex-row gap-2">
+        <span class="d-flex flex-row gap-2 cursor-pointer" (click)="goToMapAddress('endereco_02')">
             <i class="bi bi-geo-alt"></i>
             <p>Av. Osório, 110 Imbé, RS, Brasil</p>
         </span>
@@ -20,7 +20,7 @@
             <li><i class="bi bi-facebook cursor-pointer" ngbTooltip="Facebook" (click)="goToFacebook()"></i></li>
             <li><i class="bi bi-whatsapp cursor-pointer" ngbTooltip="WhatsApp" (click)="goToWhatsApp()"></i></li>
         </ul>
-        <img src="assets/logo/logo-rodape.png" alt="Logo SP-Link">
+        <img src="assets/logo/logo-rodape.png" alt="Logo SP-Link" (click)="goHome()" class="cursor-pointer">
     </section>
     <nav class="d-flex flex-column gap-3 align-items-start px-0 px-sm-5 px-md-0">
         <ul class="d-flex flex-column gap-1 m-0 px-0 px-sm-5 p-md-0">

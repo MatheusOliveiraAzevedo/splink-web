@@ -1,6 +1,7 @@
 import { Component, HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
 import { ButtonAttentionComponent } from "../button-attention/button-attention.component";
+import { links } from '../../shared/model/links';
 
 @Component({
   selector: 'app-who-we-are',
@@ -16,6 +17,7 @@ export class WhoWeAreComponent {
   ) {}
 
   @HostBinding('class') class = 'd-flex flex-column align-items-center'
+  linkButton = links.whatsapp
 
   backPage() {
     this.router.navigate(['/home'])

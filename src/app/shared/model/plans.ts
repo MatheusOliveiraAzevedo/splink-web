@@ -18,6 +18,10 @@ export const plans = [
     {
     alt: 'imagem do plano de 1gb',
     image: 'assets/plans/1gb.png'
+    },
+    {
+    alt: 'imagem do plano empresarial',
+    image: 'assets/plans/empresarial.png'
     }
 ]
 

@@ -5,7 +5,10 @@ export const links = {
     central: 'https://atendimento.sp-link.com.br/sac/login/?sys=SAC',
     contratoLocacao: 'https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-Locacao-Completo.pdf',
     contratoSVA: 'https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-de-prestacoes-de-servicos-de-valor-adicionado.pdf',
-    contratoServico: 'https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf'
+    contratoServico: 'https://sp-link.com.br/wp-content/uploads/2022/08/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf',
+    endereco_01: 'https://maps.app.goo.gl/Q6SQeR1cZkE2ZFeW8',
+    endereco_02: 'https://maps.app.goo.gl/GjoTA4i3Ftnn7R2M8'
+
   };
   
   export const navBarMenu = [

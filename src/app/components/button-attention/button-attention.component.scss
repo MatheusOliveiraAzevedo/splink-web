@@ -3,11 +3,12 @@
     border-radius: 30px;
     box-shadow: 1px 2px 5px var(--colorSplinkGray);
     scale: 1;
+    display: inline-block;
 }
 
 :host:hover {
     transition: 500ms;
-    transform: scale(1.05);
+    transform: scale(1.05) translate(2.5%, 2.5%);
 }
 
 button {

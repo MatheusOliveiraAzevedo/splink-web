@@ -36,6 +36,18 @@ export class FooterComponent implements OnInit {
     window.open(links.facebook, '_blank')
   }
 
+  goToMapAddress(map) {
+    window.open(links[map], '_blank')
+  }
+
+  goHome() {
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        this.scrollTo('startBanner');
+      }, 500);
+    })
+  }
+
   scrollTo(idElement) {
     if (this.router.url !== '/') {
       this.router.navigate(['/']).then(() => {
