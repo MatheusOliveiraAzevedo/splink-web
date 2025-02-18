@@ -7,28 +7,28 @@
                 <label class="col-form-label fw-medium fs-6" for="nome">Nome</label>
                 <input class="form-control form-control-solid" type="text" id="nome" name="nome" placeholder="Digite seu nome" formControlName="nome" autocomplete="name">
                 @if (formWork.get('nome').errors && formWork.get('nome').touched) {
-                    <span class="text-danger my-2">Favor informar um nome</span>
+                    <span class="error-message text-danger">Favor informar um nome</span>
                 }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center w-100">
                 <label class="col-form-label fw-medium fs-6" for="tel">Telefone</label>
                 <input class="form-control form-control-solid" mask="(00) 00009 0000"  [dropSpecialCharacters]="false" type="tel" id="tel" name="tel" placeholder="Digite seu telefone" formControlName="tel" autocomplete="tel">
                 @if (formWork.get('tel').errors && formWork.get('tel').touched) {
-                    <span class="text-danger my-2">Favor informar um telefone</span>
+                    <span class="error-message text-danger">Favor informar um telefone</span>
                 }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center w-100">
                 <label class="col-form-label fw-medium fs-6" for="endereco">Endereço</label>
                 <input class="form-control form-control-solid" type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" formControlName="endereco" autocomplete="street-address">
                 @if (formWork.get('endereco').errors && formWork.get('endereco').touched) {
-                    <span class="text-danger my-2">Favor informar um endereço</span>
+                    <span class="error-message text-danger">Favor informar um endereço</span>
                 }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center w-100">
                 <label class="col-form-label fw-medium fs-6" for="curriculo">Anexo</label>
                 <input class="form-control form-control-solid" type="file" id="curriculo" name="curriculo" formControlName="curriculo" (change)="onFileSelected($event)">
                 @if (formWork.get('curriculo').errors && formWork.get('curriculo').touched) {
-                    <span class="text-danger my-2">Favor inserir o anexo</span>
+                    <span class="error-message text-danger">Favor inserir o anexo</span>
                 }
             </fieldset>
             <fieldset class="d-flex flex-column justify-content-center container-large">
