@@ -28,6 +28,12 @@ img {
     max-width: 200px;
 }
 
+.img-app {
+    width: 150px !important;
+}
+
+
+
 @media screen and (max-width:1130px) {
     footer {
         grid-template-columns: repeat(2, 1fr);

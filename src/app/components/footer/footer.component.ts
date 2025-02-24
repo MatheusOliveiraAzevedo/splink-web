@@ -40,6 +40,14 @@ export class FooterComponent implements OnInit {
     window.open(links[map], '_blank')
   }
 
+  goToAppAndroid() {
+    window.open(links.app_android, '_blank')
+  }
+
+  goToAppiPhone() {
+    window.open(links.app_iphone, '_blank')
+  }
+
   goHome() {
     this.router.navigate(['/']).then(() => {
       setTimeout(() => {
