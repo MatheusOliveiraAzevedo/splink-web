@@ -1,14 +1,13 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, HostBinding, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, HostBinding } from '@angular/core';
 import { links } from '../../shared/model/links';
 import { Carousel } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
-import { Tag } from 'primeng/tag';
 import { configurationCarrousel, plans } from '../../shared/model/plans';
 
 @Component({
   selector: 'app-carousel-plans',
   standalone: true,
-  imports: [Carousel, Tag, ButtonModule],
+  imports: [Carousel, ButtonModule],
   templateUrl: './carousel-plans.component.html',
   styleUrl: './carousel-plans.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
