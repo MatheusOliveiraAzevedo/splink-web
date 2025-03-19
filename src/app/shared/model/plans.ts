@@ -62,3 +62,7 @@ export const serviceCards = [
     image: 'assets/cards-service/wi-fi6.png'
     }
 ]
+
+export const imageWhoWeAre = {
+  image: 'assets/fachada/Fachada.jpg'
+}
