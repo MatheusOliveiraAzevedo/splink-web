@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    position: fixed;
+    top: 30px;
+    left: 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#save-preferences {
+    background: linear-gradient(to right, var(--colorSplinkPrimaryDark), var(--colorSplinkPrimary));
+    border-radius: 30px;
+    display: inline-block;
+}

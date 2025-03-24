@@ -1,0 +1,18 @@
+<ng-template #modalCookies>
+    <div class="card d-flex flex-column align-items-center p-5 gap-4">
+        <p class="fs-6 text-center m-0">
+            A SP-Link utiliza cookies para melhorar a sua experiência, segurança e lhe entregar um conteúdo personalizado.
+        </p>
+        <small class="d-flex flex-column gap-2 text-center">
+            Para saber mais acesse abaixo
+            <div class="d-flex flex-row gap-2">
+                <a href="/politica-de-privacidade" tabindex="-1">Politica de privacidade</a>
+                <a href="/politica-de-cookies" tabindex="-1">Politica de Cookies</a>
+            </div>
+        </small>
+        <div class="d-flex flex-row gap-3">
+            <button class="btn fw-bold" (click)="refuseCookies()">Recusar</button>
+            <button id="save-preferences" class="px-3 text-nowrap text-white fw-bold px-3 py-2" (click)="acceptCookies()">Aceitar</button>
+        </div>
+      </div>
+</ng-template>

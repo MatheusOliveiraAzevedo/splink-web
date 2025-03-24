@@ -6,11 +6,12 @@ import { Meta, Title } from '@angular/platform-browser';
 import { filter, map, mergeMap } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { provideNgxMask } from 'ngx-mask';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuBarComponent, FooterComponent, CommonModule],
+  imports: [RouterOutlet, MenuBarComponent, FooterComponent, CommonModule, CookiesComponent],
   providers: [Title, provideNgxMask()],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

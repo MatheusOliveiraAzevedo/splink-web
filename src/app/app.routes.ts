@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { Error404Component } from './pages/error-404/error-404.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { PrivacyCookiesComponent } from './pages/privacy-cookies/privacy-cookies.component';
 
 export const routes: Routes = [
     {
@@ -13,6 +14,11 @@ export const routes: Routes = [
       path: 'politica-de-privacidade',
       component: PrivacyPolicyComponent,
       data: {title: 'SP-Link - Politica de privacidade'}
+    },
+    {
+      path: 'politica-de-cookies',
+      component: PrivacyCookiesComponent,
+      data: {title: 'SP-Link - Politica de cookies'}
     },
     {
       path: 'erro-404',
