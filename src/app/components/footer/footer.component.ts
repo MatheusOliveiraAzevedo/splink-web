@@ -11,41 +11,17 @@ import { Router } from '@angular/router';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
   constructor(
     private router: Router
   ) {}
 
   @HostBinding('class') class = 'd-flex justify-content-center bg-color-primary-dark'
-  links: any
+  links = links
 
-  ngOnInit(): void {
-    this.links = links
-  }
-
-  goToWhatsApp() {
-    window.open(links.whatsapp, '_blank')
-  }
-
-  goToInstagram() {
-    window.open(links.instagram, '_blank')
-  }
-
-  goToFacebook() {
-    window.open(links.facebook, '_blank')
-  }
-
-  goToMapAddress(map) {
-    window.open(links[map], '_blank')
-  }
-
-  goToAppAndroid() {
-    window.open(links.app_android, '_blank')
-  }
-
-  goToAppiPhone() {
-    window.open(links.app_iphone, '_blank')
+  goTo(url) {
+    window.open(url, '_blank');
   }
 
   goHome() {
@@ -65,8 +41,8 @@ export class FooterComponent implements OnInit {
       })
     }
     const element = document.getElementById(idElement);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

@@ -1,10 +1,10 @@
 <footer class="container-max gap-5 px-5 py-4 text-white">
     <section class="container-addresses d-flex flex-column justify-content-center gap-3" style="font-size: 16px;">
-        <span class="d-flex flex-row gap-2 cursor-pointer" (click)="goToMapAddress('endereco_01')">
+        <span class="d-flex flex-row gap-2 cursor-pointer" (click)="goTo(links.endereco_01)">
             <i class="bi bi-geo-alt"></i>
             <p>Av. Curitiba, 980 Tramandaí, RS, Brasil</p>
         </span>
-        <span class="d-flex flex-row gap-2 cursor-pointer" (click)="goToMapAddress('endereco_02')">
+        <span class="d-flex flex-row gap-2 cursor-pointer" (click)="goTo(links.endereco_02)">
             <i class="bi bi-geo-alt"></i>
             <p>Av. Osório, 110 Imbé, RS, Brasil</p>
         </span>
@@ -16,14 +16,14 @@
     </section>
     <section class="container-logo d-flex flex-column align-items-center justify-content-center gap-4">
         <ul class="d-flex flex-row justify-content-center gap-5 m-0 p-0 fs-1">
-            <li><i class="bi bi-instagram cursor-pointer" ngbTooltip="Instagram" (click)="goToInstagram()"></i></li>
-            <li><i class="bi bi-facebook cursor-pointer" ngbTooltip="Facebook" (click)="goToFacebook()"></i></li>
-            <li><i class="bi bi-whatsapp cursor-pointer" ngbTooltip="WhatsApp" (click)="goToWhatsApp()"></i></li>
+            <li><i class="bi bi-instagram cursor-pointer" ngbTooltip="Instagram" (click)="goTo(links.instagram)"></i></li>
+            <li><i class="bi bi-facebook cursor-pointer" ngbTooltip="Facebook" (click)="goTo(links.facebook)"></i></li>
+            <li><i class="bi bi-whatsapp cursor-pointer" ngbTooltip="WhatsApp" (click)="goTo(links.whatsapp)"></i></li>
         </ul>
         <img class="img-logo" src="assets/logo/logo-rodape.png" alt="Logo SP-Link" (click)="goHome()" class="cursor-pointer">
         <ul class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-4 gap-sm-5 m-0 p-0 pt-3 fs-1 w-100">
-            <img class="img-app" ngbTooltip="Aplicativo iPhone" (click)="goToAppiPhone()" src="assets/logo-apps/ios.svg" alt="Logo loja de aplicativos App Store">
-            <img class="img-app" ngbTooltip="Aplicativo Android" (click)="goToAppAndroid()" src="assets/logo-apps/android.png" alt="Logo loja de aplicativos Play Store">
+            <img class="img-app" ngbTooltip="Aplicativo iPhone" (click)="goTo(links.app_iphone)" src="assets/logo-apps/ios.svg" alt="Logo loja de aplicativos App Store">
+            <img class="img-app" ngbTooltip="Aplicativo Android" (click)="goTo(links.app_android)" src="assets/logo-apps/android.png" alt="Logo loja de aplicativos Play Store">
         </ul>
     </section>
     <nav class="d-flex flex-column gap-3 align-items-start px-0 px-sm-5 px-md-0">
@@ -34,9 +34,9 @@
             <app-buttom-footer url="/politica-de-cookies" label="Politica de cookies"></app-buttom-footer>
         </ul>
         <ul class="d-flex flex-column gap-1 m-0 px-0 px-sm-5 p-md-0">
-            <app-buttom-footer [url]="links.contratoLocacao" label="Contrato de locação de equipamentos"></app-buttom-footer>
-            <app-buttom-footer [url]="links.contratoSVA" label="Contrato de SVA"></app-buttom-footer>
-            <app-buttom-footer [url]="links.contratoServico" label="Contrato de prestação de serviços"></app-buttom-footer>
+            <app-buttom-footer (click)="goTo(links.contratoLocacao)" label="Contrato de locação de equipamentos"></app-buttom-footer>
+            <app-buttom-footer (click)="goTo(links.contratoSVA)" label="Contrato de SVA"></app-buttom-footer>
+            <app-buttom-footer (click)="goTo(links.contratoServico)" label="Contrato de prestação de serviços"></app-buttom-footer>
         </ul>
     </nav>
     <span class="container-cnpj d-flex flex-column align-items-center justify-content-center gap-2">
