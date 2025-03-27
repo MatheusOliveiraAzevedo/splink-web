@@ -17,7 +17,7 @@ export class Error404Component {
   @HostBinding('class') class = 'd-flex justify-content-center align-items-center'
 
   backPage() {
-    this.router.navigate(['/home'])
+    this.router.navigate(['/'])
   }
 
 }
