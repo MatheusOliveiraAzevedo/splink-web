@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { Error404Component } from './pages/error-404/error-404.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { PrivacyCookiesComponent } from './pages/privacy-cookies/privacy-cookies.component';
+import { RightsPolicyComponent } from './pages/rights-policy/rights-policy.component';
 
 export const routes: Routes = [
     {
@@ -19,6 +20,11 @@ export const routes: Routes = [
       path: 'politica-de-cookies',
       component: PrivacyCookiesComponent,
       data: {title: 'SP-Link - Politica de cookies'}
+    },
+    {
+      path: 'politica-de-direito-dos-titulares',
+      component: RightsPolicyComponent,
+      data: {title: 'SP-Link - Politica de direito dos titulares'}
     },
     {
       path: 'erro-404',
