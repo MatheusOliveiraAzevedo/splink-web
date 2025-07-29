@@ -33,6 +33,7 @@ export class WorkWithUsComponent implements OnInit {
   isLoading: boolean = false
   toastTrigger
   toastLiveExample
+  showErrorIAgree: boolean = false
 
   ngOnInit(): void {
     this.loadForm();
@@ -54,6 +55,8 @@ export class WorkWithUsComponent implements OnInit {
       ])],
       obs: ['', Validators.compose([
       ])],
+      iAgree: [false, Validators.compose([
+      ])],
     })
   }
 
@@ -62,7 +65,7 @@ export class WorkWithUsComponent implements OnInit {
   }
 
   send() {
-    if (this.formWork.status === 'VALID' && this.fileDocument) {
+    if (this.formWork.status === 'VALID' && this.fileDocument && !this.showErrorIAgree) {
       this.isLoading = true
       
       const reader = new FileReader();
@@ -97,8 +100,13 @@ export class WorkWithUsComponent implements OnInit {
       
     } else {
       this.formWork.markAllAsTouched();
+      this.showErrorIAgree = true
       this.showToast('Campos vazios!', 'Preencha os campos obrigatórios!', 'warn');
     }
+  }
+
+  changeStatusAgree() {
+    this.showErrorIAgree = !this.formWork.get('iAgree').value
   }
 
   onFileSelected(event: any): void {

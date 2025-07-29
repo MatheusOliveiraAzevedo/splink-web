@@ -36,6 +36,13 @@
                 <textarea class="w-100 textarea form-control form-control-solid no-resize" id="obs" name="obs" formControlName="obs" #textarea (change)="textObservation = textarea.value" rows="5"
                     placeholder="Digite a observação aqui..."></textarea>
             </fieldset>
+            <fieldset class="d-flex flex-column flex-nowrap gap-2 justify-content-center container-large">
+                <div class="d-flex flex-row flex-nowrap gap-2 justify-content-center">
+                    <input class="form-check-input" type="checkbox" name="iAgree" id="iAgree" formControlName="iAgree" (change)="changeStatusAgree()" >
+                    <label class="form-check-label" for="iAgree">Estou de acordo com o tratamento dos dados pessoais preenchidos acima para que seja possível a realização do contato por parte da SP-Link Telecom sobre minha solicitação.</label>
+                </div>
+                <span class="text-danger {{!showErrorIAgree ? 'opacity-0' : 'opacity-1'}}">O envio do formulário requer seu consentimento para o tratamento dos dados pessoais informados. Favor clicar na caixa de seleção acima!</span>
+            </fieldset>
         </section>
 
         <p-toast [breakpoints]="{ '767px': { width: '90%', right: '0'} }" position="bottom-center" key="br" />

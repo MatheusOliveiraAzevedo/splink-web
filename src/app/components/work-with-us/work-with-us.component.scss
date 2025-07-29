@@ -19,8 +19,10 @@ button {
 
 fieldset {
     position: relative;
-    .error-message {
+    .text-danger {
         font-size: 14px;
+    }
+    .error-message {
         position: absolute;
         left: 0px;
         bottom: -25px;
