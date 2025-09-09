@@ -1,11 +1,10 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { DialogModule } from '@angular/cdk/dialog';
 import { MatDialog } from '@angular/material/dialog';
-import { ButtonAttentionComponent } from '../button-attention/button-attention.component';
 
 @Component({
   selector: 'app-cookies',
-  imports: [DialogModule, ButtonAttentionComponent],
+  imports: [DialogModule],
   templateUrl: './cookies.component.html',
   styleUrl: './cookies.component.scss'
 })
