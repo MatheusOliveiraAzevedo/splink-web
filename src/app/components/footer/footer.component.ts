@@ -3,6 +3,7 @@ import { ButtomFooterComponent } from "../buttom-footer/buttom-footer.component"
 import { links } from '../../shared/model/links';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
+import { GeneralUtils } from '../../shared/generalutils';
 
 @Component({
   selector: 'app-footer',
@@ -19,6 +20,12 @@ export class FooterComponent {
 
   @HostBinding('class') class = 'd-flex justify-content-center bg-color-primary-dark'
   links = links
+  generalUtils = new GeneralUtils
+
+  goToWhatsApp(url) {
+    this.generalUtils.registrarConversao('whatsapp');
+    window.open(url, '_blank');
+  }
 
   goTo(url) {
     window.open(url, '_blank');
