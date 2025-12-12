@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Evita rastreamento de áreas administrativas ou privadas (caso existam)
+Disallow: /admin/
+Disallow: /administrator/
+Disallow: /painel/
+Disallow: /login/
+Disallow: /user/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+
+# Indica ao Google onde está o sitemap
+Sitemap: https://sp-link.com.br/sitemap.xml
