@@ -9,7 +9,7 @@ export const routes: Routes = [
     {
       path: '',
       component: HomeComponent,
-      data: {title: 'SP-Link - Home', description: 'SP-Link, Estabilidade para suas maratonas, reuniões e jogos online, com atendimento que faz a diferença.'}
+      data: {title: 'SP-Link Internet Fibra Óptica', description: 'Internet fibra óptica residencial e empresarial com Wi-Fi 6, atendimento rápido e a melhor avaliação de Tramandaí e Imbé. 4.8 estrelas em Tramandaí e 5.0 em Imbé.'}
     },
     {
       path: 'politica-de-privacidade',

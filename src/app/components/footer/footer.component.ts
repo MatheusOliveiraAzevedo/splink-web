@@ -4,6 +4,7 @@ import { links } from '../../shared/model/links';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
 import { GeneralUtils } from '../../shared/generalutils';
+import packageInfo from '../../../../package.json';
 
 @Component({
   selector: 'app-footer',
@@ -21,6 +22,7 @@ export class FooterComponent {
   @HostBinding('class') class = 'd-flex justify-content-center bg-color-primary-dark'
   links = links
   generalUtils = new GeneralUtils
+  version = packageInfo.version
 
   goToWhatsApp(url) {
     this.generalUtils.registrarConversao('whatsapp');
