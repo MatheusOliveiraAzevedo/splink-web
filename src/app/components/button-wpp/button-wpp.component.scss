@@ -1,0 +1,37 @@
+:host {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+#container-button-wpp {
+    padding: 5px;
+    cursor: pointer;
+    scale: 1;
+    background-color: rgb(1, 158, 70);
+
+    &:hover {
+        transition: 500ms;
+        transform: scale(1.1) ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    :host {
+
+        img {
+            width: 120px;
+            height: 120px;
+        }
+
+    }
+    
+}
