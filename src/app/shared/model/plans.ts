@@ -50,12 +50,8 @@ export const configurationCarrousel = [
 
 export const serviceCards = [
     {
-    alt: 'imagem do serviço watch tv',
-    image: 'assets/cards-service/watchtv copy.png'
-    },
-    {
-    alt: 'imagem do serviço paramount plus',
-    image: 'assets/cards-service/paramout+.png'
+    alt: 'imagem do serviço de canais de tv',
+    image: 'assets/cards-service/canais_tv.png'
     },
     {
     alt: 'imagem do serviço wifi 6',

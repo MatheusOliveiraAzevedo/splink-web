@@ -1,4 +1,4 @@
-<div class="container-max d-flex flex-row justify-content-evenly flex-wrap gap-5 px-4 px-sm-5 py-6">
+<div class="container-max d-flex flex-row align-items-end justify-content-evenly flex-wrap gap-5 px-4 px-sm-5 py-6">
     @for (service of serviceCards; track $index) {
         <div style="max-width: 300px; position: relative;">
             <img [src]="service.image" [alt]="service.alt" class="w-100">
