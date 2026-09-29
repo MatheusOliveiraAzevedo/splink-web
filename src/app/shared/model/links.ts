@@ -6,8 +6,8 @@ export const links = {
     contratoLocacao: 'assets/pdfs/Contrato-Locacao-Completo.pdf',
     contratoSVA: 'assets/pdfs/Contrato-de-prestacoes-de-servicos-de-valor-adicionado.pdf',
     contratoServico: 'assets/pdfs/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf',
-    endereco_01: 'https://maps.app.goo.gl/Q6SQeR1cZkE2ZFeW8',
-    endereco_02: 'https://maps.app.goo.gl/GjoTA4i3Ftnn7R2M8',
+    endereco_01: 'https://maps.app.goo.gl/SqudGeUcbGetoAA86',
+    endereco_02: 'https://maps.app.goo.gl/37imCWWaTZQLzPsT8',
     app_android: 'https://play.google.com/store/apps/details?id=br.com.mksolutions.mksac.splink&pcampaignid=web_share',
     app_iphone: 'https://apps.apple.com/br/app/sp-link-cliente/id6467253864'
 
