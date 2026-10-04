@@ -1,7 +1,90 @@
-<section class="container-max d-flex flex-column align-items-center justify-content-center gap-4 px-4 px-sm-5 py-6">
-    <h1 class="fs-2 fw-normal text-white">Área de cobertura</h1>
-    <div class="w-100 p-relative">
-        <div #clickZoom class="clickZoom" [ngClass]="{ 'd-none' : showMap}"  (click)="showMap = true">Clique aqui para zoom!</div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1v98WKTbN8vgrzOZgXrHlBqVD8atAnhg&ehbc=2E312F"class="w-100" height="480" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section class="container-max px-3 px-sm-5 py-6" aria-labelledby="coverage-title">
+    <header class="coverage-header">
+        <h2 id="coverage-title">Internet fibra óptica em Tramandaí e Imbé</h2>
+        <p>Consulte a disponibilidade no seu endereço. Nossa equipe confirma a viabilidade antes da contratação.</p>
+        <a class="coverage-cta" href="#coverage-form">Consultar cobertura no meu endereço</a>
+    </header>
+
+    <div class="coverage-cities" aria-label="Cidades e bairros atendidos">
+        @for (city of cities; track city.name) {
+            <article class="coverage-city">
+                <h3>{{ city.name }}</h3>
+                @if (city.neighborhoods.length) {
+                    <p>Bairros atendidos, sujeitos à análise do endereço:</p>
+                    <ul>
+                        @for (neighborhood of city.neighborhoods; track neighborhood) {
+                            <li>{{ neighborhood }}</li>
+                        }
+                    </ul>
+                } @else {
+                    <p>Consulte a equipe para saber se seu bairro e endereço podem ser atendidos.</p>
+                }
+            </article>
+        }
     </div>
+
+    <form id="coverage-form" class="coverage-form" [formGroup]="form" (ngSubmit)="submit()" aria-labelledby="coverage-form-title" novalidate>
+        <h3 id="coverage-form-title">Consultar cobertura no meu endereço</h3>
+        <p>Preencha os dados para conversar com nossa equipe. Campos com * são obrigatórios.</p>
+        <div class="coverage-fields">
+            <div class="field field--wide">
+                <label for="coverage-intent">Como podemos ajudar? *</label>
+                <select id="coverage-intent" formControlName="intent" class="form-select" aria-describedby="coverage-intent-help">
+                    <option value="coverage">Consultar cobertura</option>
+                    <option value="expansion">Cadastrar interesse em área de expansão</option>
+                </select>
+                <p id="coverage-intent-help" class="field-help">
+                    @if (form.controls.intent.value === 'expansion') {
+                        Seu interesse será encaminhado para avaliação. O cadastro não garante atendimento nem uma data de expansão.
+                    } @else {
+                        A disponibilidade depende da análise do endereço completo. CEP, localização do celular e mapa não confirmam cobertura.
+                    }
+                </p>
+            </div>
+            <div class="field">
+                <label for="coverage-city">Cidade *</label>
+                <input id="coverage-city" class="form-control" formControlName="city" autocomplete="address-level2" list="coverage-city-options" maxlength="80" required [attr.aria-invalid]="invalid('city')" aria-describedby="coverage-city-error">
+                <datalist id="coverage-city-options">
+                    @for (city of cities; track city.name) { <option [value]="city.name"></option> }
+                </datalist>
+                <span id="coverage-city-error" class="field-error">@if (invalid('city')) { Informe a cidade. }</span>
+            </div>
+            <div class="field">
+                <label for="coverage-neighborhood">Bairro *</label>
+                <input id="coverage-neighborhood" class="form-control" formControlName="neighborhood" autocomplete="address-level3" maxlength="100" required [attr.aria-invalid]="invalid('neighborhood')" aria-describedby="coverage-neighborhood-error">
+                <span id="coverage-neighborhood-error" class="field-error">@if (invalid('neighborhood')) { Informe o bairro. }</span>
+            </div>
+            <div class="field">
+                <label for="coverage-street">Rua / avenida *</label>
+                <input id="coverage-street" class="form-control" formControlName="street" autocomplete="address-line1" maxlength="150" required [attr.aria-invalid]="invalid('street')" aria-describedby="coverage-street-error">
+                <span id="coverage-street-error" class="field-error">@if (invalid('street')) { Informe a rua ou avenida. }</span>
+            </div>
+            <div class="field">
+                <label for="coverage-number">Número *</label>
+                <input id="coverage-number" class="form-control" formControlName="number" maxlength="20" placeholder="Ex.: 209 ou s/n" required [attr.aria-invalid]="invalid('number')" aria-describedby="coverage-number-error">
+                <span id="coverage-number-error" class="field-error">@if (invalid('number')) { Informe o número ou s/n. }</span>
+            </div>
+            <div class="field">
+                <label for="coverage-complement">Complemento (opcional)</label>
+                <input id="coverage-complement" class="form-control" formControlName="complement" autocomplete="address-line2" maxlength="150" placeholder="Apartamento, loja, bloco ou referência">
+            </div>
+            <div class="field">
+                <label for="coverage-contact">Telefone com DDD ou e-mail para retorno *</label>
+                <input id="coverage-contact" class="form-control" formControlName="contact" maxlength="120" required [attr.aria-invalid]="invalid('contact')" aria-describedby="coverage-contact-error">
+                <span id="coverage-contact-error" class="field-error">@if (invalid('contact')) { Informe um telefone com DDD ou um e-mail válido. }</span>
+            </div>
+        </div>
+        <p class="field-help">Os dados serão usados para avaliar seu endereço e entrar em contato sobre sua solicitação. <a href="/politica-de-privacidade">Política de privacidade</a>.</p>
+        <p>Ao continuar, o WhatsApp abrirá com os dados preenchidos. Confira a mensagem e toque em <strong>Enviar</strong> para encaminhá-la à equipe.</p>
+        <button class="coverage-cta" type="submit">
+            {{ form.controls.intent.value === 'expansion' ? 'Encaminhar interesse pelo WhatsApp' : 'Consultar cobertura pelo WhatsApp' }}
+        </button>
+
+    </form>
+
+    <details class="coverage-map">
+        <summary>Ver mapa de referência da cobertura</summary>
+        <p>O mapa é uma referência da região atendida. A viabilidade em cada endereço precisa ser confirmada pela equipe.</p>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1v98WKTbN8vgrzOZgXrHlBqVD8atAnhg&ehbc=2E312F" title="Mapa de referência da cobertura SP-Link em Tramandaí e Imbé" loading="lazy" class="w-100" height="400" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </details>
 </section>

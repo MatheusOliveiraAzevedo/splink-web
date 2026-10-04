@@ -25,3 +25,36 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Atualização dos planos
+
+Edite `src/app/shared/model/plans.ts` para alterar velocidades, mensalidades,
+benefícios e condições. `price: null` significa “sob consulta”; não use zero.
+Os cards e o JSON-LD dos planos usam esses mesmos dados. O JSON-LD é inserido
+no documento quando a página inicial é renderizada e removido ao sair dela.
+`includedInAllPlans` reúne as condições comuns dos planos residenciais e também
+alimenta os textos dos diferenciais. Não é necessário refazer as imagens.
+
+Pendente de confirmação com o marketing: velocidades de upload, fidelidade de
+12 meses, comodato sem custo e pacote/conteúdo incluído no Watch TV. As informações
+atuais foram mantidas provisoriamente a pedido do responsável pelo projeto.
+
+## Cobertura e interessados
+
+A seção de cobertura recebe consultas de viabilidade e interesse em expansão.
+O formulário valida o endereço e um telefone com DDD ou e-mail, e prepara uma
+mensagem para o WhatsApp comercial definido em `links.whatsappBase`. O visitante
+precisa confirmar o envio no WhatsApp; o site não grava cadastros em uma base e
+não informa que a equipe recebeu a mensagem antes disso.
+
+Edite `src/app/shared/model/coverage.ts` quando a operação fornecer a lista de
+bairros por cidade. As listas estão vazias intencionalmente: o mapa disponível
+não foi usado para deduzir bairros nem para aprovar cobertura automaticamente.
+Cadastros de expansão aceitam outras cidades e não prometem atendimento ou prazo.
+
+## WhatsApp e rastreamento
+
+Mensagens e eventos são centralizados em `src/app/shared/generalutils.ts`.
+Consulte [o inventário das tags e o guia de configuração](docs/rastreamento.md).
+Eventos no dataLayer ainda dependem da configuração do GTM para chegar aos relatórios.
+Contratações fechadas no WhatsApp exigem confirmação externa; cliques não são vendas.

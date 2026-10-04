@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { GeneralUtils } from '../../shared/generalutils';
-import { links } from '../../shared/model/links';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -14,8 +13,7 @@ export class ButtonWppComponent {
     generalUtils = new GeneralUtils
 
     goToWhatsApp() {
-    this.generalUtils.registrarConversao('whatsapp');
-    window.open(links.whatsapp, '_blank');
+    this.generalUtils.abrirWhatsApp({ position: 'floating' });
   }
 
 }

@@ -1,9 +1,90 @@
-<section class="d-flex">
-    <p-carousel [value]="plans" [numVisible]="5" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
-        <ng-template let-plan #item>
-            <div id="container-image" class="rounded-4 m-3 cursor-pointer" (click)="goToWhatsApp()">
-                <img src="{{ plan.image }}" [alt]="plan.name" class="w-100 rounded-4" style="height: 100%; object-fit: cover;"/>
+<section class="container-max px-3 px-sm-4" aria-labelledby="plans-title">
+    <header class="text-center text-white mb-4 mb-lg-5">
+        <h2 id="plans-title" class="fw-bold mb-2">Escolha o plano ideal para a sua casa</h2>
+        <p class="m-0 fs-5">Fibra óptica 100% própria, roteador Wi-Fi 6 e {{ included.tv.name }} inclusos nos planos residenciais.</p>
+    </header>
+
+    <p-carousel [value]="plans" [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="true"
+            [prevButtonProps]="{ ariaLabel: 'Ver planos anteriores' }"
+            [nextButtonProps]="{ ariaLabel: 'Ver próximos planos' }">
+        <ng-template let-item #item>
+            <div class="plan-slide">
+                @if (item.type === 'residential') {
+                    <article class="plan-card d-flex flex-column h-100" [class.plan-card--highlight]="item.highlight">
+                        @if (item.badge) {
+                            <span class="plan-badge">{{ item.badge }}</span>
+                        }
+
+                        <h3 class="plan-name m-0">
+                            <span class="plan-speed">{{ item.download >= 1000 ? item.download / 1000 : item.download }}</span>
+                            <span class="plan-unit">{{ item.download >= 1000 ? 'Giga' : 'Mega' }}</span>
+                        </h3>
+                        <p class="plan-description">{{ item.description }}</p>
+
+                        <dl class="plan-speeds">
+                            <div>
+                                <dt><i class="bi bi-arrow-down-circle-fill" aria-hidden="true"></i> Download</dt>
+                                <dd>{{ item.download }}&nbsp;Mbps</dd>
+                            </div>
+                            <div>
+                                <dt><i class="bi bi-arrow-up-circle-fill" aria-hidden="true"></i> Upload</dt>
+                                <dd>{{ item.upload }}&nbsp;Mbps</dd>
+                            </div>
+                        </dl>
+
+                        <p class="plan-price">
+                            @if (item.price !== null) {
+                                <span class="plan-price__currency">R$</span>
+                                <span class="plan-price__value">{{ item.price | currency:'BRL':'':'1.2-2' }}</span>
+                                <span class="plan-price__period">/mês</span>
+                            } @else {
+                                <span class="plan-price__consult">Sob consulta</span>
+                            }
+                        </p>
+
+                        <ul class="plan-benefits list-unstyled">
+                            @for (benefit of item.benefits; track benefit) {
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ benefit }}</li>
+                            }
+                        </ul>
+
+                        <p class="plan-included">
+                            {{ included.equipment }}<br>
+                            {{ included.tv.name }} incluso<br>
+                            {{ included.installation }} · {{ included.loyalty }}
+                        </p>
+                        <button type="button" class="btn-plan mt-auto" [attr.aria-label]="'Consultar contratação do plano ' + item.name" (click)="goToWhatsApp(item)">
+                            {{ item.price !== null ? 'Quero contratar!' : 'Consultar valor' }}
+                        </button>
+                    </article>
+                } @else {
+                    <article class="plan-card plan-card--business d-flex flex-column h-100">
+                        <h3 class="plan-name m-0">
+                            <span class="plan-business-title">{{ item.name }}</span>
+                            <span class="plan-business-subtitle">{{ item.subtitle }}</span>
+                        </h3>
+                        <p class="plan-description">{{ item.description }}</p>
+                        <p class="text-center fw-bold">Mensalidade e condições sob consulta</p>
+                        <ul class="plan-benefits list-unstyled">
+                            @for (benefit of item.benefits; track benefit) {
+                                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ benefit }}</li>
+                            }
+                        </ul>
+                        <button type="button" class="btn-plan mt-auto" (click)="goToWhatsApp(item)">Falar com especialista</button>
+                    </article>
+                }
             </div>
         </ng-template>
     </p-carousel>
+
+    <aside class="plan-conditions" aria-label="Condições dos planos residenciais">
+        <h3 class="plan-conditions__title">Incluso nos planos residenciais</h3>
+        <ul class="list-unstyled m-0">
+            <li><i class="bi bi-router-fill" aria-hidden="true"></i> {{ included.equipment }}</li>
+            <li><i class="bi bi-tv-fill" aria-hidden="true"></i> <span><strong>{{ included.tv.name }}</strong> — {{ included.tv.description }}</span></li>
+            <li><i class="bi bi-tools" aria-hidden="true"></i> {{ included.installation }}</li>
+            <li><i class="bi bi-calendar-check-fill" aria-hidden="true"></i> {{ included.loyalty }}</li>
+            <li><i class="bi bi-headset" aria-hidden="true"></i> {{ included.support }}</li>
+        </ul>
+    </aside>
 </section>

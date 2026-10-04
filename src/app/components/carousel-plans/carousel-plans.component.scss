@@ -2,28 +2,314 @@
     background: linear-gradient(var(--colorSplinkPrimary), #FFFFFF, var(--colorSplinkPrimary));
 }
 
-#carouselExampleDark {
-    width: 75%;
-    border-radius: 1rem;
-    overflow: hidden;
+header h2 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
 }
 
-section {
-    width: 90%;
+header p {
+    color: rgba(255, 255, 255, .95);
 }
 
-#container-image {
-    scale: 1;
+.plan-slide {
+    display: flex;
+    height: 100%;
+    padding: 1.25rem .5rem 1rem;
 }
 
-#container-image:hover {
-    transition: 500ms;
-    transform: scale(1.04);
+p-carousel {
+    display: block;
+    min-width: 0;
 }
 
+// ---------- Card ----------
+.plan-card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    border: 2px solid transparent;
+    background: #fff;
+    border-radius: 1.25rem;
+    padding: 1.75rem 1.25rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(4, 109, 93, .18);
+    color: var(--colorSplinkGray);
+    transition: transform 300ms, box-shadow 300ms;
 
-@media screen and (max-width:767px) {
-    #carouselExampleDark {
-        width: 100%;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(4, 109, 93, .28);
     }
+
+    &--highlight {
+        border: 2px solid var(--colorSplinkPrimary);
+        background: linear-gradient(180deg, #ffffff 0%, #eaf8f4 100%);
+
+        .plan-speed,
+        .plan-price__value {
+            color: var(--colorSplinkPrimaryDark);
+        }
+    }
+
+    &--business {
+        background: var(--colorSplinkPrimaryDark);
+        color: #fff;
+
+        .plan-description,
+        .plan-benefits li {
+            color: rgba(255, 255, 255, .9);
+        }
+
+        .plan-benefits i {
+            color: #fff;
+        }
+
+        .btn-plan {
+            background: #fff;
+            color: var(--colorSplinkPrimaryDark);
+            white-space: normal;
+        }
+    }
+}
+
+.plan-badge {
+    position: absolute;
+    top: -.85rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, var(--colorSplinkPrimaryDark), var(--colorSplinkPrimary));
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    padding: .3rem 1rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(4, 109, 93, .3);
+}
+
+.plan-name {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: .35rem;
+    color: var(--colorSplinkPrimary);
+    line-height: 1;
+}
+
+.plan-speed {
+    font-size: 3.25rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.plan-unit {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.plan-business-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.plan-business-subtitle {
+    display: block;
+    width: 100%;
+    font-size: .85rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: .35rem;
+}
+
+.plan-card--business .plan-name {
+    flex-wrap: wrap;
+    text-align: center;
+    color: #fff;
+}
+
+.plan-description {
+    text-align: center;
+    font-size: .95rem;
+    min-height: 3.2em;
+    margin: .9rem 0 1rem;
+}
+
+// ---------- Velocidades ----------
+.plan-speeds {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    margin: 0 0 1rem;
+    background: #f3f9f7;
+    border-radius: .75rem;
+    padding: .65rem .75rem;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    dt {
+        font-size: .68rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .03em;
+        white-space: nowrap;
+        color: var(--colorSplinkGray);
+    }
+
+    dd {
+        margin: 0;
+        font-size: .9rem;
+        font-weight: 700;
+        white-space: nowrap;
+        color: var(--colorSplinkPrimaryDark);
+    }
+
+    i {
+        color: var(--colorSplinkPrimary);
+    }
+}
+
+// ---------- Preço ----------
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: .25rem;
+    margin: 0 0 1rem;
+    color: var(--colorSplinkPrimary);
+    line-height: 1;
+
+    &__currency {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    &__value {
+        font-size: clamp(1.9rem, 1.8vw, 2.5rem);
+        font-weight: 800;
+        letter-spacing: -.02em;
+    }
+
+    &__period {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--colorSplinkGray);
+    }
+
+    &__consult {
+        font-size: 1.3rem;
+        font-weight: 800;
+        padding: .6rem 0;
+        white-space: nowrap;
+    }
+}
+
+// ---------- Benefícios ----------
+.plan-benefits {
+    margin: 0 0 1.25rem;
+    padding: 0;
+    font-size: .9rem;
+
+    li {
+        display: flex;
+        gap: .5rem;
+        align-items: flex-start;
+        margin-bottom: .45rem;
+        line-height: 1.35;
+    }
+
+    i {
+        color: var(--colorSplinkPrimary);
+        flex-shrink: 0;
+        margin-top: .1em;
+    }
+}
+
+// ---------- Botão ----------
+.btn-plan {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding: .7rem .5rem;
+    font-size: clamp(.9rem, .95vw, 1.05rem);
+    font-weight: 700;
+    white-space: nowrap;
+    color: #fff;
+    background: linear-gradient(to right, var(--colorSplinkPrimaryDark), var(--colorSplinkPrimary));
+    box-shadow: 1px 2px 5px var(--colorSplinkGray);
+    transition: transform 300ms;
+
+    &:hover {
+        transform: scale(1.04);
+    }
+
+    &:focus-visible {
+        outline: 3px solid var(--colorSplinkSecondary);
+        outline-offset: 2px;
+    }
+}
+
+// ---------- Condições ----------
+.plan-conditions {
+    margin: 2rem auto 0;
+    max-width: 960px;
+    background: rgba(255, 255, 255, .92);
+    border-radius: 1.25rem;
+    padding: 1.5rem 1.75rem;
+    color: var(--colorSplinkGray);
+    box-shadow: 0 10px 30px rgba(4, 109, 93, .15);
+
+    &__title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--colorSplinkPrimaryDark);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+        gap: .75rem 1.5rem;
+    }
+
+    li {
+        display: flex;
+        gap: .6rem;
+        align-items: flex-start;
+        font-size: .95rem;
+        line-height: 1.4;
+    }
+
+    i {
+        color: var(--colorSplinkPrimary);
+        font-size: 1.15rem;
+        flex-shrink: 0;
+    }
+
+    strong {
+        white-space: nowrap;
+    }
+}
+
+.plan-included {
+    border-top: 1px solid #d8e8e3;
+    padding-top: .75rem;
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 400px) {
+    .plan-card { padding-inline: .75rem; }
+    .plan-speed { font-size: 2.75rem; }
+    .plan-speeds { padding-inline: .5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .plan-card, .btn-plan { transition: none; }
 }

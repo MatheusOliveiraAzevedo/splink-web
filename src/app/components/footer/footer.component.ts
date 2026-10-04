@@ -24,9 +24,8 @@ export class FooterComponent {
   generalUtils = new GeneralUtils
   version = packageInfo.version
 
-  goToWhatsApp(url) {
-    this.generalUtils.registrarConversao('whatsapp');
-    window.open(url, '_blank');
+  goToWhatsApp() {
+    this.generalUtils.abrirWhatsApp({ position: 'footer' });
   }
 
   goTo(url) {

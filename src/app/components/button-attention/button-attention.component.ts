@@ -1,6 +1,5 @@
 import { Component, input } from '@angular/core';
-import { links } from '../../shared/model/links';
-import { GeneralUtils } from '../../shared/generalutils';
+import { GeneralUtils, WhatsAppPosition } from '../../shared/generalutils';
 
 @Component({
   selector: 'app-button-attention',
@@ -11,12 +10,11 @@ import { GeneralUtils } from '../../shared/generalutils';
 export class ButtonAttentionComponent {
 
   label = input.required<string>()
-  linkButton = links.whatsapp
+  position = input.required<WhatsAppPosition>()
   generalUtils = new GeneralUtils
 
   returnLinkButton() {
-    this.generalUtils.registrarConversao('whatsapp');
-    return window.open(links.whatsapp, '_blank')
+    this.generalUtils.abrirWhatsApp({ position: this.position() });
   }
 
 }

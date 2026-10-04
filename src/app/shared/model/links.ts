@@ -1,4 +1,5 @@
 export const links = {
+    whatsappBase: 'https://api.whatsapp.com/send?phone=5551995320037&text=',
     whatsapp: 'https://api.whatsapp.com/send?phone=5551995320037&text=Estou%20interessado%20em%20contratar.%20Como%20funciona?',
     instagram: 'https://www.instagram.com/splinktelecom/',
     facebook: 'https://pt-br.facebook.com/splinktelecom/',

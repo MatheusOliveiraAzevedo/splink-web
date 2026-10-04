@@ -1,5 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
-import { links } from '../../shared/model/links';
+import { Component } from '@angular/core';
 import { GeneralUtils } from '../../shared/generalutils';
 
 @Component({
@@ -11,13 +10,10 @@ import { GeneralUtils } from '../../shared/generalutils';
 })
 export class BannerPrincipalComponent {
 
-  @HostBinding('class') class = 'bg-white-to-primary'
   generalUtils = new GeneralUtils
 
   goToWhatsApp() {
-    this.generalUtils.registrarConversao('whatsapp');
-    window.open(links.whatsapp, '_blank')
+    this.generalUtils.abrirWhatsApp({ position: 'hero' });
   }
   
-
 }

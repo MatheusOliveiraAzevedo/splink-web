@@ -1,10 +1,21 @@
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-  <div class="carousel-inner">
-    <div class="carousel-item active cursor-pointer" (click)="goToWhatsApp()">
-      <img src="assets/banner/412 x 540 banner site_splink.png" class="d-block d-sm-none w-100" alt="...">
-      <img src="assets/banner/1024 x 720 banner site_splink.png" class="d-none d-sm-block d-lg-none w-100" alt="...">
-      <img src="assets/banner/1200 x 540  banner site_splink.png" class="d-none d-lg-block d-xxl-none w-100" alt="...">
-      <img src="assets/banner/1920 x 780 banner site_splink.png" class="d-none d-xxl-block w-100" alt="...">
-    </div>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__media">
+    <img src="assets/banner/familia.jpg" alt="Família sorrindo e usando celulares, tablet e notebook conectados à internet"
+      width="960" height="780" fetchpriority="high">
   </div>
-</div>
+
+  <div class="hero__content">
+    <img src="assets/logo/logo-color-splink.png" alt="SP-Link Telecom" class="hero__logo" width="1808" height="972">
+    <h1 id="hero-title" class="hero__title">
+      Internet <strong>rápida de verdade</strong> começa aqui.
+    </h1>
+    <p class="hero__subtitle">
+      Estabilidade para suas <strong>maratonas</strong>, <strong>reuniões</strong> e <strong>jogos online</strong>,
+      com atendimento que faz a diferença.
+    </p>
+    <button type="button" class="hero__cta" (click)="goToWhatsApp()">Quero contratar!</button>
+    <a class="hero__coverage" href="#coverage-form">Consultar cobertura no meu endereço</a>
+  </div>
+
+  <img src="assets/banner/ondas-bottom.png" alt="" aria-hidden="true" class="hero__waves">
+</section>

@@ -3,9 +3,57 @@
     position: relative;
 }
 
+.service-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 2.5rem;
+    padding: 3.5rem 2rem 2.25rem;
+    border-radius: 1.5rem;
+    background: var(--colorSplinkPrimaryDark);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+}
+
+.service-card__icon {
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--colorSplinkPrimaryDark);
+    font-size: 2.4rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .2);
+}
+
+.service-card__title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.service-card__text {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
 
 .buttonAttention {
- position: absolute;   
- bottom: - 20px;
- left: 22%;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    .service-card {
+        padding-bottom: 3rem;
+    }
 }

@@ -14,6 +14,8 @@ describe('ButtonAttentionComponent', () => {
 
     fixture = TestBed.createComponent(ButtonAttentionComponent);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('label', 'Quero contratar!');
+    fixture.componentRef.setInput('position', 'about');
     fixture.detectChanges();
   });
 

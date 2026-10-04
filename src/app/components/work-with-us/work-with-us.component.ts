@@ -6,6 +6,7 @@ import { NgxMaskDirective } from 'ngx-mask';
 import { Toast } from 'bootstrap';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { GeneralUtils } from '../../shared/generalutils';
 
 
 @Component({
@@ -27,6 +28,7 @@ export class WorkWithUsComponent implements OnInit {
   ) {}
 
   @HostBinding('class') class = 'd-flex flex-column align-items-center py-6 px-5'
+  generalUtils = new GeneralUtils();
   textObservation: string = ''
   formWork: FormGroup
   fileDocument: File
@@ -65,11 +67,11 @@ export class WorkWithUsComponent implements OnInit {
   }
 
   send() {
+    if (this.isLoading) return;
     if (this.formWork.status === 'VALID' && this.fileDocument && !this.showErrorIAgree) {
       this.isLoading = true
       
       const reader = new FileReader();
-      reader.readAsDataURL(this.fileDocument)
       reader.onload = () => {
         const base64String = reader.result?.toString().split(",")[1];
         
@@ -84,20 +86,24 @@ export class WorkWithUsComponent implements OnInit {
         }
         
         
-        this.contactForm.sendFormContact(data).then(() => {
-          this.isLoading = false
-          this.showToast('Concluido', 'Enviado com sucesso!', 'success');
-        }).catch((err) => {
-          if (err.status === 200) {
-            this.showToast('Concluido', 'Enviado com sucesso!', 'success');
-            this.isLoading = false
+        this.contactForm.sendFormContact(data).then((response) => {
+          this.isLoading = false;
+          if (response?.success === true || response?.status === 'success') {
+            this.generalUtils.registrarFormularioEnviado();
+            this.showToast('Concluído', 'Enviado com sucesso!', 'success');
           } else {
-            this.showToast('Houve um erro!', 'Tente novamente!', 'error');
-            this.isLoading = false
+            this.showToast('Envio não confirmado', 'Não foi possível confirmar o recebimento. Entre em contato com a equipe antes de reenviar.', 'warn');
           }
-        })
-      }
-      
+        }).catch(() => {
+          this.isLoading = false;
+          this.showToast('Envio não confirmado', 'Não foi possível confirmar o recebimento. Entre em contato com a equipe antes de reenviar.', 'warn');
+        });
+      };
+      reader.onerror = () => {
+        this.isLoading = false;
+        this.showToast('Erro no arquivo', 'Não foi possível ler o currículo. Selecione o arquivo novamente.', 'error');
+      };
+      reader.readAsDataURL(this.fileDocument);
     } else {
       this.formWork.markAllAsTouched();
       this.showErrorIAgree = true

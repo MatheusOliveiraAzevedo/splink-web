@@ -1,14 +1,29 @@
-:host {
-    background-color: var(--colorSplinkPrimary);
-}
-
-.clickZoom {
-    display: flex;
-    position: absolute;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
+:host { background: var(--colorSplinkPrimary); }
+.coverage-header { text-align: center; color: #fff; margin-bottom: 2rem; }
+.coverage-header h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; }
+.coverage-cta { display: inline-block; border: 0; border-radius: 2rem; padding: .85rem 1.5rem; background: var(--colorSplinkPrimaryDark); color: #fff; font-weight: 700; text-decoration: none; text-align: center; }
+.coverage-cta:hover { background: #035447; }
+.coverage-cta:focus-visible, summary:focus-visible { outline: 3px solid #271650; outline-offset: 4px; }
+.coverage-cities, .coverage-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.5rem; }
+.coverage-city, .coverage-form, .coverage-map { background: #fff; color: var(--colorSplinkGray); border-radius: 1.25rem; padding: clamp(1rem, 3vw, 2rem); }
+.coverage-city h3, .coverage-form h3 { color: var(--colorSplinkPrimaryDark); font-weight: 700; }
+.coverage-city p { margin-bottom: 0; }
+.coverage-city ul { margin-top: 1rem; }
+.coverage-form { margin-top: 1.5rem; scroll-margin-top: 6rem; }
+.field { min-width: 0; }
+.field--wide { grid-column: 1 / -1; }
+.field label { display: block; font-weight: 600; margin-bottom: .4rem; }
+.field-help { font-size: .9rem; margin-top: .6rem; }
+.field-error { display: block; color: #a52020; font-size: .9rem; }
+input[aria-invalid="true"] { border-color: #a52020; }
+.coverage-form a { color: var(--colorSplinkPrimaryDark); }
+.coverage-status:has(p) { margin-top: 1rem; }
+.coverage-status p { margin-bottom: .5rem; }
+.coverage-map { margin-top: 1.5rem; }
+.coverage-map summary { color: var(--colorSplinkPrimaryDark); font-weight: 600; cursor: pointer; }
+.coverage-map p { margin-top: 1rem; }
+.coverage-map iframe { border: 0; border-radius: .5rem; }
+@media (max-width: 600px) {
+    .coverage-cities, .coverage-fields { grid-template-columns: 1fr; }
+    .coverage-cta { width: 100%; }
 }
