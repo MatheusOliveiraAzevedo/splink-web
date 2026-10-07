@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('/assets/fonts/CodecPro-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: url('/assets/fonts/CodecPro-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+:root {
+    --font-heading: 'Codec Pro', Arial, sans-serif;
+    --font-body: 'Inter', Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-synthesis: none;
+}
+
+// Semantic emphasis remains accessible without inventing an Inter Bold variant.
+b, strong { font-weight: inherit; }
+
+.brand-subtitle {
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.p-toast-summary {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.p-toast-detail { font-family: var(--font-body); font-weight: 400; }

@@ -1,21 +1,25 @@
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero__media">
-    <img src="assets/banner/familia.jpg" alt="Família sorrindo e usando celulares, tablet e notebook conectados à internet"
-      width="960" height="780" fetchpriority="high">
-  </div>
+  <div class="hero__layout">
+    <div class="hero__content">
+      <img src="assets/logo/logo-rodape.webp" alt="SP-Link Telecom" class="hero__logo" width="352" height="149" decoding="async">
+      <p class="hero__eyebrow">Internet fibra óptica em Tramandaí e Imbé</p>
+      <h1 id="hero-title" class="hero__title">
+        Internet <strong>rápida de verdade</strong> começa aqui.
+      </h1>
+      <p class="hero__subtitle brand-subtitle">Para trabalhar, jogar e curtir suas séries, com estabilidade e atendimento perto de você.</p>
+      <div class="hero__actions">
+        <a class="hero__cta hero__coverage" href="#coverage-form" aria-label="Consultar cobertura no meu endereço">Consultar cobertura</a>
+        <a class="hero__plans" href="#plans">Ver planos <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
 
-  <div class="hero__content">
-    <img src="assets/logo/logo-color-splink.png" alt="SP-Link Telecom" class="hero__logo" width="1808" height="972">
-    <h1 id="hero-title" class="hero__title">
-      Internet <strong>rápida de verdade</strong> começa aqui.
-    </h1>
-    <p class="hero__subtitle">
-      Estabilidade para suas <strong>maratonas</strong>, <strong>reuniões</strong> e <strong>jogos online</strong>,
-      com atendimento que faz a diferença.
-    </p>
-    <button type="button" class="hero__cta" (click)="goToWhatsApp()">Quero contratar!</button>
-    <a class="hero__coverage" href="#coverage-form">Consultar cobertura no meu endereço</a>
+    <div class="hero__media">
+      <picture>
+        <source type="image/avif" srcset="assets/banner/familia-aberta-480.avif 480w, assets/banner/familia-aberta-800.avif 800w, assets/banner/familia-aberta-1280.avif 1280w, assets/banner/familia-aberta-1512.avif 1512w" sizes="(max-width: 991px) 100vw, 72vw">
+        <img src="assets/banner/familia-aberta-1512.webp" srcset="assets/banner/familia-aberta-480.webp 480w, assets/banner/familia-aberta-800.webp 800w, assets/banner/familia-aberta-1280.webp 1280w, assets/banner/familia-aberta-1512.webp 1512w" sizes="(max-width: 991px) 100vw, 72vw"
+          alt="Família sorrindo e usando celulares, tablet e notebook conectados à internet"
+          width="1512" height="1040" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
   </div>
-
-  <img src="assets/banner/ondas-bottom.png" alt="" aria-hidden="true" class="hero__waves">
 </section>

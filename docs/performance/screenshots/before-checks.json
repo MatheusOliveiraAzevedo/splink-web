@@ -1,0 +1,94 @@
+[
+  {
+    "width": 320,
+    "initial": {
+      "width": 320,
+      "scrollWidth": 320,
+      "banner": "http://127.0.0.1:65315/assets/banner/familia.jpg",
+      "images": [
+        "http://127.0.0.1:65315/styles-ULONHVJ5.css",
+        "http://127.0.0.1:65315/assets/logo/logo-color-splink.png",
+        "http://127.0.0.1:65315/assets/logo-apps/ios.svg",
+        "http://127.0.0.1:65315/assets/logo/logo-rodape.png",
+        "http://127.0.0.1:65315/assets/logo-apps/android.png",
+        "http://127.0.0.1:65315/assets/banner/familia.jpg",
+        "http://127.0.0.1:65315/assets/banner/ondas-bottom.png",
+        "http://127.0.0.1:65315/assets/whatsapp/wpp-white.png",
+        "http://127.0.0.1:65315/assets/fachada/Fachada.jpg"
+      ],
+      "iframeCount": 1
+    },
+    "errors": [],
+    "failures": [],
+    "passed": true
+  },
+  {
+    "width": 390,
+    "initial": {
+      "width": 390,
+      "scrollWidth": 390,
+      "banner": "http://127.0.0.1:65315/assets/banner/familia.jpg",
+      "images": [
+        "http://127.0.0.1:65315/styles-ULONHVJ5.css",
+        "http://127.0.0.1:65315/assets/logo/logo-color-splink.png",
+        "http://127.0.0.1:65315/assets/logo/logo-rodape.png",
+        "http://127.0.0.1:65315/assets/logo-apps/ios.svg",
+        "http://127.0.0.1:65315/assets/logo-apps/android.png",
+        "http://127.0.0.1:65315/assets/banner/familia.jpg",
+        "http://127.0.0.1:65315/assets/banner/ondas-bottom.png",
+        "http://127.0.0.1:65315/assets/whatsapp/wpp-white.png",
+        "http://127.0.0.1:65315/assets/fachada/Fachada.jpg"
+      ],
+      "iframeCount": 1
+    },
+    "errors": [],
+    "failures": [],
+    "passed": true
+  },
+  {
+    "width": 768,
+    "initial": {
+      "width": 768,
+      "scrollWidth": 768,
+      "banner": "http://127.0.0.1:65315/assets/banner/familia.jpg",
+      "images": [
+        "http://127.0.0.1:65315/styles-ULONHVJ5.css",
+        "http://127.0.0.1:65315/assets/logo/logo-color-splink.png",
+        "http://127.0.0.1:65315/assets/logo/logo-rodape.png",
+        "http://127.0.0.1:65315/assets/logo-apps/ios.svg",
+        "http://127.0.0.1:65315/assets/logo-apps/android.png",
+        "http://127.0.0.1:65315/assets/banner/familia.jpg",
+        "http://127.0.0.1:65315/assets/banner/ondas-bottom.png",
+        "http://127.0.0.1:65315/assets/whatsapp/wpp-white.png",
+        "http://127.0.0.1:65315/assets/fachada/Fachada.jpg"
+      ],
+      "iframeCount": 1
+    },
+    "errors": [],
+    "failures": [],
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "initial": {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "banner": "http://127.0.0.1:65315/assets/banner/familia.jpg",
+      "images": [
+        "http://127.0.0.1:65315/styles-ULONHVJ5.css",
+        "http://127.0.0.1:65315/assets/logo/logo-color-splink.png",
+        "http://127.0.0.1:65315/assets/logo/logo-rodape.png",
+        "http://127.0.0.1:65315/assets/logo-apps/ios.svg",
+        "http://127.0.0.1:65315/assets/logo-apps/android.png",
+        "http://127.0.0.1:65315/assets/banner/familia.jpg",
+        "http://127.0.0.1:65315/assets/banner/ondas-bottom.png",
+        "http://127.0.0.1:65315/assets/whatsapp/wpp-white.png",
+        "http://127.0.0.1:65315/assets/fachada/Fachada.jpg"
+      ],
+      "iframeCount": 1
+    },
+    "errors": [],
+    "failures": [],
+    "passed": true
+  }
+]

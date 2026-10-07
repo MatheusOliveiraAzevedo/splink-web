@@ -1,63 +1,54 @@
-<section class="container-max d-flex flex-column gap-4 align-items-center text-white">
-    <h1 class="m-0 fs-2">Trabalhe conosco</h1>
-    
-    <form [formGroup]="formWork" (ngSubmit)="send()" class="d-flex flex-column align-items-end gap-3 w-100">
-        <section class="block-inputs w-100">
-            <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="nome">Nome</label>
-                <input class="form-control form-control-solid" type="text" id="nome" name="nome" placeholder="Digite seu nome" formControlName="nome" autocomplete="name">
-                @if (formWork.get('nome').errors && formWork.get('nome').touched) {
-                    <span class="error-message text-danger">Favor informar um nome</span>
-                }
-            </fieldset>
-            <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="tel">Telefone</label>
-                <input class="form-control form-control-solid" mask="(00) 00009 0000"  [dropSpecialCharacters]="false" type="tel" id="tel" name="tel" placeholder="Digite seu telefone" formControlName="tel" autocomplete="tel">
-                @if (formWork.get('tel').errors && formWork.get('tel').touched) {
-                    <span class="error-message text-danger">Favor informar um telefone</span>
-                }
-            </fieldset>
-            <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="endereco">Endereço</label>
-                <input class="form-control form-control-solid" type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" formControlName="endereco" autocomplete="street-address">
-                @if (formWork.get('endereco').errors && formWork.get('endereco').touched) {
-                    <span class="error-message text-danger">Favor informar um endereço</span>
-                }
-            </fieldset>
-            <fieldset class="d-flex flex-column justify-content-center w-100">
-                <label class="col-form-label fw-medium fs-6" for="curriculo">Anexo</label>
-                <input class="form-control form-control-solid" type="file" id="curriculo" name="curriculo" formControlName="curriculo" (change)="onFileSelected($event)">
-                @if (formWork.get('curriculo').errors && formWork.get('curriculo').touched) {
-                    <span class="error-message text-danger">Favor inserir o anexo</span>
-                }
-            </fieldset>
-            <fieldset class="d-flex flex-column justify-content-center container-large">
-                <label class="col-form-label fw-bold fs-6" for="obs">Observação</label>
-                <textarea class="w-100 textarea form-control form-control-solid no-resize" id="obs" name="obs" formControlName="obs" #textarea (change)="textObservation = textarea.value" rows="5"
-                    placeholder="Digite a observação aqui..."></textarea>
-            </fieldset>
-            <fieldset class="d-flex flex-column flex-nowrap gap-2 justify-content-center container-large">
-                <div class="d-flex flex-row flex-nowrap gap-2 justify-content-center">
-                    <input class="form-check-input" type="checkbox" name="iAgree" id="iAgree" formControlName="iAgree" (change)="changeStatusAgree()" >
-                    <label class="form-check-label" for="iAgree">Estou de acordo com o tratamento dos dados pessoais preenchidos acima para que seja possível a realização do contato por parte da SP-Link Telecom sobre minha solicitação.</label>
+<section class="container-max px-3 px-sm-5 py-6" aria-labelledby="work-title">
+    <header class="work-header">
+        <h2 id="work-title">Trabalhe conosco</h2>
+        <p class="brand-subtitle">Envie seu currículo para fazer parte da equipe SP-Link.</p>
+    </header>
+
+    <form class="work-form" [formGroup]="formWork" (ngSubmit)="send()" aria-labelledby="work-form-title" novalidate>
+        <h3 id="work-form-title">Envie seu currículo</h3>
+        <p>Preencha seus dados e anexe seu currículo. Campos com * são obrigatórios.</p>
+        <div class="work-fields">
+            <div class="field">
+                <label for="nome">Nome *</label>
+                <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome" formControlName="nome" autocomplete="name" required [attr.aria-invalid]="formWork.get('nome').invalid && formWork.get('nome').touched" aria-describedby="nome-error">
+                <span id="nome-error" class="field-error">@if (formWork.get('nome').invalid && formWork.get('nome').touched) { Informe seu nome. }</span>
+            </div>
+            <div class="field">
+                <label for="tel">Telefone com DDD *</label>
+                <input class="form-control" mask="(00) 00009 0000" [dropSpecialCharacters]="false" type="tel" id="tel" name="tel" placeholder="Digite seu telefone" formControlName="tel" autocomplete="tel" required [attr.aria-invalid]="formWork.get('tel').invalid && formWork.get('tel').touched" aria-describedby="tel-error">
+                <span id="tel-error" class="field-error">@if (formWork.get('tel').invalid && formWork.get('tel').touched) { Informe um telefone com DDD. }</span>
+            </div>
+            <div class="field">
+                <label for="endereco">Endereço *</label>
+                <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" formControlName="endereco" autocomplete="street-address" required [attr.aria-invalid]="formWork.get('endereco').invalid && formWork.get('endereco').touched" aria-describedby="endereco-error">
+                <span id="endereco-error" class="field-error">@if (formWork.get('endereco').invalid && formWork.get('endereco').touched) { Informe seu endereço. }</span>
+            </div>
+            <div class="field">
+                <label for="curriculo">Currículo *</label>
+                <input class="form-control" type="file" id="curriculo" name="curriculo" formControlName="curriculo" (change)="onFileSelected($event)" required [attr.aria-invalid]="formWork.get('curriculo').invalid && formWork.get('curriculo').touched" aria-describedby="curriculo-error">
+                <span id="curriculo-error" class="field-error">@if (formWork.get('curriculo').invalid && formWork.get('curriculo').touched) { Anexe seu currículo. }</span>
+            </div>
+            <div class="field field--wide">
+                <label for="obs">Observação (opcional)</label>
+                <textarea class="form-control" id="obs" name="obs" formControlName="obs" rows="5" placeholder="Conte um pouco sobre você..."></textarea>
+            </div>
+            <div class="field field--wide">
+                <div class="work-consent">
+                    <input class="form-check-input" type="checkbox" name="iAgree" id="iAgree" formControlName="iAgree" (change)="changeStatusAgree()" required [attr.aria-invalid]="showErrorIAgree" aria-describedby="consent-error">
+                    <label for="iAgree">Estou de acordo com o tratamento dos dados pessoais preenchidos acima para que seja possível a realização do contato por parte da SP-Link Telecom sobre minha solicitação. *</label>
                 </div>
-                <span class="text-danger {{!showErrorIAgree ? 'opacity-0' : 'opacity-1'}}">O envio do formulário requer seu consentimento para o tratamento dos dados pessoais informados. Favor clicar na caixa de seleção acima!</span>
-            </fieldset>
-        </section>
-
-        <p-toast [breakpoints]="{ '767px': { width: '90%', right: '0'} }" position="bottom-center" key="br" />
-
-        <button type="submit" class="btn text-white fw-medium" [disabled]="isLoading">
+                <span id="consent-error" class="field-error">@if (showErrorIAgree) { O envio requer seu consentimento para o tratamento dos dados pessoais informados. Marque a caixa de seleção acima. }</span>
+            </div>
+        </div>
+        <p class="field-help">Saiba como seus dados são tratados na <a href="/politica-de-privacidade">Política de privacidade</a>.</p>
+        <button type="submit" class="work-cta" [disabled]="isLoading" [attr.aria-busy]="isLoading">
             @if (isLoading) {
-                <ng-container>
-                  <span clas="indicator-progress" [style.display]="'block'">
-                    Enviando...
-                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
-                  </span>
-                </ng-container>
+                Enviando...
+                <span class="spinner-border spinner-border-sm align-middle ms-2" aria-hidden="true"></span>
             } @else {
-                <ng-container>Enviar</ng-container>
+                Enviar currículo
             }
-          </button>
+        </button>
+        <p-toast [breakpoints]="{ '767px': { width: '90%', right: '0'} }" position="bottom-center" key="br" />
     </form>
 </section>

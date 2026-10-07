@@ -1,0 +1,41 @@
+[
+  {
+    "selector": ".hero__title strong",
+    "expectedFont": "CodecPro-Bold",
+    "weight": "700",
+    "fonts": [
+      {
+        "familyName": "Codec Pro Bold",
+        "postScriptName": "CodecPro-Bold",
+        "isCustomFont": true,
+        "glyphCount": 16
+      }
+    ]
+  },
+  {
+    "selector": ".hero__subtitle",
+    "expectedFont": "CodecPro-Regular",
+    "weight": "400",
+    "fonts": [
+      {
+        "familyName": "Codec Pro",
+        "postScriptName": "CodecPro-Regular",
+        "isCustomFont": true,
+        "glyphCount": 87
+      }
+    ]
+  },
+  {
+    "selector": ".hero__coverage",
+    "expectedFont": "Inter-Regular",
+    "weight": "400",
+    "fonts": [
+      {
+        "familyName": "Inter",
+        "postScriptName": "Inter-Regular",
+        "isCustomFont": true,
+        "glyphCount": 19
+      }
+    ]
+  }
+]

@@ -5,14 +5,17 @@
     z-index: 1000;
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 52px;
+        height: 52px;
     }
 
 }
 
 #container-button-wpp {
-    padding: 5px;
+    width: 72px;
+    height: 72px;
+    align-items: center;
+    padding: 8px;
     cursor: pointer;
     scale: 1;
     background-color: rgb(1, 158, 70);
@@ -22,4 +25,11 @@
         transition: 500ms;
         transform: scale(1.1) ;
     }
+}
+
+#container-button-wpp:focus-visible { outline: 3px solid #271650; outline-offset: 3px; }
+@media (max-width: 767px) {
+    :host { right: 12px; bottom: 12px; }
+    #container-button-wpp { width: 60px; height: 60px; }
+    :host img { width: 42px; height: 42px; }
 }

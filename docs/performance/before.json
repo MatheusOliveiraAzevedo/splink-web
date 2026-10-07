@@ -1,0 +1,2175 @@
+[
+  {
+    "profile": "mobile",
+    "run": 1,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-04T14:26:14.473Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 65,
+    "accessibility": 96,
+    "fcpMs": 4206.426,
+    "lcpMs": 7389.4259999999995,
+    "speedIndexMs": 4454.473199917615,
+    "tbtMs": 95.99999999999977,
+    "cls": 0,
+    "transferBytes": 2318976,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6087,
+        "status": 200
+      },
+      {
+        "url": "/chunk-UUADH6FQ.js",
+        "type": "Script",
+        "bytes": 60719,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-LMFECNS5.js",
+        "type": "Script",
+        "bytes": 170815,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-ULONHVJ5.css",
+        "type": "Stylesheet",
+        "bytes": 67059,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/chunk-4BVKGLGK.js",
+        "type": "Script",
+        "bytes": 19101,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/media/bootstrap-icons-X6UQXWUS.woff2?dd67030699838ea613ee6dbda90effa6",
+        "type": "Font",
+        "bytes": 130592,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.png",
+        "type": "Image",
+        "bytes": 156204,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.png",
+        "type": "Image",
+        "bytes": 6450,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/ios.svg",
+        "type": "Image",
+        "bytes": 3762,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/android.png",
+        "type": "Image",
+        "bytes": 5255,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia.jpg",
+        "type": "Image",
+        "bytes": 186085,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.png",
+        "type": "Image",
+        "bytes": 32457,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.png",
+        "type": "Image",
+        "bytes": 46673,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/Fachada.jpg",
+        "type": "Image",
+        "bytes": 1374212,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "4.2 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "7.4 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "4.5 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "100 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "140 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "7.4 s"
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.2 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "7,390 ms"
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 2,730 ms"
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` do not have accessible names."
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 60 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 64 KiB"
+      },
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "displayValue": "Est savings of 954 KiB"
+      },
+      {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 291 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 1,711 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 2,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-04T14:26:24.594Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 63,
+    "accessibility": 96,
+    "fcpMs": 4071.6225000000004,
+    "lcpMs": 7506.746999999999,
+    "speedIndexMs": 4071.6225000000004,
+    "tbtMs": 191,
+    "cls": 0,
+    "transferBytes": 2318976,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6087,
+        "status": 200
+      },
+      {
+        "url": "/chunk-UUADH6FQ.js",
+        "type": "Script",
+        "bytes": 60719,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-LMFECNS5.js",
+        "type": "Script",
+        "bytes": 170815,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-ULONHVJ5.css",
+        "type": "Stylesheet",
+        "bytes": 67059,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/chunk-4BVKGLGK.js",
+        "type": "Script",
+        "bytes": 19101,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/media/bootstrap-icons-X6UQXWUS.woff2?dd67030699838ea613ee6dbda90effa6",
+        "type": "Font",
+        "bytes": 130592,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.png",
+        "type": "Image",
+        "bytes": 156204,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.png",
+        "type": "Image",
+        "bytes": 6450,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/ios.svg",
+        "type": "Image",
+        "bytes": 3762,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/android.png",
+        "type": "Image",
+        "bytes": 5255,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia.jpg",
+        "type": "Image",
+        "bytes": 186085,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.png",
+        "type": "Image",
+        "bytes": 32457,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.png",
+        "type": "Image",
+        "bytes": 46673,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/Fachada.jpg",
+        "type": "Image",
+        "bytes": 1374212,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "4.1 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "7.5 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "4.1 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "190 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "240 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "7.6 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "7,510 ms"
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 2,850 ms"
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` do not have accessible names."
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 60 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 64 KiB"
+      },
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "displayValue": "Est savings of 954 KiB"
+      },
+      {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 291 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 1,711 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 3,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-04T14:26:32.561Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 66,
+    "accessibility": 96,
+    "fcpMs": 4052.679,
+    "lcpMs": 7505.679,
+    "speedIndexMs": 4052.679,
+    "tbtMs": 94,
+    "cls": 0,
+    "transferBytes": 2318976,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6087,
+        "status": 200
+      },
+      {
+        "url": "/chunk-UUADH6FQ.js",
+        "type": "Script",
+        "bytes": 60719,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-LMFECNS5.js",
+        "type": "Script",
+        "bytes": 170815,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-ULONHVJ5.css",
+        "type": "Stylesheet",
+        "bytes": 67059,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/chunk-4BVKGLGK.js",
+        "type": "Script",
+        "bytes": 19101,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/media/bootstrap-icons-X6UQXWUS.woff2?dd67030699838ea613ee6dbda90effa6",
+        "type": "Font",
+        "bytes": 130592,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.png",
+        "type": "Image",
+        "bytes": 156204,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.png",
+        "type": "Image",
+        "bytes": 6450,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/ios.svg",
+        "type": "Image",
+        "bytes": 3762,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/android.png",
+        "type": "Image",
+        "bytes": 5255,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia.jpg",
+        "type": "Image",
+        "bytes": 186085,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.png",
+        "type": "Image",
+        "bytes": 32457,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.png",
+        "type": "Image",
+        "bytes": 46673,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/Fachada.jpg",
+        "type": "Image",
+        "bytes": 1374212,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "4.1 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "7.5 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "4.1 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "90 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "140 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "7.6 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "7,510 ms"
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 2,850 ms"
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` do not have accessible names."
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 60 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 64 KiB"
+      },
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "displayValue": "Est savings of 954 KiB"
+      },
+      {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 291 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 1,711 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 1,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-04T14:26:40.421Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 93,
+    "accessibility": 96,
+    "fcpMs": 900.852,
+    "lcpMs": 1523.8519999999999,
+    "speedIndexMs": 1337.7971851553784,
+    "tbtMs": 0,
+    "cls": 0,
+    "transferBytes": 2318976,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6087,
+        "status": 200
+      },
+      {
+        "url": "/chunk-UUADH6FQ.js",
+        "type": "Script",
+        "bytes": 60719,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-LMFECNS5.js",
+        "type": "Script",
+        "bytes": 170815,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-ULONHVJ5.css",
+        "type": "Stylesheet",
+        "bytes": 67059,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/chunk-4BVKGLGK.js",
+        "type": "Script",
+        "bytes": 19101,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.png",
+        "type": "Image",
+        "bytes": 156204,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.png",
+        "type": "Image",
+        "bytes": 6450,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/ios.svg",
+        "type": "Image",
+        "bytes": 3762,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/android.png",
+        "type": "Image",
+        "bytes": 5255,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia.jpg",
+        "type": "Image",
+        "bytes": 186085,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.png",
+        "type": "Image",
+        "bytes": 32457,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.png",
+        "type": "Image",
+        "bytes": 46673,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/Fachada.jpg",
+        "type": "Image",
+        "bytes": 1374212,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/media/bootstrap-icons-X6UQXWUS.woff2?dd67030699838ea613ee6dbda90effa6",
+        "type": "Font",
+        "bytes": 130592,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.9 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.5 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.3 s"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "1.5 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "1,520 ms"
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 520 ms"
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` do not have accessible names."
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 60 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 64 KiB"
+      },
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "displayValue": "Est savings of 954 KiB"
+      },
+      {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 115 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 1,577 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 2,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-04T14:26:48.253Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 93,
+    "accessibility": 96,
+    "fcpMs": 903.023,
+    "lcpMs": 1505.5230000000001,
+    "speedIndexMs": 1292.849528130459,
+    "tbtMs": 0,
+    "cls": 0,
+    "transferBytes": 2318976,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6087,
+        "status": 200
+      },
+      {
+        "url": "/chunk-UUADH6FQ.js",
+        "type": "Script",
+        "bytes": 60719,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-LMFECNS5.js",
+        "type": "Script",
+        "bytes": 170815,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-ULONHVJ5.css",
+        "type": "Stylesheet",
+        "bytes": 67059,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/chunk-4BVKGLGK.js",
+        "type": "Script",
+        "bytes": 19101,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.png",
+        "type": "Image",
+        "bytes": 156204,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.png",
+        "type": "Image",
+        "bytes": 6450,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/ios.svg",
+        "type": "Image",
+        "bytes": 3762,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/android.png",
+        "type": "Image",
+        "bytes": 5255,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia.jpg",
+        "type": "Image",
+        "bytes": 186085,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.png",
+        "type": "Image",
+        "bytes": 32457,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.png",
+        "type": "Image",
+        "bytes": 46673,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/Fachada.jpg",
+        "type": "Image",
+        "bytes": 1374212,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/media/bootstrap-icons-X6UQXWUS.woff2?dd67030699838ea613ee6dbda90effa6",
+        "type": "Font",
+        "bytes": 130592,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.9 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.5 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.3 s"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "1.5 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "1,510 ms"
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 480 ms"
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` do not have accessible names."
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 60 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 64 KiB"
+      },
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "displayValue": "Est savings of 954 KiB"
+      },
+      {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 115 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 1,577 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 3,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-04T14:26:56.453Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 93,
+    "accessibility": 96,
+    "fcpMs": 906.134,
+    "lcpMs": 1528.6339999999998,
+    "speedIndexMs": 1284.6971047320694,
+    "tbtMs": 0,
+    "cls": 0,
+    "transferBytes": 2318976,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6087,
+        "status": 200
+      },
+      {
+        "url": "/chunk-UUADH6FQ.js",
+        "type": "Script",
+        "bytes": 60719,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-LMFECNS5.js",
+        "type": "Script",
+        "bytes": 170815,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-ULONHVJ5.css",
+        "type": "Stylesheet",
+        "bytes": 67059,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/chunk-4BVKGLGK.js",
+        "type": "Script",
+        "bytes": 19101,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.png",
+        "type": "Image",
+        "bytes": 156204,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.png",
+        "type": "Image",
+        "bytes": 6450,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/ios.svg",
+        "type": "Image",
+        "bytes": 3762,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo-apps/android.png",
+        "type": "Image",
+        "bytes": 5255,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia.jpg",
+        "type": "Image",
+        "bytes": 186085,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.png",
+        "type": "Image",
+        "bytes": 32457,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.png",
+        "type": "Image",
+        "bytes": 46673,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/Fachada.jpg",
+        "type": "Image",
+        "bytes": 1374212,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/media/bootstrap-icons-X6UQXWUS.woff2?dd67030699838ea613ee6dbda90effa6",
+        "type": "Font",
+        "bytes": 130592,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.9 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.5 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.3 s"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "1.5 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "1,530 ms"
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 520 ms"
+      },
+      {
+        "id": "aria-dialog-name",
+        "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` do not have accessible names."
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 60 KiB"
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "displayValue": "Est savings of 64 KiB"
+      },
+      {
+        "id": "modern-image-formats",
+        "title": "Serve images in next-gen formats",
+        "displayValue": "Est savings of 954 KiB"
+      },
+      {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "displayValue": "Est savings of 8 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 115 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 1,577 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  }
+]

@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build` to generate the used icons and build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
@@ -58,3 +58,18 @@ Mensagens e eventos são centralizados em `src/app/shared/generalutils.ts`.
 Consulte [o inventário das tags e o guia de configuração](docs/rastreamento.md).
 Eventos no dataLayer ainda dependem da configuração do GTM para chegar aos relatórios.
 Contratações fechadas no WhatsApp exigem confirmação externa; cliques não são vendas.
+
+
+## Desempenho e validação em celular
+
+Veja a [comparação antes/depois e as condições de teste](docs/performance/README.md).
+Os scripts em `tools/performance` reproduzem a compressão de imagens, as medições
+Lighthouse e os testes de interface sem enviar mensagens ou formulários reais.
+
+## Versão para aprovação e entrega
+
+Consulte [o checklist, as evidências e as pendências de aprovação](docs/entrega/README.md).
+O [guia de manutenção](docs/entrega/manutencao.md) explica como atualizar planos,
+avaliações, bairros e contatos. O recebimento no WhatsApp/registro comercial
+será validado pelo responsável conforme o [roteiro do atendimento](docs/entrega/validacao-atendimento.md).
+Nenhuma publicação é feita pelos scripts de validação ou empacotamento.

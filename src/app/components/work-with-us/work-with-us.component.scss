@@ -1,37 +1,25 @@
-:host {
-    min-height: 60vh;
-    color: var(--colorSplinkGray);
-    background: linear-gradient(var(--colorSplinkPrimary), var(--colorSplinkPrimary), var(--colorSplinkPrimary), var(--colorSplinkPrimaryDark));
-}
-
-.block-inputs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    .container-large {
-        grid-column: span 2;
-    }
-}
-
-button {
-    background-color: var(--colorSplinkPrimary);
-}
-
-fieldset {
-    position: relative;
-    .text-danger {
-        font-size: 14px;
-    }
-    .error-message {
-        position: absolute;
-        left: 0px;
-        bottom: -25px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .block-inputs {
-        display: flex;
-        flex-direction: column;
-    }
+:host { background: var(--colorSplinkPrimary); }
+.work-header { text-align: center; color: #fff; margin-bottom: 2rem; }
+.work-header h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; }
+.work-form { background: #fff; color: var(--colorSplinkGray); border-radius: 1.25rem; padding: clamp(1rem, 3vw, 2rem); }
+.work-form h3 { color: var(--colorSplinkPrimaryDark); font-weight: 700; }
+.work-form a { color: var(--colorSplinkPrimaryDark); }
+.work-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.5rem; }
+.field { min-width: 0; }
+.field--wide { grid-column: 1 / -1; }
+.field label { display: block; font-weight: 400; margin-bottom: .4rem; }
+.field-help { font-size: .9rem; margin-top: .6rem; }
+.field-error { display: block; color: #a52020; font-size: .9rem; }
+input[aria-invalid="true"] { border-color: #a52020; }
+textarea { resize: vertical; }
+.work-consent { display: flex; align-items: flex-start; gap: .75rem; }
+.work-consent input { flex-shrink: 0; }
+.work-consent label { font-weight: 400; }
+.work-cta { display: inline-block; border: 0; border-radius: 2rem; padding: .85rem 1.5rem; background: var(--colorSplinkPrimaryDark); color: #fff; font-weight: 400; text-align: center; }
+.work-cta:hover:not(:disabled) { background: #035447; }
+.work-cta:focus-visible { outline: 3px solid #271650; outline-offset: 4px; }
+.work-cta:disabled { opacity: .65; cursor: wait; }
+@media (max-width: 600px) {
+    .work-fields { grid-template-columns: 1fr; }
+    .work-cta { width: 100%; }
 }

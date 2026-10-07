@@ -1,21 +1,19 @@
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { DialogModule } from '@angular/cdk/dialog';
-import { MatDialog } from '@angular/material/dialog';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-cookies',
-  imports: [DialogModule],
   templateUrl: './cookies.component.html',
   styleUrl: './cookies.component.scss'
 })
-export class CookiesComponent implements OnInit {
+export class CookiesComponent implements OnInit, OnDestroy {
 
-  constructor(
-    private dialog: MatDialog
-  ) {}
+  @ViewChild('modalCookies') modalCookies: ElementRef<HTMLDialogElement>;
+  private openTimer?: ReturnType<typeof setTimeout>;
 
-  @ViewChild('modalCookies') modalCookies: TemplateRef<any>
-  showModalCookies: boolean = true
+  ngOnDestroy(): void {
+    clearTimeout(this.openTimer);
+    this.modalCookies?.nativeElement.close();
+  }
 
   ngOnInit(): void {
     this.checkCookiesShow();
@@ -25,31 +23,36 @@ export class CookiesComponent implements OnInit {
     if (localStorage.getItem("cookiePreferences") === "accepted") {
       return;
     }
-    setTimeout(() => {
+    this.openTimer = setTimeout(() => {
       this.openModalCookies();
     }, 2000);
   }
 
 
   openModalCookies() {
-    const dialogRef = this.dialog.open(this.modalCookies, {
-      position: { bottom: '30px' },
-      disableClose: true
-    })
-    dialogRef.afterOpened().subscribe(() => {
-      setTimeout(() => {
-        const button = document.getElementById('save-preferences');
-        button?.focus();
-      }, 0);
-    });
+    this.modalCookies.nativeElement.showModal();
+    this.modalCookies.nativeElement.querySelector<HTMLButtonElement>('#save-preferences')?.focus({ preventScroll: true });
+  }
+
+  onDialogKeydown(event: KeyboardEvent) {
+    if (event.key !== 'Tab') return;
+    const elements = this.modalCookies.nativeElement.querySelectorAll<HTMLElement>('a[href], button:not([disabled])');
+    const first = elements[0];
+    const last = elements[elements.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last?.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first?.focus();
+    }
   }
 
   refuseCookies() {
     this.clearAllCookies();
     localStorage.removeItem("cookiePreferences");
     sessionStorage.clear();
-    this.dialog.closeAll();
-    this.showModalCookies = true
+    this.modalCookies.nativeElement.close();
   }
 
   clearAllCookies() {
@@ -61,8 +64,7 @@ export class CookiesComponent implements OnInit {
 
   acceptCookies() {
     localStorage.setItem("cookiePreferences", "accepted");
-    this.showModalCookies = false
-    this.dialog.closeAll()
+    this.modalCookies.nativeElement.close()
   }
 
 }

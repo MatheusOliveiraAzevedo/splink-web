@@ -1,10 +1,29 @@
-<section class="d-flex flex-column flex-lg-row align-items-center text-white">
-    <img [src]="image" alt="Imagem da fachada da SP-Link" class="d-flex d-lg-none">
-    <span class="d-flex flex-column align-items-center gap-3 py-5">
-        <h1 class="m-0 fs-2 text-center">Quem somos</h1>
-        <p class="w-75 m-0">Na SP-Link acreditamos que conexão vai muito além da tecnologia. Desde 2014, nascemos como uma empresa familiar no coração do litoral norte do Rio Grande do Sul, carregando em nossa essência o compromisso com pessoas e comunidades locais.</p>
-        <p class="w-75 m-0">Raízes sólidas e uma visão inovadora, crescemos e nos expandimos sem nunca perder o foco no que realmente importa: você. Nossa maior qualidade é conectar vidas através de uma internet de alta performance, oferecendo tecnologia de ponta e um atendimento humanizado que faz toda diferença. Não é à toa que nosso slogan é "Juntos conectamos o mundo!".</p>
-        <app-button-attention label="Junte-se a nós!" position="about"></app-button-attention>
-    </span>
-    <img [src]="image" alt="Imagem da fachada da SP-Link" class="d-none d-lg-flex">
+<section class="about container-max" aria-labelledby="about-title">
+    <div class="about-layout">
+        <figure class="about-photo">
+            <picture class="about-media">
+                <source type="image/avif" srcset="assets/fachada/fachada-480.avif 480w, assets/fachada/fachada-800.avif 800w, assets/fachada/fachada-1280.avif 1280w" sizes="(max-width: 991px) calc(100vw - 48px), (max-width: 1280px) 44vw, 530px">
+                <img src="assets/fachada/fachada-800.webp" srcset="assets/fachada/fachada-480.webp 480w, assets/fachada/fachada-800.webp 800w, assets/fachada/fachada-1280.webp 1280w" sizes="(max-width: 991px) calc(100vw - 48px), (max-width: 1280px) 44vw, 530px"
+                    alt="Fachada da SP-Link Telecom" width="1280" height="960" loading="lazy" decoding="async">
+            </picture>
+            <figcaption>
+                <span class="about-year">Desde 2014</span>
+                <span>Uma história construída perto de você.</span>
+            </figcaption>
+        </figure>
+
+        <div class="about-content">
+            <p class="about-eyebrow">Quem somos</p>
+            <h2 id="about-title">Juntos conectamos <span>o mundo.</span></h2>
+            <p class="about-lead brand-subtitle">Nossa história começa no litoral norte. E continua em cada conexão com você.</p>
+            <p>Nascemos em 2014 como uma empresa familiar no litoral norte do Rio Grande do Sul. Desde então, crescemos com raízes sólidas e um compromisso que permanece o mesmo: conectar pessoas e comunidades locais.</p>
+            <p>Na SP-Link, tecnologia de ponta e atendimento humano caminham juntos. Não é à toa que acreditamos que uma boa conexão vai muito além da internet: ela aproxima vidas.</p>
+            <ul class="about-values" aria-label="O que faz parte da nossa história">
+                <li>Origem familiar</li>
+                <li>Presença local</li>
+                <li>Atendimento humano</li>
+            </ul>
+            <app-button-attention label="Fale com nossa equipe" position="about"></app-button-attention>
+        </div>
+    </div>
 </section>

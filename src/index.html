@@ -10,11 +10,21 @@
   <title>SP-Link</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Inicia apenas a variante responsiva do banner da página inicial. -->
+  <script>
+    if (location.pathname === '/') {
+      const heroPreload = document.createElement('link');
+      heroPreload.rel = 'preload';
+      heroPreload.as = 'image';
+      heroPreload.type = 'image/avif';
+      heroPreload.href = 'assets/banner/familia-aberta-1512.avif';
+      heroPreload.imageSrcset = 'assets/banner/familia-aberta-480.avif 480w, assets/banner/familia-aberta-800.avif 800w, assets/banner/familia-aberta-1280.avif 1280w, assets/banner/familia-aberta-1512.avif 1512w';
+      heroPreload.imageSizes = '(max-width: 991px) 100vw, 72vw';
+      heroPreload.fetchPriority = 'high';
+      document.head.appendChild(heroPreload);
+    }
+  </script>
   <link rel="icon" type="image/png" href="assets/logo/logo-short-splink.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16726610036"></script>
   <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-16726610036'); </script>
 
@@ -24,8 +34,8 @@
   "@type": "InternetServiceProvider",
   "name": "SP-Link Internet Fibra Óptica",
   "url": "https://sp-link.com.br",
-  "logo": "https://sp-link.com.br/logo-short-splink.png",
-  "image": "https://sp-link.com.br/logo-color-splink.png",
+  "logo": "https://sp-link.com.br/assets/logo/logo-short-splink.png",
+  "image": "https://sp-link.com.br/assets/logo/logo-color-splink.webp",
   "description": "Internet fibra óptica residencial e empresarial com Wi-Fi 6, atendimento rápido e a melhor avaliação de Tramandaí e Imbé. 4.8 estrelas em Tramandaí e 5.0 em Imbé.",
   "telephone": "+55-51-3669-1592",
   "email": "comercial@splinktelecom.com.br",

@@ -1,0 +1,90 @@
+{
+  "createdAt": "2026-10-05T13:42:33.185Z",
+  "method": "GET public destinations, redirects followed, 20 s timeout. No POST, login, messages or forms.",
+  "results": [
+    {
+      "url": "https://www.instagram.com/splinktelecom/",
+      "status": 200,
+      "finalUrl": "https://www.instagram.com/splinktelecom/",
+      "title": "SP-Link Telecom | Internet Fibra Tramandaí e Imbé (&#064;splinktelecom) • Instagram photos and videos",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://pt-br.facebook.com/splinktelecom/",
+      "status": 200,
+      "finalUrl": "https://pt-br.facebook.com/splinktelecom/",
+      "title": "SP-Link Telecom | Tramandaí RS",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://atendimento.sp-link.com.br/sac/login/?sys=SAC",
+      "status": 200,
+      "finalUrl": "https://atendimento.sp-link.com.br/sac/login/?sys=SAC",
+      "title": "SAC - Login do Assinante",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://maps.app.goo.gl/SqudGeUcbGetoAA86",
+      "status": 200,
+      "finalUrl": "https://www.google.com/maps/place/SP-Link+Telecom/@-30.0371945,-50.1568727,68m/data=!3m1!1e3!4m6!3m5!1s0x95180d5731bea013:0x1b5a1789c8b0c2b!8m2!3d-30.0371353!4d-50.1568059!16s%2Fg%2F11h1hqv233?authuser=1&entry=tts&g_ep=EgoyMDI1MTIwMi4wIPu8ASoASAFQAw%3D%3D&skid=d33b7d82-c0ad-4923-98fc-7aa20fb84451",
+      "title": "Google Maps",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://maps.app.goo.gl/37imCWWaTZQLzPsT8",
+      "status": 200,
+      "finalUrl": "https://www.google.com/maps/place/SP-Link+Telecom+-+Imb%C3%A9/@-29.98025,-50.1330981,68m/data=!3m1!1e3!4m7!3m6!1s0x95187384187bb135:0x4b0f12a6fb331d6a!8m2!3d-29.9801278!4d-50.1330066!15sCg9TUC1MaW5rIFRlbGVjb22SASN0ZWxlY29tbXVuaWNhdGlvbnNfc2VydmljZV9wcm92aWRlcuABAA!16s%2Fg%2F11xzsksqht?authuser=1&entry=tts&g_ep=EgoyMDI1MTIwMi4wIPu8ASoASAFQAw%3D%3D&skid=b703c3cb-9fb1-4d72-8fea-162f370a51c7",
+      "title": "Google Maps",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=br.com.mksolutions.mksac.splink&pcampaignid=web_share",
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=br.com.mksolutions.mksac.splink&pcampaignid=web_share",
+      "title": "SP-Link Cliente - Apps on Google Play",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://apps.apple.com/br/app/sp-link-cliente/id6467253864",
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/br/app/sp-link-cliente/id6467253864",
+      "title": "‎App SP-Link Cliente – App Store",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://www.facebook.com/splinktelecom/",
+      "status": 200,
+      "finalUrl": "https://www.facebook.com/splinktelecom/",
+      "title": "SP-Link Telecom | Tramandaí RS",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://www.linkedin.com/company/splinktelecom",
+      "status": 200,
+      "finalUrl": "https://www.linkedin.com/company/splinktelecom",
+      "title": "SP-Link Telecom | LinkedIn",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://radar.cloudflare.com/asn/264978",
+      "status": 403,
+      "finalUrl": "https://radar.cloudflare.com/asn/264978",
+      "title": "Just a moment...",
+      "result": "Manual review required; HTTP status alone does not prove a broken link"
+    },
+    {
+      "url": "https://www.peeringdb.com/asn/264978",
+      "status": 200,
+      "finalUrl": "https://www.peeringdb.com/asn/264978",
+      "title": "AS264978 - severo e prado ltda - PeeringDB",
+      "result": "HTTP reachable; identity/content requires review"
+    },
+    {
+      "url": "https://www.google.com/maps/d/embed?mid=1v98WKTbN8vgrzOZgXrHlBqVD8atAnhg&ehbc=2E312F",
+      "status": 200,
+      "finalUrl": "https://www.google.com/maps/d/embed?mid=1v98WKTbN8vgrzOZgXrHlBqVD8atAnhg&ehbc=2E312F",
+      "title": "Área de Cobertura SP-Link - Google My Maps",
+      "result": "HTTP reachable; identity/content requires review"
+    }
+  ]
+}

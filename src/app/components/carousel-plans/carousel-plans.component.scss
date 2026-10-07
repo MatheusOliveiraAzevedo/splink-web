@@ -78,7 +78,7 @@ p-carousel {
     background: linear-gradient(to right, var(--colorSplinkPrimaryDark), var(--colorSplinkPrimary));
     color: #fff;
     font-size: .8rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: .02em;
     padding: .3rem 1rem;
     border-radius: 999px;
@@ -97,7 +97,7 @@ p-carousel {
 
 .plan-speed {
     font-size: 3.25rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -.02em;
 }
 
@@ -108,7 +108,7 @@ p-carousel {
 
 .plan-business-title {
     font-size: 1.7rem;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.1;
 }
 
@@ -154,7 +154,7 @@ p-carousel {
 
     dt {
         font-size: .68rem;
-        font-weight: 500;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: .03em;
         white-space: nowrap;
@@ -164,7 +164,7 @@ p-carousel {
     dd {
         margin: 0;
         font-size: .9rem;
-        font-weight: 700;
+        font-weight: 400;
         white-space: nowrap;
         color: var(--colorSplinkPrimaryDark);
     }
@@ -186,24 +186,26 @@ p-carousel {
 
     &__currency {
         font-size: 1.1rem;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     &__value {
+        font-family: var(--font-heading);
         font-size: clamp(1.9rem, 1.8vw, 2.5rem);
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: -.02em;
     }
 
     &__period {
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 400;
         color: var(--colorSplinkGray);
     }
 
     &__consult {
+        font-family: var(--font-heading);
         font-size: 1.3rem;
-        font-weight: 800;
+        font-weight: 700;
         padding: .6rem 0;
         white-space: nowrap;
     }
@@ -237,7 +239,7 @@ p-carousel {
     border-radius: 30px;
     padding: .7rem .5rem;
     font-size: clamp(.9rem, .95vw, 1.05rem);
-    font-weight: 700;
+    font-weight: 400;
     white-space: nowrap;
     color: #fff;
     background: linear-gradient(to right, var(--colorSplinkPrimaryDark), var(--colorSplinkPrimary));

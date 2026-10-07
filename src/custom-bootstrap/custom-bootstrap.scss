@@ -1,46 +1,11 @@
 // bootstrap-custom.scss
+// Mantém as escalas padrão de fonte e espaçamento do Bootstrap.
+// Antes, a segunda cópia do CSS mascarava valores antigos como fs-6: 5rem.
 $utilities: (
   "max-width": (
     property: max-width,
     class: mw,
-    values: (
-      100: 100%,
-      75: 75%,
-      50: 50%,
-      25: 25% 
-    )
-  ),
-  "gap": (
-    property: gap,
-    class: gap,
-    values: (
-      1: 1rem,
-      2: 2rem,
-      3: 3rem,
-      4: 4rem,
-      5: 4.5rem,
-      6: 5rem,
-      7: 5.5rem,
-      8: 6rem,
-      9: 6.5rem,
-      10: 7rem
-    )
-  ),
-  "font-size": (
-    property: font-size,
-    class: fs,
-    values: (
-      1: 80px,
-      2: 2rem,
-      3: 3rem,
-      4: 4rem,
-      5: 4.5rem,
-      6: 5rem,
-      7: 5.5rem,
-      8: 6rem,
-      9: 6.5rem,
-      10: 7rem
-    )
+    values: (100: 100%, 75: 75%, 50: 50%, 25: 25%)
   )
 );
 
@@ -90,8 +55,3 @@ $utilities: (
 .no-resize {
   resize: none;
 }
-
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities/api";

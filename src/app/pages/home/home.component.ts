@@ -10,7 +10,7 @@ import { ButtonWppComponent } from "../../components/button-wpp/button-wpp.compo
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BannerPrincipalComponent, RetainAttentionComponent, CarouselPlansComponent, CoverageAreaComponent, WhoWeAreComponent, WorkWithUsComponent, ButtonWppComponent, ButtonWppComponent],
+  imports: [BannerPrincipalComponent, RetainAttentionComponent, CarouselPlansComponent, CoverageAreaComponent, WhoWeAreComponent, WorkWithUsComponent, ButtonWppComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

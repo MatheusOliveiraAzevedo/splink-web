@@ -1,0 +1,121 @@
+[
+  {
+    "source": "banner/familia.jpg",
+    "output": "banner/familia-480.avif",
+    "width": 480,
+    "originalBytes": 185889,
+    "bytes": 20887
+  },
+  {
+    "source": "banner/familia.jpg",
+    "output": "banner/familia-480.webp",
+    "width": 480,
+    "originalBytes": 185889,
+    "bytes": 29376
+  },
+  {
+    "source": "banner/familia.jpg",
+    "output": "banner/familia-800.avif",
+    "width": 800,
+    "originalBytes": 185889,
+    "bytes": 36693
+  },
+  {
+    "source": "banner/familia.jpg",
+    "output": "banner/familia-800.webp",
+    "width": 800,
+    "originalBytes": 185889,
+    "bytes": 55828
+  },
+  {
+    "source": "banner/familia.jpg",
+    "output": "banner/familia-960.avif",
+    "width": 960,
+    "originalBytes": 185889,
+    "bytes": 46710
+  },
+  {
+    "source": "banner/familia.jpg",
+    "output": "banner/familia-960.webp",
+    "width": 960,
+    "originalBytes": 185889,
+    "bytes": 72436
+  },
+  {
+    "source": "fachada/Fachada.jpg",
+    "output": "fachada/fachada-480.avif",
+    "width": 480,
+    "originalBytes": 1374015,
+    "bytes": 25998
+  },
+  {
+    "source": "fachada/Fachada.jpg",
+    "output": "fachada/fachada-480.webp",
+    "width": 480,
+    "originalBytes": 1374015,
+    "bytes": 32454
+  },
+  {
+    "source": "fachada/Fachada.jpg",
+    "output": "fachada/fachada-800.avif",
+    "width": 800,
+    "originalBytes": 1374015,
+    "bytes": 63777
+  },
+  {
+    "source": "fachada/Fachada.jpg",
+    "output": "fachada/fachada-800.webp",
+    "width": 800,
+    "originalBytes": 1374015,
+    "bytes": 82718
+  },
+  {
+    "source": "fachada/Fachada.jpg",
+    "output": "fachada/fachada-1280.avif",
+    "width": 1280,
+    "originalBytes": 1374015,
+    "bytes": 146017
+  },
+  {
+    "source": "fachada/Fachada.jpg",
+    "output": "fachada/fachada-1280.webp",
+    "width": 1280,
+    "originalBytes": 1374015,
+    "bytes": 192964
+  },
+  {
+    "source": "logo/logo-color-splink.png",
+    "output": "logo/logo-color-splink.webp",
+    "width": 380,
+    "originalBytes": 156009,
+    "bytes": 14274
+  },
+  {
+    "source": "logo/logo-rodape.png",
+    "output": "logo/logo-rodape.webp",
+    "width": 352,
+    "originalBytes": 6256,
+    "bytes": 2810
+  },
+  {
+    "source": "banner/ondas-bottom.png",
+    "output": "banner/ondas-bottom.webp",
+    "width": 620,
+    "originalBytes": 32263,
+    "bytes": 20280
+  },
+  {
+    "source": "whatsapp/wpp-white.png",
+    "output": "whatsapp/wpp-white.webp",
+    "width": 128,
+    "originalBytes": 46479,
+    "bytes": 3932
+  },
+  {
+    "source": "logo-apps/android.png",
+    "output": "logo-apps/android.webp",
+    "width": 270,
+    "originalBytes": 5061,
+    "bytes": 2326
+  }
+]

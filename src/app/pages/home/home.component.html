@@ -3,5 +3,15 @@
 <app-retain-attention id="services"></app-retain-attention>
 <app-coverage-area id="coverage"></app-coverage-area>
 <app-who-we-are id="whoWeAre"></app-who-we-are>
-<app-work-with-us id="workUs"></app-work-with-us>
+<section id="workUs" aria-label="Trabalhe conosco">
+    @defer (on viewport) {
+        <app-work-with-us></app-work-with-us>
+    } @placeholder {
+        <div class="work-placeholder d-flex align-items-center justify-content-center" aria-live="polite">
+            <p>Carregando formulário de candidatura…</p>
+        </div>
+    } @error {
+        <p class="p-5 text-center">Não foi possível carregar o formulário. Recarregue a página para tentar novamente.</p>
+    }
+</section>
 <app-button-wpp></app-button-wpp>

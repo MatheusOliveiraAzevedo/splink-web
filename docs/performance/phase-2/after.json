@@ -1,0 +1,2415 @@
+[
+  {
+    "profile": "mobile",
+    "run": 1,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-05T12:38:11.596Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 81,
+    "accessibility": 100,
+    "fcpMs": 2833.443,
+    "lcpMs": 4017.6644999999994,
+    "speedIndexMs": 3190.7632823608506,
+    "tbtMs": 125,
+    "cls": 0,
+    "transferBytes": 352491,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6016,
+        "status": 200
+      },
+      {
+        "url": "/chunk-44K7F7SN.js",
+        "type": "Script",
+        "bytes": 33521,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5ZCB5VPW.js",
+        "type": "Script",
+        "bytes": 28063,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5HRFJUU3.js",
+        "type": "Script",
+        "bytes": 7019,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QMMTPE6O.js",
+        "type": "Script",
+        "bytes": 55333,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-KXGXN6BO.js",
+        "type": "Script",
+        "bytes": 56894,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-800.avif",
+        "type": "Image",
+        "bytes": 36888,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-3IXY2TBG.css",
+        "type": "Stylesheet",
+        "bytes": 36182,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.webp",
+        "type": "Image",
+        "bytes": 20475,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "2.8 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "4.0 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "3.2 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "130 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "180 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "4.0 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "4,020 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 13 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 55 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 2,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-05T12:38:19.521Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 81,
+    "accessibility": 100,
+    "fcpMs": 2801.8379999999997,
+    "lcpMs": 4007.757,
+    "speedIndexMs": 3254.1364542940473,
+    "tbtMs": 100,
+    "cls": 0,
+    "transferBytes": 352491,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6016,
+        "status": 200
+      },
+      {
+        "url": "/chunk-44K7F7SN.js",
+        "type": "Script",
+        "bytes": 33521,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5ZCB5VPW.js",
+        "type": "Script",
+        "bytes": 28063,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5HRFJUU3.js",
+        "type": "Script",
+        "bytes": 7019,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QMMTPE6O.js",
+        "type": "Script",
+        "bytes": 55333,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-KXGXN6BO.js",
+        "type": "Script",
+        "bytes": 56894,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-800.avif",
+        "type": "Image",
+        "bytes": 36888,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-3IXY2TBG.css",
+        "type": "Stylesheet",
+        "bytes": 36182,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.webp",
+        "type": "Image",
+        "bytes": 20475,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "2.8 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "4.0 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "3.3 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "100 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "150 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "4.0 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "4,010 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 13 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 55 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 3,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-05T12:38:27.297Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 81,
+    "accessibility": 100,
+    "fcpMs": 2801.875,
+    "lcpMs": 4003.3125,
+    "speedIndexMs": 3270.5637142351006,
+    "tbtMs": 103,
+    "cls": 0,
+    "transferBytes": 352491,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6016,
+        "status": 200
+      },
+      {
+        "url": "/chunk-44K7F7SN.js",
+        "type": "Script",
+        "bytes": 33521,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5ZCB5VPW.js",
+        "type": "Script",
+        "bytes": 28063,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5HRFJUU3.js",
+        "type": "Script",
+        "bytes": 7019,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QMMTPE6O.js",
+        "type": "Script",
+        "bytes": 55333,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-KXGXN6BO.js",
+        "type": "Script",
+        "bytes": 56894,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-800.avif",
+        "type": "Image",
+        "bytes": 36888,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-3IXY2TBG.css",
+        "type": "Stylesheet",
+        "bytes": 36182,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.webp",
+        "type": "Image",
+        "bytes": 20475,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "2.8 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "4.0 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "3.3 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "100 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "150 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "4.0 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "4,000 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 13 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 55 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 1,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-05T12:38:34.603Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 98,
+    "accessibility": 100,
+    "fcpMs": 725.875,
+    "lcpMs": 958.5,
+    "speedIndexMs": 1249.9963391919878,
+    "tbtMs": 0,
+    "cls": 0,
+    "transferBytes": 416463,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6016,
+        "status": 200
+      },
+      {
+        "url": "/chunk-44K7F7SN.js",
+        "type": "Script",
+        "bytes": 33521,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5ZCB5VPW.js",
+        "type": "Script",
+        "bytes": 28063,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5HRFJUU3.js",
+        "type": "Script",
+        "bytes": 7019,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QMMTPE6O.js",
+        "type": "Script",
+        "bytes": 55333,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-KXGXN6BO.js",
+        "type": "Script",
+        "bytes": 56894,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-800.avif",
+        "type": "Image",
+        "bytes": 36888,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-3IXY2TBG.css",
+        "type": "Stylesheet",
+        "bytes": 36182,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.webp",
+        "type": "Image",
+        "bytes": 20475,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/fachada-800.avif",
+        "type": "Image",
+        "bytes": 63972,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.0 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.2 s"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 19 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 2,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-05T12:38:42.997Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 98,
+    "accessibility": 100,
+    "fcpMs": 740.224,
+    "lcpMs": 969.6320000000001,
+    "speedIndexMs": 1244.8291290994305,
+    "tbtMs": 0,
+    "cls": 0,
+    "transferBytes": 416463,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6016,
+        "status": 200
+      },
+      {
+        "url": "/chunk-44K7F7SN.js",
+        "type": "Script",
+        "bytes": 33521,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5ZCB5VPW.js",
+        "type": "Script",
+        "bytes": 28063,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5HRFJUU3.js",
+        "type": "Script",
+        "bytes": 7019,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QMMTPE6O.js",
+        "type": "Script",
+        "bytes": 55333,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-KXGXN6BO.js",
+        "type": "Script",
+        "bytes": 56894,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-800.avif",
+        "type": "Image",
+        "bytes": 36888,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-3IXY2TBG.css",
+        "type": "Stylesheet",
+        "bytes": 36182,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.webp",
+        "type": "Image",
+        "bytes": 20475,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/fachada-800.avif",
+        "type": "Image",
+        "bytes": 63972,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.0 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.2 s"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 19 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 3,
+    "browser": "Chrome/154.0.8037.58",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-05T12:38:50.809Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 98,
+    "accessibility": 100,
+    "fcpMs": 719.913,
+    "lcpMs": 951.884,
+    "speedIndexMs": 1222.9023131325312,
+    "tbtMs": 0,
+    "cls": 0,
+    "transferBytes": 416463,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 6016,
+        "status": 200
+      },
+      {
+        "url": "/chunk-44K7F7SN.js",
+        "type": "Script",
+        "bytes": 33521,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5ZCB5VPW.js",
+        "type": "Script",
+        "bytes": 28063,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5HRFJUU3.js",
+        "type": "Script",
+        "bytes": 7019,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QMMTPE6O.js",
+        "type": "Script",
+        "bytes": 55333,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-KXGXN6BO.js",
+        "type": "Script",
+        "bytes": 56894,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-800.avif",
+        "type": "Image",
+        "bytes": 36888,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-3IXY2TBG.css",
+        "type": "Stylesheet",
+        "bytes": 36182,
+        "status": 200
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+        "type": "Font",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/ondas-bottom.webp",
+        "type": "Image",
+        "bytes": 20475,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fachada/fachada-800.avif",
+        "type": "Image",
+        "bytes": 63972,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.0 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.2 s"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 19 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  }
+]

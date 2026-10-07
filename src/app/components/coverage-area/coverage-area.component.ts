@@ -32,6 +32,7 @@ export class CoverageAreaComponent {
   private fb = inject(FormBuilder);
   private element = inject<ElementRef<HTMLElement>>(ElementRef);
   private destroyRef = inject(DestroyRef);
+  mapLoaded = false;
   submitted = false;
   whatsappUrl = '';
   generalUtils = new GeneralUtils();
@@ -56,6 +57,10 @@ export class CoverageAreaComponent {
   invalid(field: keyof typeof this.form.controls): boolean {
     const control = this.form.controls[field];
     return control.invalid && (control.touched || this.submitted);
+  }
+
+  onMapToggle(event: Event): void {
+    if ((event.target as HTMLDetailsElement).open) this.mapLoaded = true;
   }
 
   submit(): void {

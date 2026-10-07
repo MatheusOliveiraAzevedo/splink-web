@@ -1,0 +1,744 @@
+{
+  "buildIndexSha256": "86059acfabeb9539c72bccf7eca50960c4e930096c0a9ef2e51745724ed3f850",
+  "createdAt": "2026-10-05T14:00:59.334Z",
+  "scope": "Local browser; external requests blocked; recruitment API mocked; no real messages sent",
+  "checks": [
+    {
+      "name": "No commercial event on initial page load",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: 170 Mega",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: 250 Mega",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: 500 Mega",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: 750 Mega",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: 1 Giga",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Plano Empresarial",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Banner",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Flutuante",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Rodapé",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Quem somos",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Watch TV",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Wi-Fi 6",
+      "passed": true
+    },
+    {
+      "name": "Coverage rejects empty",
+      "passed": true
+    },
+    {
+      "name": "Coverage rejects blank street",
+      "passed": true
+    },
+    {
+      "name": "Coverage rejects invalid contact",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Formulário coverage",
+      "passed": true
+    },
+    {
+      "name": "Coverage coverage event separation",
+      "passed": true
+    },
+    {
+      "name": "Coverage coverage address formatting",
+      "passed": true
+    },
+    {
+      "name": "Coverage coverage personal data absent from events",
+      "passed": true
+    },
+    {
+      "name": "Coverage coverage feasibility disclaimer",
+      "passed": true
+    },
+    {
+      "name": "WhatsApp: Formulário expansion",
+      "passed": true
+    },
+    {
+      "name": "Coverage expansion event separation",
+      "passed": true
+    },
+    {
+      "name": "Coverage expansion address formatting",
+      "passed": true
+    },
+    {
+      "name": "Coverage expansion personal data absent from events",
+      "passed": true
+    },
+    {
+      "name": "Coverage expansion feasibility disclaimer",
+      "passed": true
+    },
+    {
+      "name": "Anchor #coverage-form",
+      "passed": true
+    },
+    {
+      "name": "Anchor #coverage-form",
+      "passed": true
+    },
+    {
+      "name": "Email comercial@splinktelecom.com.br",
+      "passed": true
+    },
+    {
+      "name": "Email dpo@splinktelecom.com.br",
+      "passed": true
+    },
+    {
+      "name": "Outgoing https://maps.app.goo.gl/SqudGeUcbGetoAA86",
+      "passed": true
+    },
+    {
+      "name": "Outgoing https://maps.app.goo.gl/37imCWWaTZQLzPsT8",
+      "passed": true
+    },
+    {
+      "name": "Outgoing https://www.instagram.com/splinktelecom/",
+      "passed": true
+    },
+    {
+      "name": "Outgoing https://pt-br.facebook.com/splinktelecom/",
+      "passed": true
+    },
+    {
+      "name": "Outgoing https://apps.apple.com/br/app/sp-link-cliente/id6467253864",
+      "passed": true
+    },
+    {
+      "name": "Outgoing https://play.google.com/store/apps/details?id=br.com.mksolutions.mksac.splink&pcampaignid=web_share",
+      "passed": true
+    },
+    {
+      "name": "PDF button assets/pdfs/Contrato-Locacao-Completo.pdf",
+      "passed": true
+    },
+    {
+      "name": "PDF file assets/pdfs/Contrato-Locacao-Completo.pdf",
+      "passed": true
+    },
+    {
+      "name": "PDF button assets/pdfs/Contrato-de-prestacoes-de-servicos-de-valor-adicionado.pdf",
+      "passed": true
+    },
+    {
+      "name": "PDF file assets/pdfs/Contrato-de-prestacoes-de-servicos-de-valor-adicionado.pdf",
+      "passed": true
+    },
+    {
+      "name": "PDF button assets/pdfs/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf",
+      "passed": true
+    },
+    {
+      "name": "PDF file assets/pdfs/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf",
+      "passed": true
+    },
+    {
+      "name": "Menu Inicio",
+      "passed": true
+    },
+    {
+      "name": "Menu Serviços",
+      "passed": true
+    },
+    {
+      "name": "Menu Planos",
+      "passed": true
+    },
+    {
+      "name": "Menu Área de cobertura",
+      "passed": true
+    },
+    {
+      "name": "Menu Central do Assinante",
+      "passed": true
+    },
+    {
+      "name": "Submenu whoWeAre",
+      "passed": true
+    },
+    {
+      "name": "Footer whoWeAre",
+      "passed": true
+    },
+    {
+      "name": "Submenu workUs",
+      "passed": true
+    },
+    {
+      "name": "Footer workUs",
+      "passed": true
+    },
+    {
+      "name": "Recruitment rejects unchecked consent even with all fields filled",
+      "passed": true
+    },
+    {
+      "name": "Recruitment rejects missing required field with consent",
+      "passed": true
+    },
+    {
+      "name": "Recruitment response rejected",
+      "passed": true
+    },
+    {
+      "name": "Recruitment response ambiguous",
+      "passed": true
+    },
+    {
+      "name": "Recruitment response malformed",
+      "passed": true
+    },
+    {
+      "name": "Recruitment response network-error",
+      "passed": true
+    },
+    {
+      "name": "Recruitment response success",
+      "passed": true
+    },
+    {
+      "name": "Recruitment response status",
+      "passed": true
+    },
+    {
+      "name": "Schema price 170 Mega",
+      "passed": true
+    },
+    {
+      "name": "Schema price 250 Mega",
+      "passed": true
+    },
+    {
+      "name": "Schema price 500 Mega",
+      "passed": true
+    },
+    {
+      "name": "Schema price 750 Mega",
+      "passed": true
+    },
+    {
+      "name": "Schema price 1 Giga",
+      "passed": true
+    },
+    {
+      "name": "Schema price Plano Empresarial",
+      "passed": true
+    },
+    {
+      "name": "Schema asset logo",
+      "passed": true
+    },
+    {
+      "name": "Schema asset image",
+      "passed": true
+    },
+    {
+      "name": "Route politica-de-privacidade",
+      "passed": true
+    },
+    {
+      "name": "No stale plan schema politica-de-privacidade",
+      "passed": true
+    },
+    {
+      "name": "Route politica-de-cookies",
+      "passed": true
+    },
+    {
+      "name": "No stale plan schema politica-de-cookies",
+      "passed": true
+    },
+    {
+      "name": "Route politica-de-direito-dos-titulares",
+      "passed": true
+    },
+    {
+      "name": "No stale plan schema politica-de-direito-dos-titulares",
+      "passed": true
+    },
+    {
+      "name": "Route not-a-real-page",
+      "passed": true
+    },
+    {
+      "name": "No stale plan schema not-a-real-page",
+      "passed": true
+    },
+    {
+      "name": "404 return home",
+      "passed": true
+    },
+    {
+      "name": "Logo home app-menu-bar > nav > div > img",
+      "passed": true
+    },
+    {
+      "name": "Logo home app-footer .img-logo",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No click interpreted as sale",
+      "passed": true
+    }
+  ],
+  "whatsapp": [
+    {
+      "name": "170 Mega",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e tenho interesse no plano de 170 Mega. Quero consultar a cobertura.\n\nOrigem no site: seção de planos.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "plans",
+          "plan_id": "170",
+          "plan_name": "170 Mega",
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "250 Mega",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e tenho interesse no plano de 250 Mega. Quero consultar a cobertura.\n\nOrigem no site: seção de planos.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "plans",
+          "plan_id": "250",
+          "plan_name": "250 Mega",
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "500 Mega",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e tenho interesse no plano de 500 Mega. Quero consultar a cobertura.\n\nOrigem no site: seção de planos.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "plans",
+          "plan_id": "500",
+          "plan_name": "500 Mega",
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "750 Mega",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e tenho interesse no plano de 750 Mega. Quero consultar a cobertura.\n\nOrigem no site: seção de planos.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "plans",
+          "plan_id": "750",
+          "plan_name": "750 Mega",
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "1 Giga",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e tenho interesse no plano de 1 Giga. Quero consultar a cobertura.\n\nOrigem no site: seção de planos.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "plans",
+          "plan_id": "1giga",
+          "plan_name": "1 Giga",
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Plano Empresarial",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e tenho interesse no plano empresarial. Quero consultar a cobertura.\n\nOrigem no site: seção de planos.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "plans",
+          "plan_id": "business",
+          "plan_name": "Plano Empresarial",
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Banner",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero consultar a cobertura e conhecer os planos.\n\nOrigem no site: banner principal.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "hero",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Flutuante",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero consultar a cobertura e conhecer os planos.\n\nOrigem no site: botão flutuante.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "floating",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Rodapé",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero consultar a cobertura e conhecer os planos.\n\nOrigem no site: rodapé.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "footer",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Quem somos",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero consultar a cobertura e conhecer os planos.\n\nOrigem no site: quem somos.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "about",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Watch TV",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero conhecer os planos com Watch TV. Quero consultar a cobertura.\n\nOrigem no site: Watch TV.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "watch_tv",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Wi-Fi 6",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero conhecer os planos com Wi-Fi 6. Quero consultar a cobertura.\n\nOrigem no site: Wi-Fi 6.",
+      "events": [
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "wifi_6",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Formulário coverage",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero consultar a viabilidade de internet da SP-Link no meu endereço.\n\nCidade: Imbé\nBairro: Bairro de teste\nRua: Rua de teste\nNúmero: 209\nComplemento: Loja 03\nContato para retorno: pessoa@example.com\n\nAguardo a confirmação de viabilidade pela equipe para este endereço.\n\nOrigem no site: formulário de cobertura.",
+      "events": [
+        {
+          "event": "form_prepared",
+          "source": "splink_site",
+          "position": "coverage_form",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": "coverage"
+        },
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "coverage_form",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "coverage",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Formulário expansion",
+      "recipient": "5551995320037",
+      "message": "Olá! Vim pelo site e quero cadastrar meu interesse em uma área de expansão da SP-Link.\n\nCidade: Outra cidade\nBairro: Bairro de teste\nRua: Rua de teste\nNúmero: 209\nContato para retorno: pessoa@example.com\n\nAguardo avaliação da equipe. Estou ciente de que este interesse não garante atendimento nem prazo de expansão.\n\nOrigem no site: formulário de cobertura.",
+      "events": [
+        {
+          "event": "form_prepared",
+          "source": "splink_site",
+          "position": "coverage_form",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "expansion",
+          "form_id": "coverage"
+        },
+        {
+          "event": "whatsapp_click",
+          "source": "splink_site",
+          "position": "coverage_form",
+          "plan_id": null,
+          "plan_name": null,
+          "intent": "expansion",
+          "form_id": null
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "links": [
+    {
+      "text": "Politica de privacidade",
+      "href": "/politica-de-privacidade",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "Politica de cookies",
+      "href": "/politica-de-cookies",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "Politica de direito dos titulares",
+      "href": "/politica-de-direito-dos-titulares",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "Consultar cobertura no meu endereço",
+      "href": "#coverage-form",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "Consultar cobertura no meu endereço",
+      "href": "#coverage-form",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "Política de privacidade",
+      "href": "/politica-de-privacidade",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "51 3669-1592",
+      "href": "tel:05136691592",
+      "kind": "protocol-only; no email/call made"
+    },
+    {
+      "text": "Politica de privacidade",
+      "href": "/politica-de-privacidade",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "Politica de cookies",
+      "href": "/politica-de-cookies",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "Politica de direito dos titulares",
+      "href": "/politica-de-direito-dos-titulares",
+      "kind": "anchor/route"
+    },
+    {
+      "text": "comercial@splinktelecom.com.br",
+      "href": "mailto:comercial@splinktelecom.com.br",
+      "kind": "protocol-only; no email/call made"
+    },
+    {
+      "text": "dpo@splinktelecom.com.br",
+      "href": "mailto:dpo@splinktelecom.com.br",
+      "kind": "protocol-only; no email/call made"
+    },
+    {
+      "selector": ".container-addresses span:nth-child(1)",
+      "href": "https://maps.app.goo.gl/SqudGeUcbGetoAA86",
+      "kind": "click captured; availability checked separately"
+    },
+    {
+      "selector": ".container-addresses span:nth-child(2)",
+      "href": "https://maps.app.goo.gl/37imCWWaTZQLzPsT8",
+      "kind": "click captured; availability checked separately"
+    },
+    {
+      "selector": "app-footer .bi-instagram",
+      "href": "https://www.instagram.com/splinktelecom/",
+      "kind": "click captured; availability checked separately"
+    },
+    {
+      "selector": "app-footer .bi-facebook",
+      "href": "https://pt-br.facebook.com/splinktelecom/",
+      "kind": "click captured; availability checked separately"
+    },
+    {
+      "selector": "app-footer img[alt=\"Logo loja de aplicativos App Store\"]",
+      "href": "https://apps.apple.com/br/app/sp-link-cliente/id6467253864",
+      "kind": "click captured; availability checked separately"
+    },
+    {
+      "selector": "app-footer img[alt=\"Logo loja de aplicativos Play Store\"]",
+      "href": "https://play.google.com/store/apps/details?id=br.com.mksolutions.mksac.splink&pcampaignid=web_share",
+      "kind": "click captured; availability checked separately"
+    },
+    {
+      "href": "assets/pdfs/Contrato-Locacao-Completo.pdf",
+      "status": 200,
+      "pdfSignature": "%PDF-"
+    },
+    {
+      "href": "assets/pdfs/Contrato-de-prestacoes-de-servicos-de-valor-adicionado.pdf",
+      "status": 200,
+      "pdfSignature": "%PDF-"
+    },
+    {
+      "href": "assets/pdfs/Contrato-de-Prestacoes-de-Servicos-de-Telecomunicacoes.pdf",
+      "status": 200,
+      "pdfSignature": "%PDF-"
+    }
+  ],
+  "forms": [
+    {
+      "mode": "rejected",
+      "mocked": true,
+      "apiCalls": 1,
+      "submittedEvents": 0,
+      "text": " Envio não confirmado Não foi possível confirmar o recebimento. Entre em contato com a equipe antes de reenviar.",
+      "passed": true
+    },
+    {
+      "mode": "ambiguous",
+      "mocked": true,
+      "apiCalls": 1,
+      "submittedEvents": 0,
+      "text": " Envio não confirmado Não foi possível confirmar o recebimento. Entre em contato com a equipe antes de reenviar.",
+      "passed": true
+    },
+    {
+      "mode": "malformed",
+      "mocked": true,
+      "apiCalls": 1,
+      "submittedEvents": 0,
+      "text": " Envio não confirmado Não foi possível confirmar o recebimento. Entre em contato com a equipe antes de reenviar.",
+      "passed": true
+    },
+    {
+      "mode": "network-error",
+      "mocked": true,
+      "apiCalls": 1,
+      "submittedEvents": 0,
+      "text": " Envio não confirmado Não foi possível confirmar o recebimento. Entre em contato com a equipe antes de reenviar.",
+      "passed": true
+    },
+    {
+      "mode": "success",
+      "mocked": true,
+      "apiCalls": 1,
+      "submittedEvents": 1,
+      "text": " Concluído Enviado com sucesso!",
+      "passed": true
+    },
+    {
+      "mode": "status",
+      "mocked": true,
+      "apiCalls": 1,
+      "submittedEvents": 1,
+      "text": " Concluído Enviado com sucesso!",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

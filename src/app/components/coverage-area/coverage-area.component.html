@@ -1,7 +1,7 @@
 <section class="container-max px-3 px-sm-5 py-6" aria-labelledby="coverage-title">
     <header class="coverage-header">
         <h2 id="coverage-title">Internet fibra óptica em Tramandaí e Imbé</h2>
-        <p>Consulte a disponibilidade no seu endereço. Nossa equipe confirma a viabilidade antes da contratação.</p>
+        <p class="brand-subtitle">Consulte a disponibilidade no seu endereço. Nossa equipe confirma a viabilidade antes da contratação.</p>
         <a class="coverage-cta" href="#coverage-form">Consultar cobertura no meu endereço</a>
     </header>
 
@@ -82,9 +82,11 @@
 
     </form>
 
-    <details class="coverage-map">
+    <details class="coverage-map" (toggle)="onMapToggle($event)">
         <summary>Ver mapa de referência da cobertura</summary>
         <p>O mapa é uma referência da região atendida. A viabilidade em cada endereço precisa ser confirmada pela equipe.</p>
+        @if (mapLoaded) {
         <iframe src="https://www.google.com/maps/d/embed?mid=1v98WKTbN8vgrzOZgXrHlBqVD8atAnhg&ehbc=2E312F" title="Mapa de referência da cobertura SP-Link em Tramandaí e Imbé" loading="lazy" class="w-100" height="400" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        }
     </details>
 </section>

@@ -2,8 +2,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ContactFormService } from '../../shared/services/contact-form.service';
-import { NgxMaskDirective } from 'ngx-mask';
-import { Toast } from 'bootstrap';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { GeneralUtils } from '../../shared/generalutils';
@@ -13,7 +12,7 @@ import { GeneralUtils } from '../../shared/generalutils';
   selector: 'app-work-with-us',
   standalone: true,
   imports: [FormsModule, ReactiveFormsModule, NgxMaskDirective, ToastModule],
-  providers: [MessageService],
+  providers: [MessageService, provideNgxMask()],
   templateUrl: './work-with-us.component.html',
   styleUrl: './work-with-us.component.scss'
 })
@@ -27,7 +26,7 @@ export class WorkWithUsComponent implements OnInit {
     private messageService: MessageService
   ) {}
 
-  @HostBinding('class') class = 'd-flex flex-column align-items-center py-6 px-5'
+  @HostBinding('class') class = 'd-flex justify-content-center'
   generalUtils = new GeneralUtils();
   textObservation: string = ''
   formWork: FormGroup
@@ -57,8 +56,7 @@ export class WorkWithUsComponent implements OnInit {
       ])],
       obs: ['', Validators.compose([
       ])],
-      iAgree: [false, Validators.compose([
-      ])],
+      iAgree: [false, Validators.requiredTrue],
     })
   }
 
@@ -68,7 +66,8 @@ export class WorkWithUsComponent implements OnInit {
 
   send() {
     if (this.isLoading) return;
-    if (this.formWork.status === 'VALID' && this.fileDocument && !this.showErrorIAgree) {
+    this.showErrorIAgree = this.formWork.get('iAgree').invalid;
+    if (this.formWork.valid && this.fileDocument) {
       this.isLoading = true
       
       const reader = new FileReader();
@@ -106,7 +105,6 @@ export class WorkWithUsComponent implements OnInit {
       reader.readAsDataURL(this.fileDocument);
     } else {
       this.formWork.markAllAsTouched();
-      this.showErrorIAgree = true
       this.showToast('Campos vazios!', 'Preencha os campos obrigatórios!', 'warn');
     }
   }

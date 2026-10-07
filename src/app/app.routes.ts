@@ -1,9 +1,5 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { Error404Component } from './pages/error-404/error-404.component';
-import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
-import { PrivacyCookiesComponent } from './pages/privacy-cookies/privacy-cookies.component';
-import { RightsPolicyComponent } from './pages/rights-policy/rights-policy.component';
 
 export const routes: Routes = [
     {
@@ -13,27 +9,23 @@ export const routes: Routes = [
     },
     {
       path: 'politica-de-privacidade',
-      component: PrivacyPolicyComponent,
+      loadComponent: () => import('./pages/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent),
       data: {title: 'SP-Link - Politica de privacidade'}
     },
     {
       path: 'politica-de-cookies',
-      component: PrivacyCookiesComponent,
+      loadComponent: () => import('./pages/privacy-cookies/privacy-cookies.component').then(m => m.PrivacyCookiesComponent),
       data: {title: 'SP-Link - Politica de cookies'}
     },
     {
       path: 'politica-de-direito-dos-titulares',
-      component: RightsPolicyComponent,
+      loadComponent: () => import('./pages/rights-policy/rights-policy.component').then(m => m.RightsPolicyComponent),
       data: {title: 'SP-Link - Politica de direito dos titulares'}
     },
     {
       path: 'erro-404',
-      component: Error404Component,
+      loadComponent: () => import('./pages/error-404/error-404.component').then(m => m.Error404Component),
       data: {title: 'SP-Link - Pagina não encontrada'}
-    },
-    {
-      path: '',
-      component: HomeComponent
     },
     { path: '**', redirectTo: 'erro-404' },
   ];

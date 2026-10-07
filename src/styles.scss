@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+$font-family-sans-serif: "Inter", Arial, sans-serif;
+$headings-font-family: "Codec Pro", Arial, sans-serif;
+$headings-font-weight: 700;
+$font-weight-base: 400;
+
 @import './custom-bootstrap/custom-bootstrap.scss';
 
 :root {
@@ -46,3 +51,24 @@
 }
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+@import './styles/typography';
+
+// Evita zoom involuntário nos campos em navegadores móveis e mantém alvos de toque.
+input.form-control, select.form-select, textarea.form-control { font-size: 1rem; }
+input.form-control, select.form-select { min-height: 44px; }
+app-home > [id] { scroll-margin-top: 80px; }
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+}
+
+// No celular, as setas ficam abaixo para o card usar toda a largura disponível.
+@media (max-width: 767px) {
+    app-carousel-plans .p-carousel-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+    app-carousel-plans .p-carousel-viewport { grid-column: 1 / -1; grid-row: 1; }
+    app-carousel-plans .p-carousel-prev-button { grid-column: 1; grid-row: 2; justify-self: end; }
+    app-carousel-plans .p-carousel-next-button { grid-column: 2; grid-row: 2; justify-self: start; }
+}

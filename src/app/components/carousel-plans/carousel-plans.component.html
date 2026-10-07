@@ -1,7 +1,7 @@
 <section class="container-max px-3 px-sm-4" aria-labelledby="plans-title">
     <header class="text-center text-white mb-4 mb-lg-5">
         <h2 id="plans-title" class="fw-bold mb-2">Escolha o plano ideal para a sua casa</h2>
-        <p class="m-0 fs-5">Fibra óptica 100% própria, roteador Wi-Fi 6 e {{ included.tv.name }} inclusos nos planos residenciais.</p>
+        <p class="m-0 fs-5 brand-subtitle">Fibra óptica 100% própria, roteador Wi-Fi 6 e {{ included.tv.name }} inclusos nos planos residenciais.</p>
     </header>
 
     <p-carousel [value]="plans" [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="true"
@@ -19,7 +19,7 @@
                             <span class="plan-speed">{{ item.download >= 1000 ? item.download / 1000 : item.download }}</span>
                             <span class="plan-unit">{{ item.download >= 1000 ? 'Giga' : 'Mega' }}</span>
                         </h3>
-                        <p class="plan-description">{{ item.description }}</p>
+                        <p class="plan-description brand-subtitle">{{ item.description }}</p>
 
                         <dl class="plan-speeds">
                             <div>
@@ -61,10 +61,10 @@
                     <article class="plan-card plan-card--business d-flex flex-column h-100">
                         <h3 class="plan-name m-0">
                             <span class="plan-business-title">{{ item.name }}</span>
-                            <span class="plan-business-subtitle">{{ item.subtitle }}</span>
+                            <span class="plan-business-subtitle brand-subtitle">{{ item.subtitle }}</span>
                         </h3>
-                        <p class="plan-description">{{ item.description }}</p>
-                        <p class="text-center fw-bold">Mensalidade e condições sob consulta</p>
+                        <p class="plan-description brand-subtitle">{{ item.description }}</p>
+                        <p class="text-center fw-normal">Mensalidade e condições sob consulta</p>
                         <ul class="plan-benefits list-unstyled">
                             @for (benefit of item.benefits; track benefit) {
                                 <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ benefit }}</li>

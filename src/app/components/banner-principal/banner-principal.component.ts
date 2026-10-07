@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { GeneralUtils } from '../../shared/generalutils';
 
 @Component({
   selector: 'app-banner-principal',
@@ -8,12 +7,4 @@ import { GeneralUtils } from '../../shared/generalutils';
   templateUrl: './banner-principal.component.html',
   styleUrl: './banner-principal.component.scss'
 })
-export class BannerPrincipalComponent {
-
-  generalUtils = new GeneralUtils
-
-  goToWhatsApp() {
-    this.generalUtils.abrirWhatsApp({ position: 'hero' });
-  }
-  
-}
+export class BannerPrincipalComponent {}

@@ -1,10 +1,19 @@
-:host {
-    display: flex;
+dialog {
     position: fixed;
-    top: 30px;
-    left: 0px;
-    background-color: white;
-    z-index: 1;
+    inset: auto 0 30px;
+    width: min(80vw, 760px);
+    max-height: calc(100dvh - 60px);
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    color: inherit;
+    background: white;
+    box-shadow: 0 8px 28px #0004;
+}
+
+dialog::backdrop {
+    background: #0005;
 }
 
 a {
