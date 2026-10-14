@@ -4,7 +4,7 @@
         <p class="m-0 fs-5 brand-subtitle">Fibra óptica 100% própria, roteador Wi-Fi 6 e {{ included.tv.name }} inclusos nos planos residenciais.</p>
     </header>
 
-    <p-carousel [value]="plans" [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="true"
+    <p-carousel appCarouselTouchDirection [value]="plans" [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="true"
             [prevButtonProps]="{ ariaLabel: 'Ver planos anteriores' }"
             [nextButtonProps]="{ ariaLabel: 'Ver próximos planos' }">
         <ng-template let-item #item>

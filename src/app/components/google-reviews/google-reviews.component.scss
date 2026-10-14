@@ -1,0 +1,31 @@
+:host { display: flex; justify-content: center; background: #f3f9f7; }
+.reviews { padding: 4rem 1.5rem; }
+.reviews-header { text-align: center; max-width: 740px; margin: 0 auto 2rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; color: #046d5d; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); color: #046d5d; }
+.brand-subtitle { font-size: 1.15rem; }
+.locations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+.location { background: #fff; padding: 1.5rem; border: 1px solid #cde5de; border-radius: 1.5rem; min-width: 0; color: #59595b; }
+.location-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.unit-label { font-size: .85rem; margin: 0 0 .25rem; }
+h3 { color: #046d5d; font-size: 1.7rem; margin: 0 0 1rem; }
+.google-attribution { height: 18px; width: auto; margin: 10px 10px 5px; }
+.rating { display: flex; align-items: center; gap: .65rem; }
+.rating-value { font-family: var(--font-heading); font-weight: 700; font-size: 2.8rem; color: #046d5d; }
+.star { font-size: 1.8rem; color: #936600; }
+.review-count, time { display: block; font-size: .8rem; }
+.ordering, .provider { font-size: .8rem; }
+.google-terms { font-size: .8rem; margin: 1.5rem 0 0; text-align: center; color: #59595b; }
+.review-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+.review { border-top: 1px solid #e1ece8; padding: 1.25rem 0; }
+.author { display: flex; align-items: center; gap: .65rem; font-size: .9rem; }
+.author > div { min-width: 0; overflow-wrap: anywhere; }
+.author img { border-radius: 50%; flex-shrink: 0; }
+.review-rating { margin-left: auto; white-space: nowrap; color: #785300; }
+.review-text { margin: 1rem 0 .5rem; white-space: pre-line; overflow-wrap: anywhere; line-height: 1.65; font-size: .95rem; }
+a { color: #046d5d; text-underline-offset: .2em; }
+.review-source { display: inline-flex; align-items: center; min-height: 44px; font-size: .85rem; }
+.all-reviews { display: block; padding: .85rem 1rem; border: 1px solid #046d5d; border-radius: 2rem; text-align: center; text-decoration: none; }
+.all-reviews:hover { background: #eaf6f1; }
+a:focus-visible { outline: 3px solid #7c63bc; outline-offset: 4px; }
+@media (max-width: 767px) { .locations { grid-template-columns: 1fr; } .location { padding: 1.25rem; } }

@@ -1,0 +1,65 @@
+<section class="reviews container-max" aria-labelledby="reviews-title">
+  <header class="reviews-header">
+    <p class="eyebrow">Quem se conecta com a gente</p>
+    <h2 id="reviews-title">Experiências de quem conhece a SP-Link</h2>
+    <p class="brand-subtitle">Veja o que nossos clientes compartilham no Google sobre cada unidade.</p>
+  </header>
+
+  <div class="locations">
+    @for (location of locations(); track location.id) {
+      <article class="location" [attr.aria-labelledby]="'reviews-' + location.id" [attr.aria-busy]="location.state === 'loading'">
+        <header class="location-header">
+          <div><p class="unit-label">SP-Link Telecom</p><h3 [id]="'reviews-' + location.id">{{ location.name }}</h3></div>
+          @if (location.state === 'ready') {
+            <img class="google-attribution" src="assets/google/google-maps.svg" alt="Google Maps" loading="lazy">
+          }
+        </header>
+
+        @if (location.details; as place) {
+          @if (place.rating != null) {
+            <p class="rating"><span class="rating-value">{{ formatRating(place.rating) }}</span><span class="star" aria-hidden="true">★</span><span>de 5
+              @if (place.userRatingCount != null) { <span class="review-count">{{ place.userRatingCount }} avaliações no Google</span> }
+            </span></p>
+          }
+          @if (place.reviews?.length) {
+            <p class="ordering">Até 5 avaliações por unidade, ordenadas por relevância pelo Google.</p>
+            <ul class="review-list">
+              @for (review of place.reviews; track $index) {
+                <li class="review">
+                  <div class="author">
+                    @if (safeUrl(review.authorAttribution?.photoURI); as photo) {
+                      <img [src]="photo" alt="" width="40" height="40" loading="lazy" referrerpolicy="no-referrer">
+                    }
+                    <div>
+                      @if (safeUrl(review.authorAttribution?.uri); as authorUrl) {
+                        <a [href]="authorUrl" target="_blank" rel="noopener noreferrer">{{ review.authorAttribution?.displayName }}</a>
+                      } @else { <span>{{ review.authorAttribution?.displayName || 'Usuário do Google' }}</span> }
+                      @if (review.publishTime) { <time [attr.datetime]="review.publishTime | date:'yyyy-MM-dd'">{{ review.publishTime | date:'dd/MM/yyyy' }}</time> }
+                    </div>
+                    @if (review.rating != null) { <span class="review-rating" [attr.aria-label]="review.rating + ' de 5 estrelas'"><span aria-hidden="true">★</span> {{ review.rating }}/5</span> }
+                  </div>
+                  @if (review.originalText || review.text) { <p class="review-text">{{ review.originalText || review.text }}</p> }
+                  <a class="review-source" [href]="safeUrl(review.googleMapsURI) || location.url" target="_blank" rel="noopener noreferrer">Ver no Google Maps <span aria-hidden="true">↗</span></a>
+                </li>
+              }
+            </ul>
+          } @else { <p>Nenhum comentário disponível para exibição no momento. Consulte o perfil da unidade no Google.</p> }
+          @for (attribution of place.attributions || []; track $index) {
+            <p class="provider">Fonte:
+              @if (safeUrl(attribution.providerURI); as providerUrl) { <a [href]="providerUrl" target="_blank" rel="noopener noreferrer">{{ attribution.provider }}</a> }
+              @else { {{ attribution.provider }} }
+            </p>
+          }
+        }
+        @if (location.state === 'loading') { <p role="status">Carregando avaliações…</p> }
+        @if (location.state === 'unconfigured') { <p>Conheça as experiências dos nossos clientes no perfil desta unidade no Google.</p> }
+        @if (location.state === 'error') { <p role="status">Não foi possível carregar as avaliações agora. Você pode consultá-las diretamente no Google.</p> }
+        <a class="all-reviews" [href]="safeUrl(location.details?.googleMapsURI) || location.url" target="_blank" rel="noopener noreferrer">Ver todas as avaliações de {{ location.name }} <span aria-hidden="true">↗</span></a>
+      </article>
+    }
+  </div>
+  <p class="google-terms">Ao utilizar os recursos do Google Maps, aplicam-se os
+    <a href="https://maps.google.com/help/terms_maps/" target="_blank" rel="noopener noreferrer">Termos do Google Maps</a>
+    e a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade do Google</a>.
+  </p>
+</section>

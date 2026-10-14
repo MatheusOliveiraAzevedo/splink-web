@@ -1,0 +1,56 @@
+[
+  {
+    "scenario": "unconfigured",
+    "width": 320,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "unconfigured",
+    "width": 390,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "unconfigured",
+    "width": 1440,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "success",
+    "width": 320,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "success",
+    "width": 390,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "success",
+    "width": 1440,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "empty",
+    "width": 390,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "partial-error",
+    "width": 390,
+    "passed": true,
+    "simulated": true
+  },
+  {
+    "scenario": "sdk-error",
+    "width": 390,
+    "passed": true,
+    "simulated": true
+  }
+]

@@ -3,6 +3,15 @@
 <app-retain-attention id="services"></app-retain-attention>
 <app-coverage-area id="coverage"></app-coverage-area>
 <app-who-we-are id="whoWeAre"></app-who-we-are>
+<div id="reviews">
+    @defer (on viewport) {
+        <app-google-reviews></app-google-reviews>
+    } @placeholder {
+        <div class="reviews-placeholder"><p>Avaliações de clientes no Google</p></div>
+    } @error {
+        <p class="p-5 text-center">Não foi possível carregar a seção de avaliações. Recarregue a página para tentar novamente.</p>
+    }
+</div>
 <section id="workUs" aria-label="Trabalhe conosco">
     @defer (on viewport) {
         <app-work-with-us></app-work-with-us>

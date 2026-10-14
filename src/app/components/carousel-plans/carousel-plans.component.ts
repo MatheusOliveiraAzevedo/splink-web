@@ -3,11 +3,12 @@ import { CurrencyPipe, DOCUMENT } from '@angular/common';
 import { includedInAllPlans, Plan, plans, configurationCarrousel } from '../../shared/model/plans';
 import { GeneralUtils } from '../../shared/generalutils';
 import { CarouselModule } from 'primeng/carousel';
+import { CarouselTouchDirectionDirective } from './carousel-touch-direction.directive';
 
 @Component({
   selector: 'app-carousel-plans',
   standalone: true,
-  imports: [CarouselModule, CurrencyPipe],
+  imports: [CarouselModule, CurrencyPipe, CarouselTouchDirectionDirective],
   templateUrl: './carousel-plans.component.html',
   styleUrl: './carousel-plans.component.scss'
 })

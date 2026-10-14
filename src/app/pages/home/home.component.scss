@@ -4,3 +4,12 @@
 .work-placeholder {
     min-height: 800px;
 }
+.reviews-placeholder {
+    min-height: 650px;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    text-align: center;
+    background: #f3f9f7;
+}
+@media (max-width: 767px) { .reviews-placeholder { min-height: 1100px; } }

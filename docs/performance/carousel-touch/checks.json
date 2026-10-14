@@ -1,0 +1,29 @@
+[
+  {
+    "width": 320,
+    "vertical": true,
+    "diagonal": true,
+    "horizontalBothDirections": true,
+    "arrow": true,
+    "cta": true,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "vertical": true,
+    "diagonal": true,
+    "horizontalBothDirections": true,
+    "arrow": true,
+    "cta": true,
+    "passed": true
+  },
+  {
+    "width": 768,
+    "vertical": true,
+    "diagonal": true,
+    "horizontalBothDirections": true,
+    "arrow": true,
+    "cta": true,
+    "passed": true
+  }
+]

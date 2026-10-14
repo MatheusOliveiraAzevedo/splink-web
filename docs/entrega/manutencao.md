@@ -28,6 +28,15 @@ O texto atual não comprova a aprovação comercial dessas condições.
 
 ## Avaliações
 
+A home agora tem um componente separado de avaliações via Google Places, carregado
+ao chegar à seção. Para ativar a consulta real, preencher `public/google-places.json`
+com chave de navegador restrita e Place IDs confirmados das duas unidades. Sem essa
+configuração, a seção oferece links para os perfis. Consulte o
+[guia de configuração e testes](../design/google-reviews.md).
+
+As notas descritas abaixo são **dados legados do JSON-LD**, independentes da nova
+seção. Não são atualizadas pelo componente e continuam pendentes de revisão.
+
 As notas atuais estão em `src/index.html`, no bloco JSON-LD `InternetServiceProvider`:
 
 | Local | `ratingValue` atual | `reviewCount` atual |
@@ -49,8 +58,8 @@ na entrega**. Confirme fonte, data, unidade e quantidade antes de atualizar.
 5. Confirme a afirmação “a melhor avaliação” antes de mantê-la. Uma nota isolada
    não demonstra comparação com todos os concorrentes.
 
-Hoje não existe lista de depoimentos no corpo da página nem sincronização automática
-com Google. Não invente comentários, autores ou números. Pesquise ocorrências antigas
+O componente consulta comentários diretamente no Google quando configurado; não há
+sincronização automática com o JSON-LD. Não invente comentários, autores ou números. Pesquise ocorrências antigas
 com `rg -n 'ratingValue|reviewCount|estrelas|avaliação' src` depois da alteração.
 
 ## Bairros atendidos
