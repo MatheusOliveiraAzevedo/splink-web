@@ -57,6 +57,7 @@ try {
         check(!(await page.$('#nome')), 'Recruitment form rendered before scrolling');
       }
       await page.click('#save-preferences');
+      await page.evaluate(() => document.querySelector('app-banner-principal .p-carousel-indicator:nth-child(2) button')?.click());
       await pause(400);
       await page.evaluate(() => document.fonts.ready);
       if (label === 'after') {
@@ -66,9 +67,9 @@ try {
         const { root } = await client.send('DOM.getDocument');
         const typography = [];
         for (const [selector, expectedFont, weight] of [
-          ['.hero__title strong', 'CodecPro-Bold', '700'],
-          ['.hero__subtitle', 'CodecPro-Regular', '400'],
-          ['.hero__coverage', 'Inter-Regular', '400'],
+          ['app-banner-principal .p-carousel-item-active:not(.p-carousel-item-clone) .hero__content .hero__title strong', 'CodecPro-Bold', '700'],
+          ['app-banner-principal .p-carousel-item-active:not(.p-carousel-item-clone) .hero__content .hero__subtitle', 'CodecPro-Regular', '400'],
+          ['app-banner-principal .p-carousel-item-active:not(.p-carousel-item-clone) .hero__coverage', 'Inter-Regular', '400'],
         ]) {
           const { nodeId } = await client.send('DOM.querySelector', { nodeId: root.nodeId, selector });
           const { fonts } = await client.send('CSS.getPlatformFontsForNode', { nodeId });
@@ -95,10 +96,10 @@ try {
         await context.close();
         continue;
       }
-      await page.click('.hero__plans');
-      await pause(600);
+      await page.click('app-banner-principal .p-carousel-item-active:not(.p-carousel-item-clone) .hero__plans');
+      await page.waitForFunction(() => document.querySelector('#plans').getBoundingClientRect().top < 150, { timeout: 5000 });
       check(await page.$eval('#plans', el => el.getBoundingClientRect().top < 150), 'Hero plans link');
-      await page.click('.hero__coverage');
+      await page.click('app-banner-principal .p-carousel-item-active:not(.p-carousel-item-clone) .hero__coverage');
       await pause(600);
       await page.click('#coverage-form button[type=submit]');
       await page.waitForFunction(() => document.querySelector('#coverage-city').getAttribute('aria-invalid') === 'true');

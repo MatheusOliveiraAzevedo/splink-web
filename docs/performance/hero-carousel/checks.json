@@ -1,0 +1,30 @@
+[
+  {
+    "width": 320,
+    "fullWidth": true,
+    "stableHeight": true,
+    "reducedMotion": true,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "fullWidth": true,
+    "stableHeight": true,
+    "reducedMotion": true,
+    "passed": true
+  },
+  {
+    "width": 768,
+    "fullWidth": true,
+    "stableHeight": true,
+    "reducedMotion": true,
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "fullWidth": true,
+    "stableHeight": true,
+    "reducedMotion": true,
+    "passed": true
+  }
+]

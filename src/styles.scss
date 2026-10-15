@@ -73,3 +73,20 @@ app-carousel-plans .p-carousel-viewport { touch-action: pan-y pinch-zoom; }
     app-carousel-plans .p-carousel-prev-button { grid-column: 1; grid-row: 2; justify-self: end; }
     app-carousel-plans .p-carousel-next-button { grid-column: 2; grid-row: 2; justify-self: start; }
 }
+
+// Banner PrimeNG: full-width viewport, with library controls below the content.
+app-banner-principal {
+    .p-carousel { position: static; }
+    .p-carousel-viewport { touch-action: pan-y pinch-zoom; width: 100%; }
+    .p-carousel-item { display: flex; align-items: stretch; }
+    .p-carousel-prev-button, .p-carousel-next-button {
+        position: absolute; bottom: 1.25rem; z-index: 3;
+        width: 44px; height: 44px; color: #fff;
+    }
+    .p-carousel-prev-button { left: calc(50% - 120px); }
+    .p-carousel-next-button { left: calc(50% + 30px); }
+    .p-carousel-indicator-list { position: absolute; bottom: 1.25rem; left: calc(50% - 70px); z-index: 3; height: 44px; margin: 0; padding: 0; align-items: center; gap: 0; }
+    .p-carousel-indicator-button { width: 44px; height: 44px; border: 12px solid #003e35; border-radius: 50%; background: #b9cfc9; }
+    .p-carousel-indicator-active .p-carousel-indicator-button { background: #85f0ca; }
+    @media (prefers-reduced-motion: reduce) { .p-carousel-item-list { transition: none !important; } }
+}

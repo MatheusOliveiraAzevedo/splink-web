@@ -67,6 +67,13 @@ export class GooglePlacesService {
     return place;
   }
 
+  async summary(apiKey: string, placeId: string): Promise<PlaceDetails> {
+    const { Place } = await this.load(apiKey);
+    const place = new Place({ id: placeId, requestedLanguage: 'pt-BR' });
+    await this.withTimeout(place.fetchFields({ fields: ['rating', 'userRatingCount', 'googleMapsURI', 'attributions'] }));
+    return place;
+  }
+
   private withTimeout<T>(work: Promise<T>): Promise<T> {
     return new Promise((resolve, reject) => {
       const timer = setTimeout(() => reject(new Error('Places request timed out')), 15000);

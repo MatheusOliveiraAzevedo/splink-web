@@ -56,7 +56,7 @@ try {
         return request.abort();
       });
       await page.goto(server.url, { waitUntil: 'networkidle0' });
-      assert(!requests.some(url => url.includes('google-places.json') || url.includes('maps.googleapis.com/maps/api/js')), 'Places loaded before scrolling');
+      assert(!await page.$('app-google-reviews'), 'Detailed review section loaded before scrolling');
       await page.$eval('#reviews', el => el.scrollIntoView());
       await page.waitForSelector('app-google-reviews');
       await page.waitForFunction(() => [...document.querySelectorAll('app-google-reviews article')].length === 2 && [...document.querySelectorAll('app-google-reviews article')].every(el => el.getAttribute('aria-busy') === 'false'));
@@ -71,7 +71,7 @@ try {
         assert(content.includes('Não foi possível carregar'));
       } else {
         assert.equal(requests.filter(url => url.includes('maps.googleapis.com/maps/api/js')).length, 1, 'Duplicate SDK');
-        assert.equal((await page.evaluate(() => window.__placesCalls)).length, 2);
+        assert.equal((await page.evaluate(() => window.__placesCalls)).filter(call => call.fields.includes('reviews')).length, 2);
         if (scenario === 'empty') assert(content.includes('Nenhum comentário disponível'));
         else {
           assert(content.includes('Avaliação SIMULADA de Tramandaí'));

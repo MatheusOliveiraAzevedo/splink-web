@@ -1,25 +1,60 @@
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero__layout">
-    <div class="hero__content">
+<section class="hero" aria-roledescription="carrossel" aria-label="Destaques da SP-Link"
+  (mouseenter)="pauseOnHover()" (focusin)="focus($event)">
+  <h1 class="visually-hidden">SP-Link: internet fibra óptica em Tramandaí e Imbé</h1>
+    <p-carousel #carousel class="hero__panels" appCarouselTouchDirection [value]="slides" [numVisible]="1" [numScroll]="1"
+      [circular]="true" [autoplayInterval]="8000" [showIndicators]="true"
+      [prevButtonProps]="{ ariaLabel: 'Destaque anterior' }" [nextButtonProps]="{ ariaLabel: 'Próximo destaque' }"
+      (onPage)="page = $event.page ?? 0">
+      <ng-template #item let-slide>
+      <div class="hero__slide" [attr.data-slide]="slide.id">
+      <div class="hero__layout">
+      <div class="hero__content" [class.hero__reviews]="slide.id === 'reviews'" [attr.inert]="slides[page].id !== slide.id ? '' : null">
       <img src="assets/logo/logo-rodape.webp" alt="SP-Link Telecom" class="hero__logo" width="352" height="149" decoding="async">
+      @if (slide.id === 'reviews') {
+      <p class="hero__eyebrow">Conexões reais. Experiências compartilhadas.</p>
+      <h2 class="hero__title">Quem conhece <strong>conta no Google.</strong></h2>
+      <p class="hero__subtitle brand-subtitle">Conheça as avaliações de quem já se conecta com a SP-Link em Tramandaí e Imbé.</p>
+      <div class="hero__ratings">
+        @for (unit of ratings(); track unit.name) {
+          <div class="hero__rating-card">
+            <span>{{ unit.name }}</span>
+            @if (unit.details?.rating != null) {
+              <div class="hero__rating-score"><strong>{{ rating(unit.details!.rating!) }}</strong> <span aria-hidden="true">★</span><span class="visually-hidden"> de 5 estrelas</span></div>
+              @if (unit.details?.userRatingCount != null) { <small>{{ unit.details!.userRatingCount }} avaliações</small> }
+              <img src="assets/google/google-maps.svg" alt="Google Maps" class="hero__google" width="98" height="18">
+            }
+            <a [href]="safeUrl(unit.details?.googleMapsURI) || unit.url" target="_blank" rel="noopener noreferrer">Ver no Google ↗</a>
+            @for (source of unit.details?.attributions || []; track $index) {
+              @if (safeUrl(source.providerURI); as sourceUrl) { <small><a [href]="sourceUrl" target="_blank" rel="noopener noreferrer">{{ source.provider }}</a></small> }
+              @else { <small>{{ source.provider }}</small> }
+            }
+          </div>
+        }
+      </div>
+      <a class="hero__cta" href="#reviews">Conhecer as avaliações</a>
+      } @else {
       <p class="hero__eyebrow">Internet fibra óptica em Tramandaí e Imbé</p>
-      <h1 id="hero-title" class="hero__title">
+      <h2 class="hero__title">
         Internet <strong>rápida de verdade</strong> começa aqui.
-      </h1>
+      </h2>
       <p class="hero__subtitle brand-subtitle">Para trabalhar, jogar e curtir suas séries, com estabilidade e atendimento perto de você.</p>
       <div class="hero__actions">
         <a class="hero__cta hero__coverage" href="#coverage-form" aria-label="Consultar cobertura no meu endereço">Consultar cobertura</a>
         <a class="hero__plans" href="#plans">Ver planos <span aria-hidden="true">↗</span></a>
       </div>
-    </div>
-
-    <div class="hero__media">
-      <picture>
-        <source type="image/avif" srcset="assets/banner/familia-aberta-480.avif 480w, assets/banner/familia-aberta-800.avif 800w, assets/banner/familia-aberta-1280.avif 1280w, assets/banner/familia-aberta-1512.avif 1512w" sizes="(max-width: 991px) 100vw, 72vw">
-        <img src="assets/banner/familia-aberta-1512.webp" srcset="assets/banner/familia-aberta-480.webp 480w, assets/banner/familia-aberta-800.webp 800w, assets/banner/familia-aberta-1280.webp 1280w, assets/banner/familia-aberta-1512.webp 1512w" sizes="(max-width: 991px) 100vw, 72vw"
-          alt="Família sorrindo e usando celulares, tablet e notebook conectados à internet"
-          width="1512" height="1040" fetchpriority="high" decoding="async">
-      </picture>
-    </div>
-  </div>
+      }
+      </div>
+      </div>
+      <div class="hero__media">
+        <picture>
+          <source type="image/avif" [srcset]="slide.image + '-480.avif 480w, ' + slide.image + '-800.avif 800w, ' + slide.image + '-1280.avif 1280w, ' + slide.image + '-1512.avif 1512w'" sizes="100vw">
+          <img [src]="slide.image + '-1512.webp'" [srcset]="slide.image + '-480.webp 480w, ' + slide.image + '-800.webp 800w, ' + slide.image + '-1280.webp 1280w, ' + slide.image + '-1512.webp 1512w'" sizes="100vw"
+            [alt]="slide.alt" [width]="slide.width" [height]="slide.height"
+            [attr.fetchpriority]="slide.id === 'reviews' ? 'high' : 'auto'" [attr.loading]="slide.id === 'reviews' ? 'eager' : 'lazy'" decoding="async">
+        </picture>
+      </div>
+      </div>
+      </ng-template>
+    </p-carousel>
+  <button type="button" class="hero__pause" (click)="toggle()" [attr.aria-label]="carousel.isPlaying() ? 'Pausar rotação automática' : 'Iniciar rotação automática'"><i class="bi" [class.bi-pause-fill]="carousel.isPlaying()" [class.bi-play-fill]="!carousel.isPlaying()" aria-hidden="true"></i></button>
 </section>

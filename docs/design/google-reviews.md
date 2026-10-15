@@ -2,11 +2,34 @@
 
 Componente independente: `src/app/components/google-reviews/`.
 Inserido depois de Quem somos, antes de Trabalhe conosco, com `@defer (on viewport)`.
-O SDK oficial e as consultas só começam quando o componente é carregado e há configuração.
+As consultas de comentários só começam quando o componente é carregado e há configuração.
+O banner também usa o SDK compartilhado para consultar notas e quantidades, sem comentários,
+após sua renderização inicial; veja `banner-carousel.md`.
 
 ## Situação
 
-Integração implementada, aguardando configuração do responsável pelo Google Cloud.
+Integração implementada; chave de navegador e Place IDs fornecidos pelo responsável
+já preenchidos em `public/google-places.json`.
+No teste real local de 14/10/2026, o Google retornou
+`PLACES_GET_PLACE: PERMISSION_DENIED` porque o referenciador `http://127.0.0.1` na
+porta do teste não estava autorizado. Isso não comprova falha no domínio de produção.
+Em 15/10/2026, novo teste no endereço autorizado `http://localhost:4200/`
+retornou HTTP 403 nas duas unidades, no endpoint
+`places.googleapis.com/$rpc/google.maps.places.v1.Places/GetPlace`.
+Resposta: `[7,"The caller does not have permission"]`.
+A resposta atual não identifica bloqueio de referenciador nem detalha a permissão ausente.
+Conferir no projeto da chave: Places API (New) e Maps JavaScript API habilitadas,
+ambas permitidas nas restrições de APIs da chave e faturamento ativo.
+Confirmar que as restrições da captura foram aplicadas à mesma chave usada pelo site.
+Notas e comentários reais ainda não foram validados; manter as restrições de sites/APIs.
+
+Teste real reproduzível, sem envio de formulários (até quatro consultas:
+resumos no banner e avaliações das duas unidades):
+`node tools/performance/google-places-live.mjs`.
+O script usa o servidor já iniciado em `http://localhost:4200/`.
+Outro endereço autorizado pode ser passado como primeiro argumento.
+Pode consumir quota da API. As mensagens de diagnóstico ocultam a chave.
+
 Sem chave/Place IDs, mostra apenas as unidades e links para seus perfis reais.
 Não há notas antigas, avaliações inventadas ou substituição por dados de demonstração.
 Os testes usam respostas simuladas fora do código publicado.
@@ -18,7 +41,7 @@ Os testes usam respostas simuladas fora do código publicado.
 3. Criar chave de **navegador**, com restrição de sites (referenciadores HTTP),
    incluindo `https://sp-link.com.br/*` e os domínios de homologação utilizados.
    Incluir `https://www.sp-link.com.br/*` somente se esse domínio servir o site.
-   Para prévia local, liberar explicitamente `http://127.0.0.1:4174/*` na chave de desenvolvimento.
+   Para desenvolvimento local, liberar `http://localhost:4200/*`.
 4. Restringir a chave às APIs necessárias, configurar quotas e alertas de orçamento.
    Alertas não equivalem a um limite automático de gastos.
 5. Obter o **Place ID** de cada perfil, conferindo o endereço: Tramandaí (Av. Curitiba,

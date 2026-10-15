@@ -23,7 +23,7 @@ try {
     await page.addStyleTag({ content: 'html { scroll-behavior: auto !important; }' });
     const client = await page.createCDPSession();
     const gesture = async (dx, dy) => {
-      await page.$eval('.p-carousel-viewport', el => { window.scrollTo(0, scrollY + el.getBoundingClientRect().top - 100); });
+      await page.$eval('app-carousel-plans .p-carousel-viewport', el => { window.scrollTo(0, scrollY + el.getBoundingClientRect().top - 100); });
       await pause(300);
       const x = Math.round(width / 2), y = 400;
       await client.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y, id: 1 }] });
@@ -34,9 +34,9 @@ try {
       await client.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
       await pause(500);
     };
-    const state = () => page.evaluate(() => ({ y: scrollY, transform: document.querySelector('.p-carousel-item-list').style.transform }));
+    const state = () => page.evaluate(() => ({ y: scrollY, transform: document.querySelector('app-carousel-plans .p-carousel-item-list').style.transform }));
     for (const [dx, dy] of [[0, -180], [-45, -180], [40, 180]]) {
-      await page.$eval('.p-carousel-viewport', el => window.scrollTo(0, scrollY + el.getBoundingClientRect().top - 100));
+      await page.$eval('app-carousel-plans .p-carousel-viewport', el => window.scrollTo(0, scrollY + el.getBoundingClientRect().top - 100));
       const before = await state();
       await gesture(dx, dy);
       const after = await state();
@@ -52,7 +52,7 @@ try {
     await page.click('button[aria-label="Ver próximos planos"]');
     await pause(500);
     assert.notEqual((await state()).transform, before.transform, 'Arrow navigation failed');
-    await page.click('.p-carousel-item-active .btn-plan');
+    await page.click('app-carousel-plans .p-carousel-item-active .btn-plan');
     assert.equal(await page.evaluate(() => window.__opened.length), 1, 'CTA tap failed');
     results.push({ width, vertical: true, diagonal: true, horizontalBothDirections: true, arrow: true, cta: true, passed: true });
     console.log(JSON.stringify(results.at(-1)));
