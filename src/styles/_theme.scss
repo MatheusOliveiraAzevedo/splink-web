@@ -1,0 +1,104 @@
+// Manual SP-Link, p. 16. Edit this small palette to maintain the theme.
+:root {
+  --theme-bg: #fefefe;
+  --theme-surface: #fff;
+  --theme-text: #4d4d4d;
+  --theme-muted: #59595b;
+  --theme-accent: #0c725c;
+  --theme-green: #0c725c;
+  --theme-border: #c5e3da;
+  --theme-error: #a52020;
+}
+
+html[data-bs-theme='dark'] {
+  color-scheme: dark;
+  --theme-bg: #4d4d4d;
+  --theme-surface: color-mix(in srgb, #4d4d4d 80%, #000);
+  --theme-text: #fefefe;
+  --theme-muted: color-mix(in srgb, #fefefe 80%, #8c8c8c);
+  --theme-accent: #a2df75;
+  --theme-border: #8c8c8c;
+  --theme-error: #ffb4ab;
+  --colorSplinkGray: var(--theme-muted);
+  --colorSplinkGrayDark: var(--theme-muted);
+  --bs-body-bg: var(--theme-bg);
+  --bs-body-color: var(--theme-text);
+  --bs-border-color: var(--theme-border);
+  --bs-secondary-color: var(--theme-muted);
+  --bs-link-color: var(--theme-accent);
+  --bs-link-color-rgb: 162, 223, 117;
+  --bs-link-hover-color: var(--theme-text);
+
+  body, app-home, app-carousel-plans, app-who-we-are, app-google-reviews,
+  app-privacy-policy, app-privacy-cookies, app-rights-policy,
+  .reviews-placeholder {
+    background: var(--theme-bg);
+    color: var(--theme-text);
+  }
+
+  app-coverage-area, app-work-with-us, app-retain-attention,
+  app-footer.bg-color-primary-dark {
+    background: var(--theme-green) !important;
+  }
+
+  app-menu-bar, .offcanvas, .dropdown-menu,
+  app-carousel-plans .plan-card, app-carousel-plans .plan-conditions,
+  app-coverage-area :is(.coverage-city, .coverage-form, .coverage-map),
+  app-work-with-us .work-form, app-google-reviews .location,
+  app-retain-attention .service-card,
+  app-banner-principal .hero__rating-card, app-cookies dialog, app-cookies .card {
+    background: var(--theme-surface);
+    color: var(--theme-text);
+    border-color: var(--theme-border);
+  }
+
+  app-carousel-plans .plan-card--highlight { border-color: var(--theme-accent) !important; }
+  app-carousel-plans .plan-speeds { background: var(--theme-bg); }
+  app-carousel-plans :is(.plan-name, .plan-price, .plan-speed, .plan-price__value, .plan-speeds dd, .plan-conditions__title, .plan-benefits i, .plan-speeds i, .plan-conditions i),
+  app-who-we-are :is(h2, .about-eyebrow, .about-lead, .about-values li),
+  app-coverage-area :is(h3, summary, .coverage-form a),
+  app-work-with-us :is(h3, .work-form a),
+  app-google-reviews :is(h2, h3, a, .eyebrow, .rating-value, .star, .review-rating),
+  app-banner-principal :is(.hero__rating-score strong, .hero__rating-star),
+  app-banner-principal .hero__rating-card a { color: var(--theme-accent) !important; }
+
+  app-banner-principal :is(.hero__rating-card small, .hero__rating-scale),
+  app-google-reviews .google-terms { color: var(--theme-muted) !important; }
+
+  app-banner-principal .hero__rating-card .hero__rating-link,
+  app-google-reviews .all-reviews:hover,
+  app-menu-bar .dropdown-item:is(:hover, :active) {
+    background: var(--theme-green) !important;
+    color: var(--theme-text) !important;
+  }
+  app-menu-bar .nav-link:hover { color: var(--theme-accent) !important; }
+  app-menu-bar .image-logo { background: #fefefe; border-radius: .4rem; padding: .25rem; }
+
+  // Preserve official Google artwork and its contrast without recoloring it.
+  app-banner-principal .hero__google, app-google-reviews .google-attribution {
+    box-sizing: content-box; background: #fefefe; padding: 5px 10px; border-radius: 4px;
+  }
+
+  app-carousel-plans .btn-plan,
+  app-coverage-area .coverage-cta, app-work-with-us .work-cta,
+  app-carousel-plans .plan-badge, app-cookies #save-preferences {
+    background: var(--theme-green) !important; color: var(--theme-text) !important;
+    box-shadow: none;
+  }
+  app-carousel-plans .btn-plan:hover, app-coverage-area .coverage-cta:hover,
+  app-work-with-us .work-cta:hover:not(:disabled) {
+    background: var(--theme-accent) !important; color: var(--theme-surface) !important;
+  }
+
+  .form-control, .form-select, .form-control:focus, .form-select:focus {
+    background-color: var(--theme-bg); color: var(--theme-text); border-color: var(--theme-border);
+  }
+  .form-control::placeholder { color: var(--theme-muted) !important; opacity: 1; }
+  .form-control:focus, .form-select:focus { border-color: var(--theme-accent); box-shadow: 0 0 0 3px #a2df7533; }
+  app-coverage-area .field-error, app-work-with-us .field-error { color: var(--theme-error) !important; }
+  input[aria-invalid='true'] { border-color: var(--theme-error) !important; }
+  app-google-reviews .all-reviews, app-google-reviews .review,
+  app-carousel-plans .plan-included, app-banner-principal .hero__rating-unit,
+  app-who-we-are .about-values li { border-color: var(--theme-border); }
+  :is(a, button, summary):focus-visible { outline-color: var(--theme-accent) !important; }
+}

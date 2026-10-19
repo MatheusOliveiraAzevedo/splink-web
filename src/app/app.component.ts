@@ -6,11 +6,12 @@ import { Meta, Title } from '@angular/platform-browser';
 import { filter, map, mergeMap } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { CookiesComponent } from './components/cookies/cookies.component';
+import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuBarComponent, FooterComponent, CommonModule, CookiesComponent],
+  imports: [RouterOutlet, MenuBarComponent, FooterComponent, CommonModule, CookiesComponent, ThemeToggleComponent],
   providers: [Title],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -10,7 +10,7 @@ $font-weight-base: 400;
 :root {
     --colorSplinkPrimaryLigth: #27af919c;
     --colorSplinkPrimary: #27AF91;
-    --colorSplinkPrimaryDark: #046D5D;
+    --colorSplinkPrimaryDark: #0C725C;
     --colorSplinkSecondary: #B5A4EE;
     --colorSplinkGrayLigth: #a0a0a0;
     --colorSplinkGray: #59595b;
@@ -52,6 +52,7 @@ $font-weight-base: 400;
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import './styles/typography';
+@import './styles/theme';
 
 // Evita zoom involuntário nos campos em navegadores móveis e mantém alvos de toque.
 input.form-control, select.form-select, textarea.form-control { font-size: 1rem; }

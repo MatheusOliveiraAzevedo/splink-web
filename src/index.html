@@ -7,6 +7,12 @@
   <!-- End Google Tag Manager -->
   
   <meta charset="utf-8">
+  <script>
+    // Apply the saved preference before styles render to avoid a light flash.
+    try {
+      document.documentElement.dataset.bsTheme = localStorage.getItem('splink-theme') === 'dark' ? 'dark' : 'light';
+    } catch { document.documentElement.dataset.bsTheme = 'light'; }
+  </script>
   <title>SP-Link</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
