@@ -72,7 +72,8 @@ html[data-bs-theme='dark'] {
     color: var(--theme-text) !important;
   }
   app-menu-bar .nav-link:hover { color: var(--theme-accent) !important; }
-  app-menu-bar .image-logo { background: #fefefe; border-radius: .4rem; padding: .25rem; }
+  app-menu-bar .logo-light { display: none; }
+  app-menu-bar .logo-dark { display: inline; }
 
   // Preserve official Google artwork and its contrast without recoloring it.
   app-banner-principal .hero__google, app-google-reviews .google-attribution {
