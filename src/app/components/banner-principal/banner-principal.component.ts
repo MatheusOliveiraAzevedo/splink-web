@@ -30,8 +30,8 @@ export class BannerPrincipalComponent implements OnInit, AfterViewInit {
     const onVisibility = () => { if (document.hidden) this.carousel?.stopAutoplay(); };
     motion.addEventListener('change', onMotion);
     document.addEventListener('visibilitychange', onVisibility);
-    // Start Places after the initial banner render; failures never block the banner.
-    const load = setTimeout(() => { void this.loadRatings(); }, 1200);
+    // Yield to the initial render without adding a fixed wait before the visible ratings.
+    const load = setTimeout(() => { void this.loadRatings(); }, 0);
     this.destroyRef.onDestroy(() => {
       this.destroyed = true; clearTimeout(load);
       motion.removeEventListener('change', onMotion);

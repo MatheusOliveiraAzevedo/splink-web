@@ -1,7 +1,7 @@
 import { Component, DestroyRef, OnInit, inject, signal } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { links } from '../../shared/model/links';
-import { GooglePlacesService, PlaceDetails } from './google-places.service';
+import { GooglePlacesService, GoogleReview, PlaceDetails } from './google-places.service';
 
 interface ReviewLocation {
   id: 'tramandai' | 'imbe';
@@ -9,6 +9,7 @@ interface ReviewLocation {
   url: string;
   state: 'loading' | 'ready' | 'unconfigured' | 'error';
   details?: PlaceDetails;
+  selectedReviews?: GoogleReview[];
 }
 
 @Component({
@@ -38,7 +39,9 @@ export class GoogleReviewsComponent implements OnInit {
         if (!config.apiKey?.trim() || !id) { this.update(location.id, { state: 'unconfigured' }); return; }
         try {
           const details = await this.places.details(config.apiKey.trim(), id);
-          this.update(location.id, { state: 'ready', details });
+          const selectedReviews = (details.reviews ?? []).filter(review =>
+            review.rating === 5 && (review.originalText || review.text)?.trim());
+          this.update(location.id, { state: 'ready', details, selectedReviews });
         } catch { this.update(location.id, { state: 'error' }); }
       }));
     } catch {

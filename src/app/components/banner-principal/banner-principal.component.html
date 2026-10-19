@@ -17,13 +17,13 @@
       <div class="hero__ratings">
         @for (unit of ratings(); track unit.name) {
           <div class="hero__rating-card">
-            <span>{{ unit.name }}</span>
+            <span class="hero__rating-unit">{{ unit.name }}</span>
             @if (unit.details?.rating != null) {
-              <div class="hero__rating-score"><strong>{{ rating(unit.details!.rating!) }}</strong> <span aria-hidden="true">★</span><span class="visually-hidden"> de 5 estrelas</span></div>
+              <div class="hero__rating-score"><strong>{{ rating(unit.details!.rating!) }}</strong><span class="hero__rating-scale"><span class="hero__rating-star" aria-hidden="true">★</span><span>de 5</span><span class="visually-hidden"> estrelas</span></span></div>
               @if (unit.details?.userRatingCount != null) { <small>{{ unit.details!.userRatingCount }} avaliações</small> }
               <img src="assets/google/google-maps.svg" alt="Google Maps" class="hero__google" width="98" height="18">
             }
-            <a [href]="safeUrl(unit.details?.googleMapsURI) || unit.url" target="_blank" rel="noopener noreferrer">Ver no Google ↗</a>
+            <a class="hero__rating-link" [href]="safeUrl(unit.details?.googleMapsURI) || unit.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Ver avaliações de ' + unit.name + ' no Google (abre em nova aba)'">Ver no Google <span aria-hidden="true">↗</span></a>
             @for (source of unit.details?.attributions || []; track $index) {
               @if (safeUrl(source.providerURI); as sourceUrl) { <small><a [href]="sourceUrl" target="_blank" rel="noopener noreferrer">{{ source.provider }}</a></small> }
               @else { <small>{{ source.provider }}</small> }

@@ -1,0 +1,2187 @@
+[
+  {
+    "profile": "mobile",
+    "run": 1,
+    "browser": "Chrome/155.0.8059.40",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-19T17:48:21.789Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 71,
+    "accessibility": 100,
+    "fcpMs": 3462.928,
+    "lcpMs": 5187.928,
+    "speedIndexMs": 3462.928,
+    "tbtMs": 170,
+    "cls": 0.01700215999335376,
+    "transferBytes": 585973,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 4583,
+        "status": 200
+      },
+      {
+        "url": "/chunk-E7SPRPOM.js",
+        "type": "Script",
+        "bytes": 1065,
+        "status": 200
+      },
+      {
+        "url": "/chunk-7C3E36ME.js",
+        "type": "Script",
+        "bytes": 32999,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5EE2QAEG.js",
+        "type": "Script",
+        "bytes": 872,
+        "status": 200
+      },
+      {
+        "url": "/chunk-H4VK4PFD.js",
+        "type": "Script",
+        "bytes": 28064,
+        "status": 200
+      },
+      {
+        "url": "/chunk-F2H75KF3.js",
+        "type": "Script",
+        "bytes": 10032,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QGSX6AJN.js",
+        "type": "Script",
+        "bytes": 55383,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-YX2QMRHF.js",
+        "type": "Script",
+        "bytes": 59697,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-aberta-800.avif",
+        "type": "Image",
+        "bytes": 36556,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-HIDPMIMS.css",
+        "type": "Stylesheet",
+        "bytes": 36902,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Bold-latin.woff2",
+        "type": "Font",
+        "bytes": 49451,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 51107,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.webp",
+        "type": "Image",
+        "bytes": 24801,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia-aberta-800.avif",
+        "type": "Image",
+        "bytes": 36556,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/google-places.json",
+        "type": "Fetch",
+        "bytes": 391,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2DMpBUeIjwjjot69aBjXMuJ93UbXHjyk&v=quarterly&loading=async&libraries=places&language=pt-BR&region=BR&callback=splinkPlacesReady",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "3.5 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "5.2 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "3.5 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "170 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "220 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "5.2 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "5,190 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 29 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "forced-reflow-insight",
+        "title": "Forced reflow"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 49 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 2,
+    "browser": "Chrome/155.0.8059.40",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-19T17:48:29.431Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 72,
+    "accessibility": 100,
+    "fcpMs": 3620.1440000000002,
+    "lcpMs": 5195.144,
+    "speedIndexMs": 3620.1440000000002,
+    "tbtMs": 104,
+    "cls": 0.01700215999335376,
+    "transferBytes": 585973,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 4583,
+        "status": 200
+      },
+      {
+        "url": "/chunk-E7SPRPOM.js",
+        "type": "Script",
+        "bytes": 1065,
+        "status": 200
+      },
+      {
+        "url": "/chunk-7C3E36ME.js",
+        "type": "Script",
+        "bytes": 32999,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5EE2QAEG.js",
+        "type": "Script",
+        "bytes": 872,
+        "status": 200
+      },
+      {
+        "url": "/chunk-H4VK4PFD.js",
+        "type": "Script",
+        "bytes": 28064,
+        "status": 200
+      },
+      {
+        "url": "/chunk-F2H75KF3.js",
+        "type": "Script",
+        "bytes": 10032,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QGSX6AJN.js",
+        "type": "Script",
+        "bytes": 55383,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-YX2QMRHF.js",
+        "type": "Script",
+        "bytes": 59697,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-aberta-800.avif",
+        "type": "Image",
+        "bytes": 36556,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-HIDPMIMS.css",
+        "type": "Stylesheet",
+        "bytes": 36902,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Bold-latin.woff2",
+        "type": "Font",
+        "bytes": 49451,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 51107,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.webp",
+        "type": "Image",
+        "bytes": 24801,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia-aberta-800.avif",
+        "type": "Image",
+        "bytes": 36556,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/google-places.json",
+        "type": "Fetch",
+        "bytes": 391,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2DMpBUeIjwjjot69aBjXMuJ93UbXHjyk&v=quarterly&loading=async&libraries=places&language=pt-BR&region=BR&callback=splinkPlacesReady",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "3.6 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "5.2 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "3.6 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "100 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "150 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "5.2 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "5,200 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 29 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 49 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "mobile",
+    "run": 3,
+    "browser": "Chrome/155.0.8059.40",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-19T17:48:36.558Z",
+    "settings": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 2,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "performance": 73,
+    "accessibility": 100,
+    "fcpMs": 3608.418,
+    "lcpMs": 5108.418000000001,
+    "speedIndexMs": 3608.418,
+    "tbtMs": 104.99999999999955,
+    "cls": 0.01700215999335376,
+    "transferBytes": 585973,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 4583,
+        "status": 200
+      },
+      {
+        "url": "/chunk-E7SPRPOM.js",
+        "type": "Script",
+        "bytes": 1065,
+        "status": 200
+      },
+      {
+        "url": "/chunk-7C3E36ME.js",
+        "type": "Script",
+        "bytes": 32999,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5EE2QAEG.js",
+        "type": "Script",
+        "bytes": 872,
+        "status": 200
+      },
+      {
+        "url": "/chunk-H4VK4PFD.js",
+        "type": "Script",
+        "bytes": 28064,
+        "status": 200
+      },
+      {
+        "url": "/chunk-F2H75KF3.js",
+        "type": "Script",
+        "bytes": 10032,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QGSX6AJN.js",
+        "type": "Script",
+        "bytes": 55383,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-YX2QMRHF.js",
+        "type": "Script",
+        "bytes": 59697,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-aberta-800.avif",
+        "type": "Image",
+        "bytes": 36556,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-HIDPMIMS.css",
+        "type": "Stylesheet",
+        "bytes": 36902,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Bold-latin.woff2",
+        "type": "Font",
+        "bytes": 49451,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 51107,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.webp",
+        "type": "Image",
+        "bytes": 24801,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia-aberta-800.avif",
+        "type": "Image",
+        "bytes": 36556,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/google-places.json",
+        "type": "Fetch",
+        "bytes": 391,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2DMpBUeIjwjjot69aBjXMuJ93UbXHjyk&v=quarterly&loading=async&libraries=places&language=pt-BR&region=BR&callback=splinkPlacesReady",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "3.6 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "5.1 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "3.6 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "displayValue": "100 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "displayValue": "150 ms"
+      },
+      {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "displayValue": "5.1 s"
+      },
+      {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "displayValue": "5,110 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 29 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 49 KiB"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 1,
+    "browser": "Chrome/155.0.8059.40",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-19T17:48:43.631Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 98,
+    "accessibility": 100,
+    "fcpMs": 692.85,
+    "lcpMs": 1072.8500000000001,
+    "speedIndexMs": 998.5071081708795,
+    "tbtMs": 0,
+    "cls": 0.004401428674768519,
+    "transferBytes": 650535,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 4583,
+        "status": 200
+      },
+      {
+        "url": "/chunk-E7SPRPOM.js",
+        "type": "Script",
+        "bytes": 1065,
+        "status": 200
+      },
+      {
+        "url": "/chunk-7C3E36ME.js",
+        "type": "Script",
+        "bytes": 32999,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5EE2QAEG.js",
+        "type": "Script",
+        "bytes": 872,
+        "status": 200
+      },
+      {
+        "url": "/chunk-H4VK4PFD.js",
+        "type": "Script",
+        "bytes": 28064,
+        "status": 200
+      },
+      {
+        "url": "/chunk-F2H75KF3.js",
+        "type": "Script",
+        "bytes": 10032,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QGSX6AJN.js",
+        "type": "Script",
+        "bytes": 55383,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-YX2QMRHF.js",
+        "type": "Script",
+        "bytes": 59697,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-aberta-1512.avif",
+        "type": "Image",
+        "bytes": 68837,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-HIDPMIMS.css",
+        "type": "Stylesheet",
+        "bytes": 36902,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.webp",
+        "type": "Image",
+        "bytes": 24801,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia-aberta-1512.avif",
+        "type": "Image",
+        "bytes": 68837,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 51107,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Bold-latin.woff2",
+        "type": "Font",
+        "bytes": 49451,
+        "status": 200
+      },
+      {
+        "url": "/google-places.json",
+        "type": "Fetch",
+        "bytes": 391,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2DMpBUeIjwjjot69aBjXMuJ93UbXHjyk&v=quarterly&loading=async&libraries=places&language=pt-BR&region=BR&callback=splinkPlacesReady",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.1 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.0 s"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 160 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 23 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 23 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 2,
+    "browser": "Chrome/155.0.8059.40",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-19T17:48:50.989Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 98,
+    "accessibility": 100,
+    "fcpMs": 694.9350000000002,
+    "lcpMs": 1074.935,
+    "speedIndexMs": 1006.4845444259884,
+    "tbtMs": 0,
+    "cls": 0.004401428674768519,
+    "transferBytes": 650535,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 4583,
+        "status": 200
+      },
+      {
+        "url": "/chunk-E7SPRPOM.js",
+        "type": "Script",
+        "bytes": 1065,
+        "status": 200
+      },
+      {
+        "url": "/chunk-7C3E36ME.js",
+        "type": "Script",
+        "bytes": 32999,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5EE2QAEG.js",
+        "type": "Script",
+        "bytes": 872,
+        "status": 200
+      },
+      {
+        "url": "/chunk-H4VK4PFD.js",
+        "type": "Script",
+        "bytes": 28064,
+        "status": 200
+      },
+      {
+        "url": "/chunk-F2H75KF3.js",
+        "type": "Script",
+        "bytes": 10032,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QGSX6AJN.js",
+        "type": "Script",
+        "bytes": 55383,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-YX2QMRHF.js",
+        "type": "Script",
+        "bytes": 59697,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-aberta-1512.avif",
+        "type": "Image",
+        "bytes": 68837,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-HIDPMIMS.css",
+        "type": "Stylesheet",
+        "bytes": 36902,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.webp",
+        "type": "Image",
+        "bytes": 24801,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia-aberta-1512.avif",
+        "type": "Image",
+        "bytes": 68837,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 51107,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Bold-latin.woff2",
+        "type": "Font",
+        "bytes": 49451,
+        "status": 200
+      },
+      {
+        "url": "/google-places.json",
+        "type": "Fetch",
+        "bytes": 391,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2DMpBUeIjwjjot69aBjXMuJ93UbXHjyk&v=quarterly&loading=async&libraries=places&language=pt-BR&region=BR&callback=splinkPlacesReady",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.1 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.0 s"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 160 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 23 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 23 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  },
+  {
+    "profile": "desktop",
+    "run": 3,
+    "browser": "Chrome/155.0.8059.40",
+    "lighthouse": "12.8.2",
+    "fetchedAt": "2026-10-19T17:48:58.422Z",
+    "settings": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "performance": 98,
+    "accessibility": 100,
+    "fcpMs": 694.1474999999999,
+    "lcpMs": 1074.1475,
+    "speedIndexMs": 994.820584854593,
+    "tbtMs": 0,
+    "cls": 0.004401428674768519,
+    "transferBytes": 650535,
+    "resources": [
+      {
+        "url": "/",
+        "type": "Document",
+        "bytes": 4583,
+        "status": 200
+      },
+      {
+        "url": "/chunk-E7SPRPOM.js",
+        "type": "Script",
+        "bytes": 1065,
+        "status": 200
+      },
+      {
+        "url": "/chunk-7C3E36ME.js",
+        "type": "Script",
+        "bytes": 32999,
+        "status": 200
+      },
+      {
+        "url": "/chunk-5EE2QAEG.js",
+        "type": "Script",
+        "bytes": 872,
+        "status": 200
+      },
+      {
+        "url": "/chunk-H4VK4PFD.js",
+        "type": "Script",
+        "bytes": 28064,
+        "status": 200
+      },
+      {
+        "url": "/chunk-F2H75KF3.js",
+        "type": "Script",
+        "bytes": 10032,
+        "status": 200
+      },
+      {
+        "url": "/chunk-QGSX6AJN.js",
+        "type": "Script",
+        "bytes": 55383,
+        "status": 200
+      },
+      {
+        "url": "/polyfills-EQXJKH7W.js",
+        "type": "Script",
+        "bytes": 13202,
+        "status": 200
+      },
+      {
+        "url": "/scripts-EEEIPNC3.js",
+        "type": "Script",
+        "bytes": 24586,
+        "status": 200
+      },
+      {
+        "url": "/main-YX2QMRHF.js",
+        "type": "Script",
+        "bytes": 59697,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NXWZ6T7R",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/assets/banner/familia-aberta-1512.avif",
+        "type": "Image",
+        "bytes": 68837,
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-16726610036",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      },
+      {
+        "url": "/styles-HIDPMIMS.css",
+        "type": "Stylesheet",
+        "bytes": 36902,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-color-splink.webp",
+        "type": "Image",
+        "bytes": 14469,
+        "status": 200
+      },
+      {
+        "url": "/assets/whatsapp/wpp-white.webp",
+        "type": "Image",
+        "bytes": 4126,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-rodape.webp",
+        "type": "Image",
+        "bytes": 24801,
+        "status": 200
+      },
+      {
+        "url": "/assets/banner/familia-aberta-1512.avif",
+        "type": "Image",
+        "bytes": 68837,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 51107,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='no…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/Inter-Regular-latin.woff2",
+        "type": "Font",
+        "bytes": 42707,
+        "status": 200
+      },
+      {
+        "url": "/assets/fonts/CodecPro-Bold-latin.woff2",
+        "type": "Font",
+        "bytes": 49451,
+        "status": 200
+      },
+      {
+        "url": "/google-places.json",
+        "type": "Fetch",
+        "bytes": 391,
+        "status": 200
+      },
+      {
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%2…",
+        "type": "Image",
+        "bytes": 0,
+        "status": 200
+      },
+      {
+        "url": "/assets/logo/logo-short-splink.png",
+        "type": "Other",
+        "bytes": 15717,
+        "status": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2DMpBUeIjwjjot69aBjXMuJ93UbXHjyk&v=quarterly&loading=async&libraries=places&language=pt-BR&region=BR&callback=splinkPlacesReady",
+        "type": "Script",
+        "bytes": 0,
+        "status": -1
+      }
+    ],
+    "failedAudits": [
+      {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "displayValue": "0.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "displayValue": "1.1 s"
+      },
+      {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "displayValue": "1.0 s"
+      },
+      {
+        "id": "prioritize-lcp-image",
+        "title": "Preload Largest Contentful Paint image",
+        "displayValue": "Est savings of 120 ms"
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "displayValue": "Est savings of 30 KiB"
+      },
+      {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "displayValue": "Est savings of 23 KiB"
+      },
+      {
+        "id": "bf-cache",
+        "title": "Page prevented back/forward cache restoration",
+        "displayValue": "2 failure reasons"
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 23 KiB"
+      },
+      {
+        "id": "lcp-discovery-insight",
+        "title": "LCP request discovery"
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "title": "Network dependency tree"
+      }
+    ]
+  }
+]

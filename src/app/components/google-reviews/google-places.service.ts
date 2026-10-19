@@ -33,8 +33,16 @@ type MapsWindow = Window & {
 @Injectable({ providedIn: 'root' })
 export class GooglePlacesService {
   private library?: Promise<PlacesLibrary>;
+  private config?: Promise<PlacesConfig>;
 
-  async configuration(): Promise<PlacesConfig> {
+  configuration(): Promise<PlacesConfig> {
+    return this.config ??= this.fetchConfiguration().catch(error => {
+      this.config = undefined;
+      throw error;
+    });
+  }
+
+  private async fetchConfiguration(): Promise<PlacesConfig> {
     const response = await fetch('/google-places.json', { cache: 'no-store', signal: AbortSignal.timeout(10000) });
     if (!response.ok) throw new Error('Places configuration unavailable');
     return response.json();
@@ -46,7 +54,7 @@ export class GooglePlacesService {
     this.library = this.withTimeout(new Promise<void>((resolve, reject) => {
       if (target.google?.maps?.importLibrary) { resolve(); return; }
       const script = document.createElement('script');
-      const params = new URLSearchParams({ key: apiKey, v: 'quarterly', loading: 'async',
+      const params = new URLSearchParams({ key: apiKey, v: 'quarterly', loading: 'async', libraries: 'places',
         language: 'pt-BR', region: 'BR', callback: 'splinkPlacesReady' });
       target.splinkPlacesReady = () => { resolve(); };
       script.id = 'splink-google-places-sdk';

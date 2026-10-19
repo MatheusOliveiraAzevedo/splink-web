@@ -21,10 +21,10 @@
               @if (place.userRatingCount != null) { <span class="review-count">{{ place.userRatingCount }} avaliações no Google</span> }
             </span></p>
           }
-          @if (place.reviews?.length) {
-            <p class="ordering">Até 5 avaliações por unidade, ordenadas por relevância pelo Google.</p>
+          @if (location.selectedReviews?.length) {
+            <p class="ordering">Comentários de 5 estrelas selecionados entre as avaliações retornadas pelo Google, mantendo a ordem de relevância pelo Google. A nota geral considera todas as avaliações da unidade.</p>
             <ul class="review-list">
-              @for (review of place.reviews; track $index) {
+              @for (review of location.selectedReviews; track $index) {
                 <li class="review">
                   <div class="author">
                     @if (safeUrl(review.authorAttribution?.photoURI); as photo) {
@@ -43,7 +43,7 @@
                 </li>
               }
             </ul>
-          } @else { <p>Nenhum comentário disponível para exibição no momento. Consulte o perfil da unidade no Google.</p> }
+          } @else { <p>Nenhum comentário de 5 estrelas disponível nesta seleção. Consulte todas as avaliações no perfil da unidade no Google.</p> }
           @for (attribution of place.attributions || []; track $index) {
             <p class="provider">Fonte:
               @if (safeUrl(attribution.providerURI); as providerUrl) { <a [href]="providerUrl" target="_blank" rel="noopener noreferrer">{{ attribution.provider }}</a> }

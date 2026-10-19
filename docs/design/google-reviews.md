@@ -21,7 +21,7 @@ A resposta atual não identifica bloqueio de referenciador nem detalha a permiss
 Conferir no projeto da chave: Places API (New) e Maps JavaScript API habilitadas,
 ambas permitidas nas restrições de APIs da chave e faturamento ativo.
 Confirmar que as restrições da captura foram aplicadas à mesma chave usada pelo site.
-Notas e comentários reais ainda não foram validados; manter as restrições de sites/APIs.
+Em 19/10/2026, após a ativação pelo responsável, o teste real no localhost:4200 confirmou sucesso nas duas unidades, sem erros da API. Manter as restrições de sites/APIs. Os erros acima são históricos.
 
 Teste real reproduzível, sem envio de formulários (até quatro consultas:
 resumos no banner e avaliações das duas unidades):
@@ -63,13 +63,13 @@ Preencher `public/google-places.json`:
 Esses são marcadores explicativos, não valores válidos. O arquivo publicado fica em
 `/google-places.json`; é uma configuração pública, não um cofre de segredos. Não usar
 chave de servidor ou credenciais OAuth. A proteção da chave web depende das restrições
-configuradas no Google Cloud. O site lê o JSON sem cache HTTP a cada montagem da seção.
+configuradas no Google Cloud. O site lê o JSON sem cache HTTP e compartilha a configuração em memória entre banner e seção durante a página atual; uma falha permite nova tentativa.
 
 ## Comportamento
 
 - Uma consulta de detalhes por unidade configurada, em paralelo. SDK compartilhado.
 - Consulta `rating`, `userRatingCount`, `reviews`, `googleMapsURI` e `attributions`.
-- Até cinco avaliações selecionadas por relevância pelo Google, sem filtrar por nota.
+- Exibe apenas comentários com texto e nota de 5 estrelas entre as até cinco avaliações retornadas pelo Google. Mantém a ordem de relevância e informa o filtro na página. A nota geral e a quantidade de avaliações continuam sendo os valores originais da unidade. Se nenhum comentário corresponder, mantém o link para todas as avaliações.
 - Nota e quantidade específicas por unidade; não calcula uma média entre lojas.
 - Mostra autor, avatar quando disponível, data, nota, texto original e links de fonte.
 - Não usa `innerHTML`; URLs remotas aceitam somente HTTPS.
@@ -103,3 +103,14 @@ Os testes simulados não comprovam credenciais, faturamento ou dados reais retor
 
 `src/assets/google/google-maps.svg` é o logo cinza original, sem alterações, extraído
 do pacote oficial Google_Maps_Attribution_Assets.zip indicado nas regras de atribuição.
+
+## Carregamento otimizado (19/10/2026)
+
+- O banner inicia a busca após ceder à renderização, sem a espera fixa de 1,2 segundo.
+- A biblioteca `places` é solicitada junto com o SDK, evitando esperar o SDK
+  terminar para só então iniciar o carregamento dessa biblioteca.
+- A página inicial antecipa conexões com os três domínios usados pelo Google.
+- Apenas a configuração é compartilhada; comentários continuam sendo buscados
+  ao chegar à seção. Nenhuma consulta adicional de avaliações foi introduzida,
+  nem armazenamento persistente dos dados do Google.
+- A latência de resposta da API permanece dependente do Google e da conexão.

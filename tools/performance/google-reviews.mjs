@@ -41,8 +41,8 @@ try {
                 this.userRatingCount = this.id === 'test-imbe' ? 22 : 120;
                 this.googleMapsURI = 'https://www.google.com/maps?place=' + this.id;
                 this.attributions = [{ provider: 'Provedor de teste', providerURI: 'https://example.com/provider' }];
-                this.reviews = ${JSON.stringify(scenario)} === 'empty' ? [] : [{
-                  rating: 3, text: 'Texto traduzido de teste', originalText: '<img src=x onerror=alert(1)> Avaliação SIMULADA de ' + city,
+                this.reviews = ${JSON.stringify(scenario)} === 'empty' ? [{ rating: 4, text: 'Comentário fora do filtro' }] : [{ rating: 4, text: 'Comentário fora do filtro' }, { rating: 5, text: '   ' }, {
+                  rating: 5, text: 'Texto traduzido de teste', originalText: '<img src=x onerror=alert(1)> Avaliação SIMULADA de ' + city,
                   publishTime: new Date('2026-10-01T12:00:00Z'),
                   googleMapsURI: 'https://www.google.com/maps/reviews?review=' + this.id,
                   authorAttribution: { displayName: 'Autor de teste ' + city, uri: 'https://www.google.com/maps/contrib/test' }
@@ -64,6 +64,8 @@ try {
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'Horizontal overflow');
       assert.equal(await page.$$eval('.all-reviews', els => els.length), 2);
       const content = await page.$eval('app-google-reviews', el => el.textContent);
+      assert(!content.includes('Comentário fora do filtro'));
+      assert(await page.$$eval('.review-rating', els => els.every(el => el.textContent.includes('5/5'))));
       if (scenario === 'unconfigured') {
         assert(!requests.some(url => url.includes('maps.googleapis.com/maps/api/js')), 'SDK requested without config');
         assert.equal(await page.$$eval('.rating-value', els => els.length), 0, 'Invented ratings');
@@ -72,7 +74,7 @@ try {
       } else {
         assert.equal(requests.filter(url => url.includes('maps.googleapis.com/maps/api/js')).length, 1, 'Duplicate SDK');
         assert.equal((await page.evaluate(() => window.__placesCalls)).filter(call => call.fields.includes('reviews')).length, 2);
-        if (scenario === 'empty') assert(content.includes('Nenhum comentário disponível'));
+        if (scenario === 'empty') assert(content.includes('Nenhum comentário de 5 estrelas disponível'));
         else {
           assert(content.includes('Avaliação SIMULADA de Tramandaí'));
           assert(!await page.$('.review-text img'), 'Unescaped review HTML');

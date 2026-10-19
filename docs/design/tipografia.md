@@ -42,3 +42,15 @@ node tools/performance/check.mjs dist/splink-web/browser docs/performance/typogr
 O teste verifica 320, 390, 768 e 1440 px, formulários com envio simulado,
 navegação e fontes efetivamente renderizadas pelo navegador (nome PostScript,
 peso e origem local). Capturas e resultados ficam em `docs/performance/typography`.
+
+## Otimização de carregamento (19/10/2026)
+
+Os arquivos `*-latin.woff2` cobrem português, caracteres latinos básicos,
+acentos combinantes, pontuação e símbolos usados na interface. São priorizados
+por `unicode-range`; os WOFF2 completos permanecem como alternativa para outros
+caracteres (inclusive nomes e comentários retornados pelo Google).
+O peso total das três fontes latinas é 142.680 bytes, contra 379.408 bytes dos
+arquivos completos. A família e os pesos permanecem iguais.
+
+Para reproduzir: instalar `fonttools[woff]` em um ambiente Python e executar
+`python tools/fonts/subset.py`. Gerado com fontTools 4.67.0.

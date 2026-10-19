@@ -13,6 +13,13 @@
   <!-- Inicia apenas a variante responsiva do banner da página inicial. -->
   <script>
     if (location.pathname === '/') {
+      for (const href of ['https://maps.googleapis.com', 'https://maps.gstatic.com', 'https://places.googleapis.com']) {
+        const connection = document.createElement('link');
+        connection.rel = 'preconnect';
+        connection.href = href;
+        connection.crossOrigin = 'anonymous';
+        document.head.appendChild(connection);
+      }
       const heroPreload = document.createElement('link');
       heroPreload.rel = 'preload';
       heroPreload.as = 'image';
