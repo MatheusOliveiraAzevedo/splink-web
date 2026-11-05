@@ -4,6 +4,7 @@ import { Error404Component } from './pages/error-404/error-404.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { PrivacyCookiesComponent } from './pages/privacy-cookies/privacy-cookies.component';
 import { RightsPolicyComponent } from './pages/rights-policy/rights-policy.component';
+import { BlackFridayRulesComponent } from './pages/black-friday-rules/black-friday-rules.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,11 @@ export const routes: Routes = [
       path: 'politica-de-direito-dos-titulares',
       component: RightsPolicyComponent,
       data: {title: 'SP-Link - Politica de direito dos titulares'}
+    },
+    {
+      path: 'regras-black-friday',
+      component: BlackFridayRulesComponent,
+      data: {title: 'SP-Link - Regras da Black Friday', description: 'Confira as regras da campanha de indicação da Black November da SP-Link, válida de 01 a 30 de novembro de 2026.'}
     },
     {
       path: 'erro-404',

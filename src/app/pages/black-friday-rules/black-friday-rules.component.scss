@@ -1,0 +1,20 @@
+:host {
+    min-height: 60vh;
+    background-color: #FFFFFF;
+    color: var(--colorSplinkGray);
+
+    section {
+        padding-bottom: 100px;
+    }
+
+    .rules-list {
+        width: 75%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :host .rules-list {
+        width: 100%;
+    }
+}
