@@ -140,6 +140,15 @@ try {
       } else if (width <= 1100) { await page.click('button[aria-label="Ver próximos planos"]'); await pause(600); }
       await page.click('.plan-card--highlight .btn-plan');
       check(decodeURIComponent(await page.evaluate(() => window.__opened.at(-1))).includes('500 Mega'), '500 Mega message');
+      check(decodeURIComponent(await page.evaluate(() => window.__opened.at(-1))).includes('Streaming — WatchTV'), 'Streaming option missing');
+      await page.select('#plan-option-500', 'ia');
+      await page.click('.plan-card--highlight .btn-plan');
+      check(decodeURIComponent(await page.evaluate(() => window.__opened.at(-1))).includes('IA — HUB de 5 IAs'), 'IA option missing');
+      check(await page.evaluate(() => window.dataLayer.filter(e => e.event === 'whatsapp_click').at(-1).plan_id === '500-ia'), 'IA tracking option missing');
+      const products = await page.$eval('#plans-structured-data', el => JSON.parse(el.textContent)['@graph']);
+      check(JSON.stringify(products.map(p => p.offers?.price ?? null)) === JSON.stringify(['84.90', '99.90', '119.90', '145.00', null]), 'Incorrect plan prices');
+      check(products.length === 5 && !products.some(p => /Giga/.test(p.name)), 'Retired plan still offered');
+      check(await page.$eval('.plan-card', el => !el.textContent.includes('WatchTV') && el.textContent.includes('Sem serviços adicionais')), '170 Mbps has incorrect SVA');
       await page.$eval('.plan-card--highlight', el => el.scrollIntoView({ block: 'start' }));
       await pause(600);
       await page.evaluate(() => window.scrollBy({ top: -80, behavior: 'instant' }));

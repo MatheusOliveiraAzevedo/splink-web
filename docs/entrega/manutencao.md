@@ -9,14 +9,16 @@ Arquivo: `src/app/shared/model/plans.ts`.
 
 - `name`: nome exibido e enviado no WhatsApp; `id`: identificador usado no rastreamento.
   Preserve o ID de um plano existente para manter a continuidade dos registros.
-- `download` e `upload`: números em Mbps; 1 Giga usa `download: 1000`.
+- `download` e `upload`: números em Mbps; use `null` para planos personalizados.
 - `price`: mensalidade numérica, com ponto decimal (ex.: `119.9` = R$ 119,90).
   Use `null` para “sob consulta”, nunca `0` para representar um preço desconhecido.
 - `description` e `benefits`: descrição e lista de benefícios do card.
 - `highlight: true` e `badge`: destaque visual; mantenha o 500 Mega destacado,
   a menos que o marketing aprove uma mudança.
-- `includedInAllPlans`: equipamento, Watch TV, instalação, fidelidade e suporte
-  dos planos residenciais. O card empresarial tem descrição e benefícios próprios.
+- `includedInAllPlans`: equipamento, instalação, fidelidade e suporte dos planos residenciais.
+  Os benefícios de cada oferta ficam em `plans[].benefits`. O 500 Mbps usa `options`
+  para a escolha exclusiva entre WatchTV e HUB de 5 IAs; o 170 Mbps não inclui SVA.
+  O card de planos personalizados tem descrição própria e preço `null` (sob consulta).
 
 Exemplo de alteração isolada: mudar `price: 119.9` para o novo valor aprovado no
 objeto `id: '500'`. O card e o JSON-LD serão atualizados juntos. Não refaça artes.
@@ -101,3 +103,5 @@ navegador configurado em `CHROME_PATH` (Brave no Mac por padrão). Veja
 `tools/performance/README.md`. Os testes interceptam os envios: não substituem a
 validação de recebimento pela equipe. Depois de uma alteração, gere uma nova versão
 para aprovação; o pacote de 05/10/2026 é uma cópia fixa e não se atualiza sozinho.
+
+Atualização de 05/11/2026: 170 Mbps R$ 84,90; 250 Mbps R$ 99,90; 500 Mbps R$ 119,90 com escolha de Streaming ou IA; 750 Mbps R$ 145,00 com WatchTV, HUB de IAs e segundo roteador. Oferta de 1 Gbps retirada. WhatsApp registra `500-streaming` ou `500-ia` e inclui o benefício escolhido na mensagem.

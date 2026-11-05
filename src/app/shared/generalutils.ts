@@ -51,7 +51,9 @@ export class GeneralUtils {
 
     criarLinkWhatsApp(context: WhatsAppContext, message?: string): string {
         const introduction = context.plan
-            ? `Olá! Vim pelo site e tenho interesse no ${context.plan.name === 'Plano Empresarial' ? 'plano empresarial' : `plano de ${context.plan.name}`}. Quero consultar a cobertura.`
+            ? context.plan.id === 'custom'
+                ? 'Olá! Vim pelo site e tenho interesse em um plano personalizado. Quero consultar a cobertura e conversar sobre a minha necessidade.'
+                : `Olá! Vim pelo site e tenho interesse no ${context.plan.name === 'Plano Empresarial' ? 'plano empresarial' : `plano de ${context.plan.name}`}. Quero consultar a cobertura.`
             : context.position === 'watch_tv' || context.position === 'wifi_6'
                 ? `Olá! Vim pelo site e quero conhecer os planos com ${positionLabels[context.position]}. Quero consultar a cobertura.`
                 : 'Olá! Vim pelo site e quero consultar a cobertura e conhecer os planos.';

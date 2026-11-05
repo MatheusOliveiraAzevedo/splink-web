@@ -14,17 +14,14 @@ export interface Plan {
   badge?: string;
   description: string;
   benefits: string[];
-  type: 'residential' | 'business';
+  type: 'residential' | 'custom';
+  options?: { id: string; label: string }[];
   subtitle?: string;
 }
 
 // Condições provisórias: confirmar uploads, fidelidade, comodato e pacote Watch TV com o marketing.
 export const includedInAllPlans = {
   equipment: 'Roteador Wi-Fi 6 em comodato, sem custo adicional',
-  tv: {
-    name: 'Watch TV',
-    description: 'Aplicativo de canais de TV incluso: canais ao vivo e conteúdo sob demanda, no celular, TV ou computador',
-  },
   installation: 'Instalação gratuita',
   loyalty: 'Fidelidade de 12 meses',
   support: 'Suporte técnico local, com atendimento humano',
@@ -37,8 +34,8 @@ export const plans: Plan[] = [
     download: 170,
     upload: 85,
     price: 84.9,
-    description: 'Ideal para uso diário, redes sociais e streaming.',
-    benefits: ['Navegação e redes sociais', 'Streaming em Full HD', 'Videochamadas'],
+    description: 'Internet para o dia a dia, apenas com a velocidade contratada.',
+    benefits: ['Sem serviços adicionais (SVA)'],
     type: 'residential',
   },
   {
@@ -48,7 +45,7 @@ export const plans: Plan[] = [
     upload: 125,
     price: 99.9,
     description: 'Ótimo para famílias e uso simultâneo.',
-    benefits: ['Streaming em vários aparelhos ao mesmo tempo', 'Home office e videochamadas', 'Vários dispositivos conectados'],
+    benefits: ['WatchTV incluso'],
     type: 'residential',
   },
   {
@@ -59,8 +56,12 @@ export const plans: Plan[] = [
     price: 119.9,
     highlight: true,
     badge: 'Plano em destaque',
-    description: 'Perfeito para streaming 4K, jogos online e casas conectadas.',
-    benefits: ['Streaming em 4K', 'Jogos online com baixa latência', 'Home office sem travar', 'Toda a família conectada'],
+    description: 'Você escolhe: streaming com WatchTV ou HUB de 5 IAs.',
+    benefits: ['Um benefício à sua escolha, pelo mesmo valor'],
+    options: [
+      { id: 'streaming', label: 'Streaming — WatchTV' },
+      { id: 'ia', label: 'IA — HUB de 5 IAs' },
+    ],
     type: 'residential',
   },
   {
@@ -68,28 +69,18 @@ export const plans: Plan[] = [
     name: '750 Mega',
     download: 750,
     upload: 375,
-    price: 139.9,
+    price: 145,
     description: 'Alta performance para gamers e uso intenso.',
-    benefits: ['Downloads pesados em segundos', 'Múltiplas TVs em 4K', 'Casa inteligente e câmeras'],
+    benefits: ['WatchTV incluso', 'HUB de IAs incluso', 'Segundo roteador incluso'],
     type: 'residential',
   },
   {
-    id: '1giga',
-    name: '1 Giga',
-    download: 1000,
-    upload: 500,
-    price: null,
-    description: 'Ultra velocidade para quem exige o máximo desempenho.',
-    benefits: ['Máxima velocidade da rede', 'Ideal para criadores de conteúdo', 'Atendimento consultivo'],
-    type: 'residential',
-  },
-  {
-    id: 'business',
-    name: 'Plano Empresarial',
-    subtitle: 'Personalizado',
-    description: 'Entre em contato com nossos especialistas e informe sua necessidade. Criamos um plano de acordo com a demanda da sua empresa.',
-    benefits: ['Velocidade sob medida', 'Roteador Wi-Fi 6 incluso', 'Suporte prioritário'],
-    type: 'business',
+    id: 'custom',
+    name: 'Planos personalizados',
+    subtitle: 'Chama a gente',
+    description: 'Precisa de uma solução diferente para sua casa ou empresa? Chama a gente para montar um plano de acordo com a sua necessidade.',
+    benefits: ['Velocidade sob medida', 'Condições definidas com a nossa equipe'],
+    type: 'custom',
     download: null,
     upload: null,
     price: null,
@@ -106,9 +97,9 @@ export interface ServiceCard {
 export const serviceCards: ServiceCard[] = [
   {
     icon: 'bi-tv',
-    title: includedInAllPlans.tv.name,
+    title: 'WatchTV',
     highlight: 'canais de TV',
-    text: `${includedInAllPlans.tv.name} incluso nos planos residenciais. ${includedInAllPlans.tv.description}.`,
+    text: 'Aplicativo de canais de TV com canais ao vivo e conteúdo sob demanda. Incluso no 250 e 750 Mbps; no 500 Mbps, disponível ao escolher a opção Streaming.',
   },
   {
     icon: 'bi-wifi',

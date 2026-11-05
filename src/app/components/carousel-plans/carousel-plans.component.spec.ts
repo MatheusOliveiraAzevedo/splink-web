@@ -29,7 +29,7 @@ describe('CarouselPlansComponent', () => {
     expect(highlighted.textContent).toContain('500');
     expect(highlighted.textContent).toContain('119,90');
     expect(highlighted.textContent).toContain('Upload');
-    expect(highlighted.textContent).toContain('Watch TV');
+    expect(highlighted.textContent).toContain('WatchTV');
     expect(highlighted.textContent).toContain('Instalação gratuita');
     expect(highlighted.textContent).toContain('Fidelidade de 12 meses');
   });
@@ -58,6 +58,10 @@ describe('CarouselPlansComponent', () => {
     const open = spyOn(window, 'open');
     component.goToWhatsApp(component.plans[2]);
     expect(decodeURIComponent(open.calls.mostRecent().args[0] as string)).toContain('500 Mega');
-    expect(component.generalUtils.registrarCliqueWhatsApp).toHaveBeenCalledWith({ position: 'plans', plan: component.plans[2] });
+    expect(component.generalUtils.registrarCliqueWhatsApp).toHaveBeenCalledWith({ position: 'plans', plan: { id: '500-streaming', name: '500 Mega (Streaming — WatchTV)' } });
+    component.selectedOption = 'ia';
+    component.goToWhatsApp(component.plans[2]);
+    expect(decodeURIComponent(open.calls.mostRecent().args[0] as string)).toContain('HUB de 5 IAs');
+    expect(component.generalUtils.registrarCliqueWhatsApp).toHaveBeenCalledWith({ position: 'plans', plan: { id: '500-ia', name: '500 Mega (IA — HUB de 5 IAs)' } });
   });
 });

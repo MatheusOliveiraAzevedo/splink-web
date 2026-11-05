@@ -1,7 +1,7 @@
 <section class="container-max px-3 px-sm-4" aria-labelledby="plans-title">
     <header class="text-center text-white mb-4 mb-lg-5">
         <h2 id="plans-title" class="fw-bold mb-2">Escolha o plano ideal para a sua casa</h2>
-        <p class="m-0 fs-5 brand-subtitle">Fibra óptica 100% própria, roteador Wi-Fi 6 e {{ included.tv.name }} inclusos nos planos residenciais.</p>
+        <p class="m-0 fs-5 brand-subtitle">Fibra óptica 100% própria. Compare as velocidades e os benefícios de cada plano.</p>
     </header>
 
     <p-carousel appCarouselTouchDirection [value]="plans" [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="true"
@@ -48,9 +48,17 @@
                             }
                         </ul>
 
+                        @if (item.options?.length) {
+                            <label class="mb-2" [for]="'plan-option-' + item.id">Escolha seu benefício incluso</label>
+                            <select class="form-select mb-3" [id]="'plan-option-' + item.id" [value]="selectedOption"
+                                (change)="selectedOption = $any($event.target).value">
+                                @for (option of item.options; track option.id) {
+                                    <option [value]="option.id">{{ option.label }}</option>
+                                }
+                            </select>
+                        }
                         <p class="plan-included">
                             {{ included.equipment }}<br>
-                            {{ included.tv.name }} incluso<br>
                             {{ included.installation }} · {{ included.loyalty }}
                         </p>
                         <button type="button" class="btn-plan mt-auto" [attr.aria-label]="'Consultar contratação do plano ' + item.name" (click)="goToWhatsApp(item)">
@@ -70,7 +78,7 @@
                                 <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ benefit }}</li>
                             }
                         </ul>
-                        <button type="button" class="btn-plan mt-auto" (click)="goToWhatsApp(item)">Falar com especialista</button>
+                        <button type="button" class="btn-plan mt-auto" (click)="goToWhatsApp(item)">Chama a gente</button>
                     </article>
                 }
             </div>
@@ -81,7 +89,6 @@
         <h3 class="plan-conditions__title">Incluso nos planos residenciais</h3>
         <ul class="list-unstyled m-0">
             <li><i class="bi bi-router-fill" aria-hidden="true"></i> {{ included.equipment }}</li>
-            <li><i class="bi bi-tv-fill" aria-hidden="true"></i> <span><strong>{{ included.tv.name }}</strong> — {{ included.tv.description }}</span></li>
             <li><i class="bi bi-tools" aria-hidden="true"></i> {{ included.installation }}</li>
             <li><i class="bi bi-calendar-check-fill" aria-hidden="true"></i> {{ included.loyalty }}</li>
             <li><i class="bi bi-headset" aria-hidden="true"></i> {{ included.support }}</li>

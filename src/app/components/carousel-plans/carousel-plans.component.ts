@@ -17,6 +17,7 @@ export class CarouselPlansComponent implements OnInit, OnDestroy {
   @HostBinding('class') class = 'd-flex flex-column align-items-center py-6'
   plans = plans;
   included = includedInAllPlans;
+  selectedOption = 'streaming';
   generalUtils = new GeneralUtils;
   responsiveOptions = configurationCarrousel;
 
@@ -32,7 +33,7 @@ export class CarouselPlansComponent implements OnInit, OnDestroy {
       '@graph': this.plans.map(plan => ({
         '@type': 'Product',
         name: `${plan.name} – SP-Link`,
-        description: `${plan.description}${plan.price === null ? ' Valor sob consulta.' : ''}`,
+        description: `${plan.description} ${plan.benefits.join('. ')}.${plan.price === null ? ' Valor sob consulta.' : ''}`,
         brand: { '@type': 'Brand', name: 'SP-Link' },
         category: 'Internet Fibra Óptica',
         url: 'https://sp-link.com.br/#plans',
@@ -55,6 +56,8 @@ export class CarouselPlansComponent implements OnInit, OnDestroy {
   }
 
   goToWhatsApp(plan: Plan) {
-    this.generalUtils.abrirWhatsApp({ position: 'plans', plan });
+    const option = plan.options?.find(option => option.id === this.selectedOption);
+    const chosenPlan = option ? { id: `${plan.id}-${option.id}`, name: `${plan.name} (${option.label})` } : plan;
+    this.generalUtils.abrirWhatsApp({ position: 'plans', plan: chosenPlan });
   }
 }
