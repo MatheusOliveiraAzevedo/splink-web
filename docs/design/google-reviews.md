@@ -23,12 +23,38 @@ ambas permitidas nas restrições de APIs da chave e faturamento ativo.
 Confirmar que as restrições da captura foram aplicadas à mesma chave usada pelo site.
 Em 19/10/2026, após a ativação pelo responsável, o teste real no localhost:4200 confirmou sucesso nas duas unidades, sem erros da API. Manter as restrições de sites/APIs. Os erros acima são históricos.
 
+### Recorrência em 05/11/2026
+
+Falha reproduzida em `http://localhost:4200/` nas duas unidades: SDK carregado,
+mas as consultas de resumo e avaliações recebem HTTP 403 no `GetPlace`, com
+`PLACES_GET_PLACE: PERMISSION_DENIED: The caller does not have permission`.
+Uma consulta adicional à API REST, no mesmo navegador e referenciador, pedindo
+somente `id`, também recebe 403 / `PERMISSION_DENIED`, sem detalhes adicionais.
+Isso confirma que a recusa também ocorre fora do componente de avaliações.
+A configuração e o serviço não têm alterações no Git posteriores a 19/10.
+
+A resposta não permite distinguir a causa exata. No projeto da **mesma chave**
+de `public/google-places.json`, verificar:
+
+1. Faturamento ativo, forma de pagamento válida e eventual término do período de testes.
+2. Places API (New) e Maps JavaScript API habilitadas no projeto e permitidas
+   nas restrições de APIs da chave.
+3. Restrição de sites incluindo `http://localhost:4200/*`; `127.0.0.1` é outro host.
+4. Métricas, quotas e erros da Places API (New) no horário da reprodução.
+
+Não foi possível inspecionar as configurações privadas do Google Cloud nesta sessão.
+Não há confirmação de recuperação até repetir o teste real após o ajuste.
+
 Teste real reproduzível, sem envio de formulários (até quatro consultas:
 resumos no banner e avaliações das duas unidades):
 `node tools/performance/google-places-live.mjs`.
 O script usa o servidor já iniciado em `http://localhost:4200/`.
 Outro endereço autorizado pode ser passado como primeiro argumento.
 Pode consumir quota da API. As mensagens de diagnóstico ocultam a chave.
+Para investigar recusas genéricas, executar
+`node tools/performance/google-places-live.mjs http://localhost:4200/ --diagnose`.
+Quando uma unidade está indisponível, essa opção faz uma consulta REST adicional
+somente de ID e inclui a resposta em `permissionDiagnostic`.
 
 Sem chave/Place IDs, mostra apenas as unidades e links para seus perfis reais.
 Não há notas antigas, avaliações inventadas ou substituição por dados de demonstração.

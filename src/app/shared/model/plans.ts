@@ -117,7 +117,7 @@ export const serviceCards: ServiceCard[] = [
     title: 'HUB de IAs',
     position: 'ai_hub',
     highlight: 'ChatGPT, Claude, Gemini, Grok, DeepSeek e Mistral',
-    text: 'ChatGPT, Claude, Gemini, Grok, DeepSeek e Mistral. Adicione uma licença em qualquer plano por R$ 19,90 a mais na sua fatura mensal.',
+    text: 'ChatGPT, Claude, Gemini, Grok, DeepSeek e Mistral. Adicione uma licença em qualquer plano por R$ 29,90 a mais na sua fatura mensal.',
   },
 ];
 

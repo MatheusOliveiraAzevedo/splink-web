@@ -72,6 +72,26 @@ try {
     reviewsDisplayed: card.querySelectorAll('.review').length,
     unavailable: card.textContent.includes('Não foi possível'),
   })));
+  // The SDK's RPC can hide the reason behind a generic PERMISSION_DENIED.
+  // Opt in to one IDs-only REST request from the same browser/referrer to get
+  // Google's structured error details, without fetching or storing reviews.
+  let permissionDiagnostic;
+  if (process.argv.includes('--diagnose') && locations.some(location => location.unavailable)) {
+    permissionDiagnostic = await page.evaluate(async () => {
+      try {
+        const configResponse = await fetch('/google-places.json', { cache: 'no-store', signal: AbortSignal.timeout(10000) });
+        if (!configResponse.ok) return { configurationStatus: configResponse.status };
+        const config = await configResponse.json();
+        const placeId = config.placeIds?.tramandai;
+        if (!config.apiKey || !placeId) return { error: 'Missing API key or Place ID' };
+        const endpoint = new URL(`https://places.googleapis.com/v1/places/${encodeURIComponent(placeId)}`);
+        endpoint.searchParams.set('fields', 'id');
+        endpoint.searchParams.set('key', config.apiKey);
+        const response = await fetch(endpoint, { signal: AbortSignal.timeout(15000) });
+        return { status: response.status, body: (await response.text()).replace(/AIza[\w-]+/g, '[REDACTED]').slice(0, 6000) };
+      } catch (error) { return { error: String(error).replace(/AIza[\w-]+/g, '[REDACTED]') }; }
+    });
+  }
   await Promise.all(diagnostics);
-  console.log(JSON.stringify({ origin: target.origin, locations, apiFailures, errors: [...new Set(errors)] }, null, 2));
+  console.log(JSON.stringify({ origin: target.origin, locations, permissionDiagnostic, apiFailures, errors: [...new Set(errors)] }, null, 2));
 } finally { await browser.close(); }

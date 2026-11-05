@@ -55,7 +55,7 @@ export class GeneralUtils {
                 ? 'Olá! Vim pelo site e tenho interesse em um plano personalizado. Quero consultar a cobertura e conversar sobre a minha necessidade.'
                 : `Olá! Vim pelo site e tenho interesse no ${context.plan.name === 'Plano Empresarial' ? 'plano empresarial' : `plano de ${context.plan.name}`}. Quero consultar a cobertura.`
             : context.position === 'ai_hub'
-                ? 'Olá! Vim pelo site e quero adicionar uma licença do HUB de IAs ao meu plano por R$ 19,90 a mais na fatura mensal.'
+                ? 'Olá! Vim pelo site e quero adicionar uma licença do HUB de IAs ao meu plano por R$ 29,90 a mais na fatura mensal.'
             : context.position === 'watch_tv' || context.position === 'wifi_6'
                 ? `Olá! Vim pelo site e quero conhecer os planos com ${positionLabels[context.position]}. Quero consultar a cobertura.`
                 : 'Olá! Vim pelo site e quero consultar a cobertura e conhecer os planos.';
