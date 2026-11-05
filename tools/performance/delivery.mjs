@@ -53,7 +53,7 @@ try {
     const event = emitted.find(x => x.event === 'whatsapp_click');
     const message = url.searchParams.get('text');
     const passed = url.hostname === 'api.whatsapp.com' && url.searchParams.get('phone') === '5551995320037'
-      && message.includes(`Origem no site: ${{hero:'banner principal',plans:'seção de planos',floating:'botão flutuante',footer:'rodapé',about:'quem somos',watch_tv:'Watch TV',wifi_6:'Wi-Fi 6',coverage_form:'formulário de cobertura'}[position]}.`) && (!plan || message.toLowerCase().includes(plan.name.toLowerCase()))
+      && message.includes(`Origem no site: ${{hero:'banner principal',plans:'seção de planos',floating:'botão flutuante',footer:'rodapé',about:'quem somos',watch_tv:'Watch TV',wifi_6:'Wi-Fi 6',ai_hub:'HUB de IAs',coverage_form:'formulário de cobertura'}[position]}.`) && (!plan || message.toLowerCase().includes(plan.name.toLowerCase()))
       && event?.position === position && event.plan_id === (plan?.id ?? null) && event.plan_name === (plan?.name ?? null)
       && event.intent === intent && emitted.filter(x => x.event === 'whatsapp_click').length === 1
       && (await page.evaluate(() => window.__opened.length)) === opens + 1;
@@ -67,7 +67,8 @@ try {
     ['Flutuante','#container-button-wpp','floating'],
     ['Rodapé','app-footer .bi-whatsapp','footer'], ['Quem somos','app-who-we-are app-button-attention button','about'],
     ['Watch TV','app-retain-attention .service-card:first-child button','watch_tv'],
-    ['Wi-Fi 6','app-retain-attention .service-card:last-child button','wifi_6'],
+    ['Wi-Fi 6','app-retain-attention .service-card:nth-child(2) button','wifi_6'],
+    ['HUB de IAs','app-retain-attention .service-card:last-child button','ai_hub'],
   ]) await captureWhatsApp(name, () => click(selector), position);
 
   for (const [selector,target] of [['.hero__plans','#plans'],['.hero__coverage','#coverage-form']]) {

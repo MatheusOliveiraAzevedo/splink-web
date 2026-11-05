@@ -1,3 +1,5 @@
+import type { WhatsAppPosition } from '../generalutils';
+
 /**
  * Fonte única dos planos exibidos no site.
  * Para atualizar preço, velocidade ou condição comercial, altere apenas este arquivo.
@@ -35,7 +37,7 @@ export const plans: Plan[] = [
     upload: 85,
     price: 84.9,
     description: 'Internet para o dia a dia, apenas com a velocidade contratada.',
-    benefits: ['Sem serviços adicionais (SVA)'],
+    benefits: [],
     type: 'residential',
   },
   {
@@ -56,11 +58,11 @@ export const plans: Plan[] = [
     price: 119.9,
     highlight: true,
     badge: 'Plano em destaque',
-    description: 'Você escolhe: streaming com WatchTV ou HUB de 5 IAs.',
+    description: 'Você escolhe: streaming com WatchTV ou HUB de 6 IAs.',
     benefits: ['Um benefício à sua escolha, pelo mesmo valor'],
     options: [
       { id: 'streaming', label: 'Streaming — WatchTV' },
-      { id: 'ia', label: 'IA — HUB de 5 IAs' },
+      { id: 'ia', label: 'IA — HUB de 6 IAs' },
     ],
     type: 'residential',
   },
@@ -92,20 +94,30 @@ export interface ServiceCard {
   title: string;
   highlight: string;
   text: string;
+  position: WhatsAppPosition;
 }
 
 export const serviceCards: ServiceCard[] = [
   {
     icon: 'bi-tv',
     title: 'WatchTV',
+    position: 'watch_tv',
     highlight: 'canais de TV',
     text: 'Aplicativo de canais de TV com canais ao vivo e conteúdo sob demanda. Incluso no 250 e 750 Mbps; no 500 Mbps, disponível ao escolher a opção Streaming.',
   },
   {
     icon: 'bi-wifi',
     title: 'Wi-Fi 6',
+    position: 'wifi_6',
     highlight: 'maior velocidade e capacidade',
     text: `Conecte seus dispositivos com a tecnologia Wi-Fi 6. ${includedInAllPlans.equipment}.`,
+  },
+  {
+    icon: 'bi-stars',
+    title: 'HUB de IAs',
+    position: 'ai_hub',
+    highlight: 'ChatGPT, Claude, Gemini, Grok, DeepSeek e Mistral',
+    text: 'ChatGPT, Claude, Gemini, Grok, DeepSeek e Mistral. Adicione uma licença em qualquer plano por R$ 19,90 a mais na sua fatura mensal.',
   },
 ];
 

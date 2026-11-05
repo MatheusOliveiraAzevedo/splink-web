@@ -12,6 +12,6 @@ import { ButtonAttentionComponent } from "../button-attention/button-attention.c
 export class RetainAttentionComponent {
 
   @HostBinding('class') class = 'd-flex flex-column align-items-center justify-content-center'
-  serviceCards: any[] = serviceCards
+  serviceCards = serviceCards
 
 }

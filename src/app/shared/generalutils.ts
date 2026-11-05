@@ -1,7 +1,7 @@
 import { links } from './model/links';
 
 export type WhatsAppPosition = 'hero' | 'plans' | 'floating' | 'footer' | 'about'
-    | 'watch_tv' | 'wifi_6' | 'coverage_form';
+    | 'watch_tv' | 'wifi_6' | 'ai_hub' | 'coverage_form';
 export type ContactIntent = 'coverage' | 'expansion';
 export interface WhatsAppContext {
     position: WhatsAppPosition;
@@ -13,7 +13,7 @@ type TrackingWindow = Window & { dataLayer?: unknown[] };
 const positionLabels: Record<WhatsAppPosition, string> = {
     hero: 'banner principal', plans: 'seção de planos', floating: 'botão flutuante',
     footer: 'rodapé', about: 'quem somos', watch_tv: 'Watch TV', wifi_6: 'Wi-Fi 6',
-    coverage_form: 'formulário de cobertura',
+    ai_hub: 'HUB de IAs', coverage_form: 'formulário de cobertura',
 };
 
 export class GeneralUtils {
@@ -54,6 +54,8 @@ export class GeneralUtils {
             ? context.plan.id === 'custom'
                 ? 'Olá! Vim pelo site e tenho interesse em um plano personalizado. Quero consultar a cobertura e conversar sobre a minha necessidade.'
                 : `Olá! Vim pelo site e tenho interesse no ${context.plan.name === 'Plano Empresarial' ? 'plano empresarial' : `plano de ${context.plan.name}`}. Quero consultar a cobertura.`
+            : context.position === 'ai_hub'
+                ? 'Olá! Vim pelo site e quero adicionar uma licença do HUB de IAs ao meu plano por R$ 19,90 a mais na fatura mensal.'
             : context.position === 'watch_tv' || context.position === 'wifi_6'
                 ? `Olá! Vim pelo site e quero conhecer os planos com ${positionLabels[context.position]}. Quero consultar a cobertura.`
                 : 'Olá! Vim pelo site e quero consultar a cobertura e conhecer os planos.';

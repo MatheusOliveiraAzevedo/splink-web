@@ -1,5 +1,5 @@
 <section class="container-max px-4 px-sm-5 py-6" aria-labelledby="services-title">
-    <h2 id="services-title" class="visually-hidden">Diferenciais inclusos nos planos</h2>
+    <h2 id="services-title" class="visually-hidden">Benefícios e serviços adicionais dos planos</h2>
     <div class="d-flex flex-row align-items-stretch justify-content-evenly flex-wrap gap-5">
         @for (service of serviceCards; track service.title) {
             <article class="service-card">
@@ -8,7 +8,7 @@
                 </div>
                 <h3 class="service-card__title">{{ service.title }}</h3>
                 <p class="service-card__text">{{ service.text }}</p>
-                <app-button-attention class="d-block d-md-none buttonAttention" label="Quero contratar!" [position]="service.title === 'WatchTV' ? 'watch_tv' : 'wifi_6'"></app-button-attention>
+                <app-button-attention class="d-block d-md-none buttonAttention" label="Quero contratar!" [position]="service.position"></app-button-attention>
             </article>
         }
     </div>
