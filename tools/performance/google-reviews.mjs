@@ -1,99 +1,53 @@
+// Regression check for the retired Places integration. No real Google requests.
 import puppeteer from 'puppeteer-core';
 import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { serve, executablePath } from './server.mjs';
 
-const [directory, output] = process.argv.slice(2);
-if (!directory || !output) throw new Error('Usage: google-reviews.mjs BUILD OUTPUT');
+const directory = process.argv[2] ?? 'dist/splink-web/browser';
+const output = process.argv[3] ?? '/tmp/splink-no-places';
 await mkdir(output, { recursive: true });
 const server = await serve(directory);
 const browser = await puppeteer.launch({ executablePath, headless: true, args: ['--no-first-run', '--disable-extensions'] });
 const results = [];
 try {
-  for (const scenario of ['unconfigured', 'success', 'empty', 'partial-error', 'sdk-error']) {
-    for (const width of scenario === 'success' || scenario === 'unconfigured' ? [320, 390, 1440] : [390]) {
-      const context = await browser.createBrowserContext();
-      const page = await context.newPage();
-      const requests = [], errors = [];
-      page.on('pageerror', error => errors.push(error.message));
-      await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
-      await page.evaluateOnNewDocument(() => localStorage.setItem('cookiePreferences', 'accepted'));
-      await page.setRequestInterception(true);
-      page.on('request', request => {
-        requests.push(request.url());
-        if (request.url() === `${server.url}/google-places.json`) {
-          const config = scenario === 'unconfigured' ? { apiKey: '', placeIds: {} }
-            : { apiKey: 'TEST_ONLY_NOT_A_REAL_KEY', placeIds: { tramandai: 'test-tramandai', imbe: 'test-imbe' } };
-          return request.respond({ status: 200, contentType: 'application/json', body: JSON.stringify(config) });
-        }
-        if (request.url().startsWith('https://maps.googleapis.com/maps/api/js?')) {
-          if (scenario === 'sdk-error') return request.abort();
-          return request.respond({ status: 200, contentType: 'text/javascript', body: `
-            window.__placesCalls = [];
-            window.google = { maps: { importLibrary: async () => ({ Place: class {
-              constructor(options) { this.id = options.id; }
-              async fetchFields(options) {
-                window.__placesCalls.push({ id: this.id, fields: options.fields });
-                if (${JSON.stringify(scenario)} === 'partial-error' && this.id === 'test-imbe') throw new Error('Simulated rejection');
-                const city = this.id === 'test-imbe' ? 'Imbé' : 'Tramandaí';
-                this.rating = this.id === 'test-imbe' ? 4.2 : 4.7;
-                this.userRatingCount = this.id === 'test-imbe' ? 22 : 120;
-                this.googleMapsURI = 'https://www.google.com/maps?place=' + this.id;
-                this.attributions = [{ provider: 'Provedor de teste', providerURI: 'https://example.com/provider' }];
-                this.reviews = ${JSON.stringify(scenario)} === 'empty' ? [{ rating: 4, text: 'Comentário fora do filtro' }] : [{ rating: 4, text: 'Comentário fora do filtro' }, { rating: 5, text: '   ' }, {
-                  rating: 5, text: 'Texto traduzido de teste', originalText: '<img src=x onerror=alert(1)> Avaliação SIMULADA de ' + city,
-                  publishTime: new Date('2026-10-01T12:00:00Z'),
-                  googleMapsURI: 'https://www.google.com/maps/reviews?review=' + this.id,
-                  authorAttribution: { displayName: 'Autor de teste ' + city, uri: 'https://www.google.com/maps/contrib/test' }
-                }];
-              }
-            } }) } };
-            window.splinkPlacesReady();
-          ` });
-        }
-        if (request.url().startsWith(server.url) || request.url().startsWith('data:')) return request.continue();
-        return request.abort();
-      });
-      await page.goto(server.url, { waitUntil: 'networkidle0' });
-      assert(!await page.$('app-google-reviews'), 'Detailed review section loaded before scrolling');
-      await page.$eval('#reviews', el => el.scrollIntoView());
-      await page.waitForSelector('app-google-reviews');
-      await page.waitForFunction(() => [...document.querySelectorAll('app-google-reviews article')].length === 2 && [...document.querySelectorAll('app-google-reviews article')].every(el => el.getAttribute('aria-busy') === 'false'));
-      await page.evaluate(() => document.fonts.ready);
-      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'Horizontal overflow');
-      assert.equal(await page.$$eval('.all-reviews', els => els.length), 2);
-      const content = await page.$eval('app-google-reviews', el => el.textContent);
-      assert(!content.includes('Comentário fora do filtro'));
-      assert(await page.$$eval('.review-rating', els => els.every(el => el.textContent.includes('5/5'))));
-      if (scenario === 'unconfigured') {
-        assert(!requests.some(url => url.includes('maps.googleapis.com/maps/api/js')), 'SDK requested without config');
-        assert.equal(await page.$$eval('.rating-value', els => els.length), 0, 'Invented ratings');
-      } else if (scenario === 'sdk-error') {
-        assert(content.includes('Não foi possível carregar'));
-      } else {
-        assert.equal(requests.filter(url => url.includes('maps.googleapis.com/maps/api/js')).length, 1, 'Duplicate SDK');
-        assert.equal((await page.evaluate(() => window.__placesCalls)).filter(call => call.fields.includes('reviews')).length, 2);
-        if (scenario === 'empty') assert(content.includes('Nenhum comentário de 5 estrelas disponível'));
-        else {
-          assert(content.includes('Avaliação SIMULADA de Tramandaí'));
-          assert(!await page.$('.review-text img'), 'Unescaped review HTML');
-          assert(content.includes('4,7'));
-          assert(content.includes('relevância pelo Google'));
-          await page.$eval('.google-attribution', el => el.scrollIntoView({ behavior: 'instant', block: 'center' }));
-          await page.waitForFunction(() => { const img = document.querySelector('.google-attribution'); return img.complete && img.naturalWidth > 0; });
-          assert.equal(await page.$eval('.review-source', el => el.href), 'https://www.google.com/maps/reviews?review=test-tramandai');
-          if (scenario === 'partial-error') assert(content.includes('Não foi possível carregar'));
-          else { assert(content.includes('Avaliação SIMULADA de Imbé')); assert(content.includes('4,2')); }
-        }
+  for (const width of [320, 390, 768, 1440]) {
+    const page = await browser.newPage();
+    const placesRequests = [];
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.setViewport({ width, height: 900 });
+    await page.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
+    await page.evaluateOnNewDocument(() => localStorage.setItem('cookiePreferences', 'accepted'));
+    await page.setRequestInterception(true);
+    page.on('request', request => {
+      const url = new URL(request.url());
+      if (url.pathname === '/google-places.json' || url.hostname === 'places.googleapis.com' ||
+          (url.hostname === 'maps.googleapis.com' && url.pathname.startsWith('/maps/api/js'))) {
+        placesRequests.push(url.hostname + url.pathname);
       }
-      assert.deepEqual(errors, []);
-      await page.addStyleTag({ content: 'html { scroll-behavior: auto !important; }' });
-      await (await page.$('app-google-reviews')).screenshot({ path: resolve(output, `${scenario}-${width}.png`) });
-      results.push({ scenario, width, passed: true, simulated: true });
-      await writeFile(resolve(output, 'checks.json'), JSON.stringify(results, null, 2));
-      console.log(JSON.stringify(results.at(-1)));
-      await context.close();
+      return url.origin === server.url || url.protocol === 'data:' ? request.continue() : request.abort();
+    });
+    await page.goto(server.url, { waitUntil: 'networkidle0' });
+    for (const selector of ['#whoWeAre', '#workUs', 'app-footer', '.hero']) {
+      await page.$eval(selector, element => element.scrollIntoView({ behavior: 'instant' }));
+      if (selector === '#workUs') await page.waitForSelector('app-work-with-us .work-form');
     }
+    assert.equal(await page.$('app-google-reviews'), null, 'Retired review component rendered');
+    assert.equal(await page.$('#reviews'), null, 'Stale review anchor remains');
+    assert.equal(await page.$('.hero__ratings'), null, 'Live rating cards remain');
+    assert.equal(await page.$('a[href="#reviews"]'), null, 'Link points to the removed section');
+    assert.equal(await page.$$eval('link[rel="preconnect"]', links => links.filter(link =>
+      /maps\.googleapis|places\.googleapis|maps\.gstatic/.test(link.href)).length), 0);
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'Horizontal overflow');
+    const schemas = await page.$$eval('script[type="application/ld+json"]', scripts => scripts.map(script => JSON.parse(script.textContent)));
+    assert(!JSON.stringify(schemas).includes('aggregateRating'), 'Unconfirmed legacy ratings remain in schema');
+    assert.deepEqual(placesRequests, [], 'Places requested despite removal');
+    assert.deepEqual(errors, []);
+    results.push({ width, placesRequests: 0, reviewComponentRemoved: true, passed: true });
+    console.log(JSON.stringify(results.at(-1)));
+    await page.close();
   }
+  await writeFile(resolve(output, 'checks.json'), JSON.stringify(results, null, 2));
 } finally { await browser.close(); await server.close(); }

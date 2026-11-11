@@ -6,12 +6,11 @@ import { CoverageAreaComponent } from "../../components/coverage-area/coverage-a
 import { WhoWeAreComponent } from "../../components/who-we-are/who-we-are.component";
 import { WorkWithUsComponent } from "../../components/work-with-us/work-with-us.component";
 import { ButtonWppComponent } from "../../components/button-wpp/button-wpp.component";
-import { GoogleReviewsComponent } from '../../components/google-reviews/google-reviews.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BannerPrincipalComponent, RetainAttentionComponent, CarouselPlansComponent, CoverageAreaComponent, WhoWeAreComponent, WorkWithUsComponent, ButtonWppComponent, GoogleReviewsComponent],
+  imports: [BannerPrincipalComponent, RetainAttentionComponent, CarouselPlansComponent, CoverageAreaComponent, WhoWeAreComponent, WorkWithUsComponent, ButtonWppComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

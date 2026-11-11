@@ -19,13 +19,6 @@
   <!-- Inicia apenas a variante responsiva do banner da página inicial. -->
   <script>
     if (location.pathname === '/') {
-      for (const href of ['https://maps.googleapis.com', 'https://maps.gstatic.com', 'https://places.googleapis.com']) {
-        const connection = document.createElement('link');
-        connection.rel = 'preconnect';
-        connection.href = href;
-        connection.crossOrigin = 'anonymous';
-        document.head.appendChild(connection);
-      }
       const heroPreload = document.createElement('link');
       heroPreload.rel = 'preload';
       heroPreload.as = 'image';
@@ -49,7 +42,7 @@
   "url": "https://sp-link.com.br",
   "logo": "https://sp-link.com.br/assets/logo/logo-short-splink.png",
   "image": "https://sp-link.com.br/assets/logo/logo-color-splink.webp",
-  "description": "Internet fibra óptica residencial e empresarial com Wi-Fi 6, atendimento rápido e a melhor avaliação de Tramandaí e Imbé. 4.8 estrelas em Tramandaí e 5.0 em Imbé.",
+  "description": "Internet fibra óptica residencial e empresarial com Wi-Fi 6 e atendimento em Tramandaí e Imbé.",
   "telephone": "+55-51-3669-1592",
   "email": "comercial@splinktelecom.com.br",
   "contactPoint": [
@@ -65,11 +58,6 @@
     "Tramandaí, RS",
     "Imbé, RS"
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "443"
-  },
   "serviceType": "Internet Fibra Óptica",
   "knowsAbout": [
     "fibra óptica",
@@ -105,11 +93,6 @@
         "@type": "GeoCoordinates",
         "latitude": -30.0371353,
         "longitude": -50.1568059
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "423"
       }
     },
     {
@@ -129,11 +112,6 @@
         "@type": "GeoCoordinates",
         "latitude": -29.9801278,
         "longitude": -50.1330066
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "20"
       }
     }
   ]

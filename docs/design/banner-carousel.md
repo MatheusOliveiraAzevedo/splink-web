@@ -1,60 +1,99 @@
-# Carrossel do banner principal
+# Banner principal e arte estática de avaliações
 
-O banner ocupa toda a largura da página e usa `p-carousel` do PrimeNG, a mesma
-biblioteca já usada nos planos, com um item visível e navegação circular.
-A biblioteca controla transição, setas, indicadores e autoplay a cada 8 segundos.
-Os itens mantêm altura comum pelo layout flex do carrossel. O botão de pausa chama
-`startAutoplay()` / `stopAutoplay()` da própria biblioteca, sem temporizador de rotação próprio.
-Foco no conteúdo, navegação manual, mouse sobre o banner e aba oculta interrompem
-a rotação; o visitante pode retomá-la em Iniciar. Movimento reduzido inicia pausado.
-A diretiva de direção de toque usada nos planos também protege a rolagem vertical
-no banner, permitindo navegação horizontal. Cada slide possui sua própria imagem responsiva dentro do item do PrimeNG; imagem,
-gradiente e texto deslizam juntos. Por enquanto os dois usam o mesmo arquivo,
-reaproveitado pelo navegador. A lista `slides` define `image` (prefixo dos arquivos),
-`width`, `height` e `alt` separadamente. Ao trocar a arte, gerar as variantes
-480/800/1280/1512 em AVIF/WebP e atualizar o preload em `src/index.html` se a primeira
-imagem mudar.
+## Estado atual — 11/11/2026
 
-A imagem usa `object-fit: cover` e ocupa todo o slide, inclusive no celular.
-O texto fica sobre a foto, com gradiente verde mais intenso na área de leitura.
-Não há uma faixa de imagem separada acima do conteúdo. O enquadramento se adapta à
-proporção da tela, preservando a proporção da imagem; artes futuras devem manter
-os elementos importantes em uma área segura. `sizes` e preload usam `100vw`.
+A integração com Google Places foi retirada da página inicial e do banner.
+O componente de comentários não é mais importado/renderizado na home. O serviço
+antigo permanece no código-fonte, sem consumidores na aplicação publicada.
+Não há busca de configuração, carregamento do SDK, consultas de nota/comentários
+ou preconnects para Places. `public/google-places.json` foi removido.
+O mapa de cobertura incorporado via My Maps continua separado dessa integração.
 
-Slides atuais:
+Até o marketing entregar a arte e os dados reais, aparece somente o banner de
+internet, com foto, consulta de cobertura e acesso aos planos. Com um único slide,
+não há setas, indicadores, autoplay ou botão de pausa.
 
-1. Avaliações por unidade via Google Places, com nota, quantidade, atribuição e link.
-   Em falta de configuração/erro, mantém links reais sem inventar notas. Não afirma
-   “mais bem avaliada”, pois nota individual não comprova liderança no mercado.
-2. Internet fibra óptica, com a foto atual, consulta de cobertura e acesso aos planos.
+## Briefing para o marketing
 
-O banner consulta apenas resumo (`rating`, `userRatingCount`, `googleMapsURI`,
-`attributions`), após a renderização inicial. Não solicita comentários. O SDK é
-compartilhado com a seção de avaliações; essa seção consulta seus comentários somente
-quando carregada. São até duas consultas de resumo no banner, além das consultas da
-seção inferior; considerar isso nas quotas e custos. Não há armazenamento persistente.
-A chave precisa autorizar localhost/Vercel/produção conforme o ambiente usado.
+A arte substituirá **um slide completo**, incluindo composição, logo, títulos e
+pontuações; não é apenas uma imagem para os antigos cartões.
 
-## Arte e conteúdo do programa de indicações
+| Versão | Arquivo mestre | Proporção | Seleção no site |
+| --- | --- | --- | --- |
+| Desktop | **1920 × 1080 px** | 16:9 | A partir de 992 px |
+| Tablet (recomendada) | **1440 × 1080 px** | 4:3 | De 576 a 991 px |
+| Celular | **1080 × 1440 px** | 3:4 | Até 575 px |
 
-Preparar duas versões da imagem:
+- Criar composições próprias para cada proporção. A versão de celular precisa ter
+  textos legíveis na tela de 320 px; não reduzir simplesmente o arquivo desktop.
+- Entregar PNG/JPG em alta qualidade e, se possível, o editável. Exportaremos os
+  arquivos finais otimizados em WebP/AVIF, mantendo a legibilidade das notas.
+- Manter textos e logos com margem de segurança de cerca de 10% das bordas.
+- O site usa `object-fit: contain`, sem cortar notas, textos ou logos. Dependendo
+  da tela, pode haver margens na cor de fundo do banner. Os controles ficam em
+  uma área reservada abaixo da imagem, sem gradiente sobre a arte.
+- Entregar junto a transcrição de **todo o texto** aprovado da arte: chamadas,
+  nomes das unidades, nota de cada unidade na escala de 5, quantidade de avaliações
+  se constar e data de conferência. Não somar nem tirar média entre unidades.
+- As notas são uma fotografia da data informada e precisam de revisão manual.
+  Alterações futuras devem atualizar imagem e transcrição juntas.
+- Não afirmar liderança de mercado (ex.: “mais bem avaliada”) sem comprovação.
 
-- Desktop: **1920 × 1080 px**, horizontal.
-- Celular: **1080 × 1440 px**, vertical.
-- Arquivo mestre em PNG ou JPG de alta qualidade; versão editável é bem-vinda.
-- Deixar pessoas/logos/elementos essenciais longe das bordas e reservar área para
-  título e botão. A área visível varia com tela e altura do conteúdo.
-- Preferir imagem de fundo sem título, preço e botão incorporados: os textos ficam
-  em HTML, selecionáveis e acessíveis. O site gera versões leves para publicação.
-- Enviar título, descrição, benefício da indicação, critérios/regras, validade e
-  destino do botão aprovados. Não há promoção fictícia publicada enquanto isso.
+## Como inserir a arte quando chegar
 
-Implementação: `src/app/components/banner-principal/`.
-O slide de indicação deverá ser adicionado com seus controles e rótulos, atualizando
-a lista `slides`, o template de conteúdo e os testes; os dois slides atuais não constituem um CMS.
+Copiar os arquivos otimizados para `src/assets/banner/` e substituir o `null`
+em `src/app/components/banner-principal/google-ratings-artwork.ts` por um objeto
+com estes campos:
 
-## Testes
+```ts
+{
+  desktop: 'assets/banner/avaliacoes-desktop.webp',
+  tablet: 'assets/banner/avaliacoes-tablet.webp', // Opcional.
+  mobile: 'assets/banner/avaliacoes-mobile.webp',
+  description: 'TRANSCRIÇÃO REAL E COMPLETA DA ARTE, COM A DATA DE CONFERÊNCIA',
+}
+```
 
-`node tools/performance/hero-carousel.mjs` usa respostas simuladas de Places e valida
-largura total, estabilidade entre slides, um título h1, redução de movimento, controles,
-rotação e pausa em quatro larguras. Não comprova autorização da chave real.
+O valor de `description` acima é apenas um marcador de documentação. Só publicar
+com texto aprovado e dados confirmados. Não há arquivos de arte fictícios no site.
+Se `tablet` for omitido, telas de tablet usam a imagem desktop.
+Ao habilitar o slide, atualizar também o preload em `src/index.html` para a nova
+primeira imagem, incluindo sua seleção responsiva, em vez de antecipar a foto de internet.
+
+O novo slide entra antes de Internet. O `p-carousel` do PrimeNG reativa as setas,
+indicadores, navegação circular e autoplay a cada 8 segundos quando há dois slides.
+Foco, mouse sobre o banner, aba oculta e preferência por movimento reduzido pausam
+a rotação. A diretiva de toque preserva a rolagem vertical. Imagens e conteúdo
+permanecem dentro do slide; slides inativos ficam `inert`.
+
+## Texto acessível e indexação
+
+A transcrição fica em um `figcaption` com a classe Bootstrap `visually-hidden`:
+é HTML textual disponível para leitores de tela e para o processamento da página,
+sem interferir no layout. A imagem tem `alt=""` porque seu equivalente completo já
+está na legenda, evitando leitura duplicada. Não usar `display:none`, `hidden`
+ou `aria-hidden` nessa legenda.
+
+A legenda deve corresponder ao que qualquer visitante pode ler na imagem. Não é
+um espaço para palavras-chave extras. Isso ajuda o Google a compreender o conteúdo,
+mas não garante indexação nem estrelas nos resultados. Não foi acrescentado schema
+de avaliações: as notas antigas sem confirmação foram retiradas do JSON-LD.
+
+Referências:
+- [Google: imagens e texto alternativo](https://developers.google.com/search/docs/appearance/google-images)
+- [Google: texto oculto e acessibilidade](https://developers.google.com/search/docs/essentials/spam-policies#hidden-text-and-link-abuse)
+
+## Validação
+
+```sh
+npm run build
+node tools/performance/google-reviews.mjs dist/splink-web/browser /tmp/splink-no-places
+node tools/performance/hero-carousel.mjs /tmp/splink-hero-carousel
+```
+
+O teste `google-reviews.mjs` agora verifica a **ausência** da integração em quatro
+larguras, inclusive após rolar a página. Não permite chamadas externas reais.
+O teste do banner verifica a apresentação provisória com um slide; atualizar o
+cenário para a arte final quando ela for fornecida. O teste unitário do banner
+exercita também a inserção de uma arte simulada com transcrição acessível e
+seleção de imagem para desktop/tablet/celular.

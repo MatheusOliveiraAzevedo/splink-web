@@ -1,5 +1,13 @@
 # Avaliações do Google na página principal
 
+> **Integração retirada em 11/11/2026.** A home não carrega este componente nem o
+> serviço Places. A configuração pública foi removida. O restante deste documento
+> registra o histórico da implementação, não instruções para reativação.
+> A substituição por arte estática e o briefing do marketing estão em
+> [banner-carousel.md](banner-carousel.md).
+> `google-reviews.mjs` agora testa ausência de consultas; o diagnóstico
+> `google-places-live.mjs` é histórico e não se aplica à home atual.
+
 Componente independente: `src/app/components/google-reviews/`.
 Inserido depois de Quem somos, antes de Trabalhe conosco, com `@defer (on viewport)`.
 As consultas de comentários só começam quando o componente é carregado e há configuração.
